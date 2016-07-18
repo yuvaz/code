@@ -1,0 +1,290 @@
+<html lang="en" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths win chrome chrome4 webkit webkit5 js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths nav-down js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	  <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"> <!-- used to load spl characters -->
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=edge,chrome=1" http-equiv="X-UA-compatible">
+      
+      <!--ls:begin[stylesheet]-->
+      <title>E-notary : portal</title>
+      <link href="/iwov-resources/fixed-layout/Single-Column-Offcanvas.css" type="text/css" rel="stylesheet">
+      <!--ls:end[stylesheet]-->
+      <!--ls:begin[meta-keywords]-->
+      <meta name="keywords" content="">
+      <!--ls:end[meta-keywords]-->
+      <!--ls:begin[meta-description]-->
+      <meta name="description" content="">
+      <!--ls:end[meta-description]-->
+      <!--ls:begin[meta-vpath]-->
+      <meta name="vpath" content="">
+      <!--ls:end[meta-vpath]-->
+      <!--ls:begin[meta-page-locale-name]-->
+      <meta name="page-locale-name" content="">
+      <!--ls:end[meta-page-locale-name]-->
+      <!--ls:begin[stylesheet]-->
+      <link type="text/css" href="/rsc/contrib/graphicaltheme/bnpp-fortis/brand.css" rel="stylesheet">
+      <link type="text/css" href="/rsc/contrib/graphicaltheme/bnpp-fortis/log.css" rel="stylesheet">
+      <!--ls:end[stylesheet]-->
+      <!--ls:begin[stylesheet]-->
+      <link type="text/css" href="/rsc/sys/css/player/mediaelementplayer.min.css" rel="stylesheet">
+      <!--ls:end[stylesheet]-->
+      <!--ls:begin[script]-->
+      <script type="text/javascript" src="/rsc/contrib/script/js/common/lib/jquery-1.9.1.min.js"></script><style type="text/css"></style>
+      <style type="text/css"></style>
+	  <script>
+			$( document ).ready(function() {
+				$(".possible .list_item").on("click",function(e){
+					var view = this;
+						$current = $(e.currentTarget);
+						//$previousSelected = $('.list_body.in');
+						
+					/*if ($previousSelected.hasClass("collapse")) {				
+						$previousSelected.collapse('toggle');
+						$(".list_head .list_item").removeClass("list_arrow_active");
+					}*/				
+					if (!$current.hasClass('disabled')) {					
+						$current.parent().next().collapse('toggle');
+						$current.toggleClass("list_active");
+					}
+				});
+				
+				
+				
+			});				
+			 
+		</script>
+      <!--ls:end[script]-->
+
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/modernizr/modernizr-min.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/pagebus/pagebus.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/require/require.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/lib/iscroll.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/lib/bootstrap.min.js"></script>
+      <!--ls:end[script]-->
+
+      <!--ls:end[script]-->
+      <!--ls:begin[favicon]-->
+      <link type="image/x-icon" href="/rsc/contrib/graphicaltheme/bnpp-fortis/images/favicon.ico" rel="shortcut icon">
+      <!--ls:end[favicon]-->
+      <!--ls:begin[head-injection]-->
+      <meta name="siteid" content="web-banking">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="msapplication-tap-highlight" content="no">
+      <meta name="referrer" content="origin">
+      <meta name="format-detection" content="telephone=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+      
+   </head>
+   <body class="en PC fb priv nextgen" cz-shortcut-listen="true">
+	<div class="portal_wrapper">
+
+	<script>
+		$( document ).ready(function() {
+			
+			$( ".one" ).on( "click", function() {
+			  $("#one").addClass( "in" );
+			  $("#one").css("display", "block");
+			  $(".checklist").css("display", "none");
+			});
+			$( ".onea" ).on( "click", function() {
+			  $("#onea").addClass( "in" );
+			  $("#onea").css("display", "block");
+			  $(".checklist").css("display", "none");
+			});
+			$( ".two" ).on( "click", function() {
+			  $("#two").addClass( "in" );
+			  $("#two").css("display", "block");
+			  $(".checklist").css("display", "none");
+			});
+			
+			
+			
+			
+			$( ".close" ).on( "click", function() {
+			  $(".modal").removeClass( "in" );
+			  $(".modal").css("display", "none");
+			   $(".checklist").css("display", "block");
+			});
+			
+			
+			
+		});
+
+	</script>
+	<style>
+	.checklist{
+		padding: 20px;
+		background: #FFF;
+	}
+
+	</style>
+	
+	<ul class="checklist">
+		<p class="pad-b20">Click on the link to open the overlay</p>
+		<li class="two lnk_primary">Enotary - Waiting Screen</li>
+		<li class="one lnk_primary">Accounts - Statements Setting</li>
+		<li class="onea lnk_primary">Accounts - Update Statements Setting</li>
+	</ul>
+	
+	
+	
+	<!-- Module Header -->
+	<div class="ng modal selectionlist-modal auto-height" id="one">  <!-- dummy id -->
+		<div class="modal-dialog" style="height:auto;">
+		<div class="modal-content">
+			<div class="modal-header mh_theme">
+				<button type="button" class="close" aria-label="Close" data-dismiss="modal">
+					<span aria-hidden="true" class="fontcon-close"></span>
+					<span class="sr-only">Close</span>
+				</button>
+				<h2 class="modal-title" id="sf-gen-13-label">UPDATE STATEMENTS SETTINGS</h2>
+			</div>
+			<div class="modal-body">
+				<div class="overlay_container">	
+					<div class="overlay_column">
+						<div class="overlay_col_left">
+							<div class="overlay_col_image"></div>
+						</div>
+						<div class="overlay_col_right">
+							<div class="rich_text_simple">
+								   <div class="form_inner_block">
+										<h3 class="highlight_text">Stop paper clutter, and access your statements any time, online, free.</h3>
+										<div class="font_14">
+											<p>Consult and download your PDF statements, going back as far as 10 years.</p>
+											<p>Access online statements for your accounts, and the ones you legally represent.</p>
+											<p>Your statement is available at the beginning of each month, and shows the previous month's transactions. (Or customise these settings to receive statements exactly when you want them.</p>
+											<p class="pad-0">Le SMS security est parfetement sûr et gratuit et ne sera utilisé à aucune autre fin.</p>
+										</div>
+								   </div>
+								<div class="form_inner_block">
+									<div class="navigation_btns">
+										<div class="right_navigation_btn">
+											<button class="btn_default btn_primary">Switch to online statements</button> <!-- btn_disabled -->
+										</div>
+										<div class="text_right pad-t20">
+											<a class="lnk_primary" href="#">Maybe later</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	<div class="ng modal selectionlist-modal auto-height" id="onea">  <!-- dummy id -->
+		<div class="modal-dialog" style="height:auto;">
+		<div class="modal-content">
+			<div class="modal-header mh_theme">
+				<button type="button" class="close" aria-label="Close" data-dismiss="modal">
+					<span aria-hidden="true" class="fontcon-close"></span>
+					<span class="sr-only">Close</span>
+				</button>
+				<h2 class="modal-title" id="sf-gen-13-label">UPDATE STATEMENTS SETTINGS 3</h2>
+			</div>
+			<div class="modal-body">
+				<div class="overlay_container">	
+					<div class="rich_text_simple">
+					   <div class="form_inner_block">
+							<div class="pad-b15 text_center">
+								<p><span class="fontcon-circle-done clr_primary font_80"></span></p>
+								<h3 class="highlight_text pad-0">Your statements are now Online</h3>
+								<p class="font_14"><span>You can find your statements online at the beginning of each month.</span></p>
+							</div>
+							<div class="font_14">
+								<p><span>You'll no longer receive statements by mail. Any statements you have not yet requested at the Self terminal will be available in Online within 3 days.</span></p>
+								<p class="pad-0"><span>You can customize the frequency, date, and the way you receive statements at any time.</span></p>
+							</div>
+					   </div>
+					</div>
+					<div class="form_inner_block border_top">
+						<div class="navigation_btns">
+							<div class="right_navigation_btn">
+								<button class="btn_default f_right btn_primary">Go to my accounts</button>
+								<a class="btn_default lnk_primary pad-0" href="#">Go to my statements settings</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	
+	<!-- Module Header -->
+	<div class="ng modal selectionlist-modal auto-height" id="two">  <!-- dummy id -->
+		<div class="modal-dialog" style="height:auto;">
+		<div class="modal-content">
+			<div class="modal-header mh_theme">
+				<button type="button" class="close" aria-label="Close" data-dismiss="modal">
+					<span aria-hidden="true" class="fontcon-close"></span>
+					<span class="sr-only">Close</span>
+				</button>
+				<h2 class="modal-title" id="sf-gen-13-label">Waiting Screen</h2>
+			</div>
+			<div class="modal-body">
+				<div class="overlay_container">	
+					<div class="overlay_column">
+						<div class="overlay_col_left">
+							<div class="overlay_col_image"></div>
+						</div>
+						<div class="overlay_col_right">
+							<div class="rich_text_simple">
+								   <div class="form_inner_block">
+										<h3 class="highlight_text pad-b30">Stop paper clutter, and access your statements any time, online, free.</h3>
+										<div class="">
+											<p><span class="pad-r10">1.</span><span>Consult and download your PDF statements, going back as far as 10 years.</span></p>
+											<p><span class="pad-r10">2.</span><span>Access online statements for your accounts, and the ones you legally represent.</span></p>
+											<p class="pad-0"><span class="pad-r10">3.</span><span>e SMS security est parfetement sûr et gratuit et ne sera utilisé à aucune autre fin.</span></p>
+										</div>
+								   </div>
+								<div class="form_inner_block">
+									<div class="navigation_btns">
+										<div class="right_navigation_btn">
+											<button class="btn_default btn_primary btn_disabled">Switch to online statements</button> <!-- btn_disabled -->
+										</div>
+									</div>
+									<p class="data_2 text_right font_14 pad-t15">testing message of loading</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	
+	</div>
+</body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

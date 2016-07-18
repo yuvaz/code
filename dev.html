@@ -1,0 +1,2615 @@
+<html lang="en" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths win chrome chrome4 webkit webkit5 js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths nav-down">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" />
+		<!-- used to load spl characters -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-compatible">
+		<!--ls:begin[stylesheet]-->
+		<title>New List</title>
+		<!--ls:end[stylesheet]-->
+		<!--ls:begin[meta-keywords]-->
+		<meta name="keywords" content="">
+		<!--ls:end[meta-keywords]-->
+		<!--ls:begin[meta-description]-->
+		<meta name="description" content="">
+		<!--ls:end[meta-description]-->
+		<!--ls:begin[meta-vpath]-->
+		<meta name="vpath" content="">
+		<!--ls:end[meta-vpath]-->
+		<!--ls:begin[meta-page-locale-name]-->
+		<meta name="page-locale-name" content="">
+		<!--ls:end[meta-page-locale-name]-->
+		<!--ls:begin[stylesheet]-->
+		<link type="text/css" href="/rsc/contrib/graphicaltheme/bnpp-fortis/brand.css" rel="stylesheet">
+		<link type="text/css" href="/rsc/contrib/graphicaltheme/bnpp-fortis/dev.css" rel="stylesheet">
+		<link type="text/css" href="http://wdh00043:8080/documents/css/doc.min.css" rel="stylesheet">
+		<!--ls:end[stylesheet]-->
+		<!--ls:begin[stylesheet]-->
+		<link type="text/css" href="/rsc/sys/css/player/mediaelementplayer.min.css" rel="stylesheet">
+		<!--ls:end[stylesheet]-->
+		<!--ls:begin[script]-->
+		<script type="text/javascript" src="/rsc/contrib/script/js/common/lib/jquery-1.9.1.min.js"></script>
+		<style type="text/css"></style>
+		<script>
+			$( document ).ready(function() {
+				$(".possible .list_item").on("click",function(e){
+					var view = this;
+						$current = $(e.currentTarget);
+						//$previousSelected = $('.list_body.in');
+						
+					/*if ($previousSelected.hasClass("collapse")) {				
+						$previousSelected.collapse('toggle');
+						$(".list_head .list_item").removeClass("list_arrow_active");
+					}*/				
+					if (!$current.hasClass('disabled')) {					
+						$current.parent().next().collapse('toggle');
+						$current.toggleClass("list_active");
+					}
+				});
+				
+				$(".links").click(function(){
+					$("figure").toggle(200);
+				});
+				
+				//show and hide the snippet
+				if(window.location.href.indexOf("c=1")!==-1){
+						$(".component").css({"display": "none"});
+						$(".component.1").css({"display": "block"});
+					}
+				else if(window.location.href.indexOf("c=2")!==-1){
+						$(".component").css({"display": "none"});
+						$(".component.2").css({"display": "block"});
+						$(".component.2 figure").css({"display": "block"});
+					}
+				else if(window.location.href.indexOf("c=d")!==-1){
+						$(".component").css({"display": "none"});
+						$(".component.d").css({"display": "block"});
+						$(".component.d figure").css({"display": "block"});
+					}
+				else if(window.location.href.indexOf("c=a")!==-1){
+						$(".component").css({"display": "none"});
+						$(".component.a").css({"display": "block"});
+						$(".component.a figure").css({"display": "block"});
+					}
+				else if(window.location.href.indexOf("c=b")!==-1){
+						$(".component").css({"display": "none"});
+						$(".component.b").css({"display": "block"});
+						$(".component.b figure").css({"display": "block"});
+					}
+				else if(window.location.href.indexOf("c=c")!==-1){
+						$(".component").css({"display": "none"});
+						$(".component.c").css({"display": "block"});
+						$(".component.c figure").css({"display": "block"});
+					}
+				
+				
+			});				
+			 
+		</script>
+		<!--ls:end[script]-->
+		<!--ls:end[script]-->
+		<!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/modernizr/modernizr-min.js"></script>
+		<!--ls:end[script]-->
+		<!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/pagebus/pagebus.js"></script>
+		<!--ls:end[script]-->
+		<!--ls:end[script]-->
+		<!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/require/require.js"></script>
+		<!--ls:end[script]-->
+		<!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/lib/iscroll.js"></script>
+		<!--ls:end[script]-->
+		<!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/lib/bootstrap.min.js"></script>
+		<!--ls:end[script]-->
+		<!--ls:end[script]-->
+		<!--ls:begin[favicon]-->
+		<link type="image/x-icon" href="/rsc/contrib/graphicaltheme/bnpp-fortis/images/favicon.ico" rel="shortcut icon">
+		<!--ls:end[favicon]-->
+		<!--ls:begin[head-injection]-->
+		<meta name="siteid" content="web-banking">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="referrer" content="origin">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<style>.product_header:before{background-image:none;}</style>
+		<style type="text/css">
+			.heading{
+				color: #182D26;
+				text-align: center;
+				font-family: regular;
+				margin-bottom: 10px;
+				border-bottom: 1px solid #232927;
+				background: hsl(160, 17%, 86%);
+				padding: 10px 30px;
+			}
+			figure{
+				display:none;
+			}
+			.links{
+				position: fixed;
+				right: 0;
+				background: #fff;
+				border-radius: 5px;
+				padding: 5px;
+				font-size: 14px;
+				font-family: regular;
+				top: 0;
+				z-index: 1;
+				border: 1px solid #ccc;
+			}
+			.heading1{
+				    font-family: regular;
+					width: 100%;
+					text-align: center;
+					border-bottom: 1px solid #b7b7b7;
+					font-size: 14px;
+					padding: 6px;
+					background: #ECF7F3;
+					margin-top: 24px;
+			}
+			.highlight{ margin-left:15px;}
+		</style>
+	</head>
+	<body class="en PC fb priv nextgen" cz-shortcut-listen="true">
+		<!-- new -->
+		<div class="portal_wrapper">
+			<!-- simple listing -->
+			<br>
+			<span class="links">CODE</span>
+			<div class="component 1">
+				<h1 class="heading">Simple listing  - Level 2</h1>
+				<div class="list_group pad_rl30">
+					<div class="list_item">
+						<div class="list_item_inner">
+							<div class="column_5050">
+								<div class="list_col_l">
+									<h4>
+										<a class="list_item_title lnk_primary" href="javascript:void(0);">DOMINIQUE DECLERQ 13 </a>
+									</h4>
+								</div>
+								<div class="list_col_r">
+									<p class="nowrap list_amount">
+										<span>
+										<span>240,00</span><span> USD</span>
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list_item">
+						<div class="list_item_inner">
+							<div class="column_5050">
+								<div class="list_col_l">
+									<h4>
+										<a class="list_item_title lnk_primary" href="javascript:void(0);">DOMINIQUE DECLERsdsdQ</a>
+										<span class="inline_icon fontcon-expire notexecuted hide show_inline"></span>
+									</h4>
+								</div>
+								<div class="list_col_r">
+									<p class="nowrap list_amount">
+										<span>
+										<span>240,00</span><span> USD</span>
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list_item">
+						<div class="list_item_inner">
+							<div class="column_5050">
+								<div class="list_col_l">
+									<h4>
+										<a class="list_item_title lnk_primary" href="javascript:void(0);">DOMINIQUE DECLERQ 13 </a>
+										<span class="hello_icon show_hello"></span>
+									</h4>
+								</div>
+								<div class="list_col_r">
+									<p class="nowrap list_amount">
+										<span>
+										<span>240,00</span><span> USD</span>
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list_item list_fav">
+						<div class="list_item_inner">
+							<a href="javascript:void(0);" class="fontcon-fav-default list_fav_icon"></a>
+							<div class="column_5050">
+								<div class="list_col_l">
+									<h4>
+										<a class="list_item_title  lnk_primary" href="javascript:void(0);">DOMINIQUE DECLERQ 13 </a>
+									</h4>
+								</div>
+								<div class="list_col_r">
+									<p class="nowrap list_amount">
+										<span>
+										<span>240,00</span><span> USD</span>
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list_item list_fav">
+						<div class="list_item_inner">
+							<a href="javascript:void(0);" class="fontcon-fav-default list_fav_icon fontcon-fav-select"></a>
+							<div class="column_5050">
+								<div class="list_col_l">
+									<h4>
+										<a class="list_item_title lnk_primary" href="javascript:void(0);">DOMINIQUE DECLERQ 13 </a>
+									</h4>
+								</div>
+								<div class="list_col_r txt_left_s">
+									<!-- to align the ammount in left in S -->
+									<p class="nowrap list_amount">
+										<span>
+										<span>240,00</span><span> USD</span>
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list_item list_pdf">
+						<div class="list_item_inner">
+							<span class="fontcon-pdf list_pdf_icon"></span>
+							<div class="column_100">
+								<div class="list_col">
+									<h4>
+										<a class="list_item_title lnk_primary" href="javascript:void(0);">DOMINIQUE DECLERQ 13 </a>
+									</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<figure class="highlight">
+					<pre>
+				<code class="language-html" data-lang="html">
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list_group pad_rl30"</span><span class="nt">&gt;</span> 
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list_item"</span><span class="nt">&gt;</span>  
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list_item_inner"</span><span class="nt">&gt;</span>  
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column_5050"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list_col_l"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;h4</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:void(0);"</span> <span class="na">class=</span><span class="s">"list_item_title lnk_primary"</span><span class="nt">&gt;</span>DOMINIQUE DECLERQ 13<span class="nt">&lt;/a&gt;</span> 
+					<span class="nt">&lt;/h4&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list_col_r"</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"nowrap list_amount"</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;span</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span><span class="nt">&gt;</span>240 <span class="nt">&lt;/span&gt;</span><span class="nt">&lt;span</span><span class="nt">&gt;</span>USD<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/span&gt;</span>
+					<span class="nt">&lt;/p&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+
+<p><span class="s">"list_group"</span><span class="c"> is the parent block for all the listing block</span></p>
+<p><span class="s">"pad_rl30"</span><span class="c"> is the generic class which will inject the 30px padding in right and left side of the container</span></p>
+<p><span class="s">"list_item"</span><span class="c"> is the parent of single listing, its relative and 100% width</span></p>
+<p><span class="s">"list_item_inner"</span><span class="c"> it contain top and bottom padding with border bottom for teh listing</span></p>
+<p><span class="s">"column_5050"</span><span class="c"> This is a type of column spliting, adding to this we have some more types of column spliting "column_100", "column_5050", "column_6733", "column_3367"</span></p>
+<p><span class="s">"list_col_l, list_col_r"</span><span class="c"> This is column spliting parent class</span></p>
+<p><span class="s">"list_item_title"</span><span class="c"> Title class for the listing</span></p>
+<p><span class="s">"lnk_primary"</span><span class="c"> generic primary link class, which inject theme color</span></p>
+<p><span class="s">"nowrap"</span><span class="c"> generic class, to maintain the text in single link, mostly used for amount and iban</span></p>
+<p><span class="s">"list_amount"</span><span class="c"> used to style amount</span></p>
+
+				</code>
+			</pre>
+				</figure>
+				<br><br><br><br>
+			</div>
+			<div class="component 2 module_bg">
+				<!-- Simple accordion -->
+				<h1 class="heading">Accordion listing - Level 1</h1>
+				<div>
+					<div class="list_block ">
+						<div class="list_head possible">
+							<div class="list_item pad_rl30 ">
+								<div class="list_item_inner">
+									<span class="fontcon-arrow-right-filled list_arrow"></span>
+									<div class="column_100">
+										<div class="list_col">
+											<h3 class="list_header_title">
+												<a href="javascript:void(0)">DOMINIQUE Head 1 </a>
+											</h3>
+											<p class="list_desc">Description can be loaded in th eheading 1</p>
+											<p class="list_desc">Testiong descrption level one</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list_body collapse" id="collapse1">
+							<!-- sub heading type 3 -->
+							<div class="list_item lh_theme2 pad_rl30 noclk">
+								<div class="list_item_inner">
+									<div class="column_5050">
+										<div class="list_col_l">
+											<p class="list_data_info">05.06.2015 to 12.12.2015 Due date 22.12.15</p>
+										</div>
+										<div class="list_col_r">
+											<div class="nowrap">
+												<div class="action_icon_heading">
+													<span class="action_icons__global innerPrint" data-rv-checkprint="">
+													<a class="fontcon-print global_print" href="javascript:void(0);" aria-label="Print"></a>
+													</span>
+													<span class="action_icons__global">
+													<a class="fontcon-pdf" href="javascript:void(0);" aria-label="Download as PDF"></a>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<!-- sub heading type 1 -->
+							<div class="list_item lh_theme2 pad_rl30 noclk">
+								<div class="list_item_inner">
+									<div class="column_5050">
+										<div class="list_col_l">
+											<h4>DOMINIQUE DECLERQ Sub head</h4>
+										</div>
+										<div class="list_col_r">
+											<p class="nowrap">
+												<span>
+												<span>240,00</span><span> USD</span>
+												</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<!-- sub heading type 2 -->
+							<div class="list_item lh_theme2 pad_rl30 noclk">
+								<div class="list_item_inner">
+									<div class="column_5050">
+										<div class="list_col_l">
+											<h4>DOMINIQUE DECLERQ Sub head</h4>
+										</div>
+										<div class="list_col_r">
+											<div class="nowrap lnk_currency">
+												<!-- add "active" class for active case--> 
+												<a href="javascript:void(0);" class="lnk_primary" id="new_curr" onclick="document.getElementById('new_curr').parentNode.className += ' active';">
+												<span>240,00</span><span> USD</span>
+												</a>
+												<div class="overlay_curreny animated fadeInDown">
+													<p>Total balance per currency</p>
+													<p>
+														<span>-591,11</span><span>EUR</span>
+													</p>
+													<p>
+														<span>76,58</span><span>AUD</span>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="list_group pad_rl30">
+								<div class="list_item">
+									<div class="list_item_inner">
+										<div class="column_100">
+											<div class="list_col">
+												<h4>
+													<a href="javascript:void(0);" class="list_item_title lnk_primary">DOMINIQUE DECLERQ 11 </a>
+												</h4>
+												<p class="list_item_detail span_block_s"><span>HELLO BANK ACCOUNT</span> <span class="hide_s">-</span> <span><span class="no_wrap">BE24 2349 1092 3928</span> <span class="badge badge-blue mar-l5">FLEXPAY</span></span> </p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list_item list_extra">
+									<!-- 'list_extra' is used, when we have extra button -->
+									<div class="list_item_inner">
+										<div class="column_5050">
+											<div class="list_col_l">
+												<h4>
+													<a class="list_item_title lnk_primary" href="javascript:void(0);">DOMINIQUE DECLERQ 12 </a>
+												</h4>
+												<p class="list_item_detail span_block_s"><span>HELLO BANK ACCOUNT</span> <span class="hide_s">-</span> <span class="no_wrap">BE24 2349 1092 3928</span> </p>
+											</div>
+											<div class="list_col_r">
+												<p class="nowrap list_amount">
+													<span>
+													<span>240,00</span><span> USD</span>
+													</span>
+												</p>
+												<div class="dropdown extra">
+													<button href="#" data-toggle="dropdown" class="dropdown-toggle menu drpdwn_menu" aria-expanded="false"><i class="fontcon-extra menu drpdwn_menu"></i></button>
+													<ul class="dropdown-menu animated fadeInDown">
+														<li class="menuItem"><button>Menu item 1</button></li>
+														<li class="menuItem"><button href="#">Menu item 2</button></li>
+														<li class="menuItem"><button href="#">Menu item 3</button></li>
+														<li class="menuItem"><button href="#">Menu item 4</button></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list_item">
+									<div class="list_item_inner">
+										<div class="column_5050">
+											<div class="list_col_l">
+												<h4>
+													<a class="list_item_title lnk_primary" href="javascript:void(0);">DOMINIQUE DECLERQ 13 </a>
+												</h4>
+												<p class="list_item_detail span_block_s"><span>HELLO BANK ACCOUNT</span> <span class="hide_s">-</span> <span class="no_wrap">BE24 2349 1092 3928</span> </p>
+											</div>
+											<div class="list_col_r">
+												<p class="nowrap list_amount">
+													<span>
+													<span>240,00</span><span> USD</span>
+													</span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list_item">
+									<div class="list_item_inner">
+										<div class="column_5050">
+											<div class="list_col_l">
+												<h4>
+													<a class="list_item_title lnk_primary" href="javascript:void(0);">DOMINIQUE DECLERQ 13 </a>
+												</h4>
+												<p class="list_item_detail span_block_s"><span>HELLO BANK ACCOUNT</span> <span class="hide_s">-</span> <span class="no_wrap">BE24 2349 1092 3928</span> </p>
+											</div>
+											<div class="list_col_r">
+												<p class="nowrap list_amount">
+													<span>
+													<span>240,00</span><span> USD</span>
+													</span>
+													<span class="diff_currency">240,00 EUR</span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list_item list_extra list_indent_check">
+									<!-- 'list_extra' is used, when we have extra button -->
+									<div class="list_item_inner">
+										<div class="list_check_left">
+											<input class="css-checkbox" type="checkbox" id="checkBox1" name="checkBox1"> 
+											<label class="css-label" for="checkBox1"> 
+											<span class=""></span> 
+											</label>
+										</div>
+										<div class="column_5050">
+											<div class="list_col_l">
+												<h4>
+													<a class="list_item_title lnk_primary txt_default inner_data_block" href="javascript:void(0);"><span>Dominique Declerq 12 </span><span>Dominique Declerq 13 </span></a>
+												</h4>
+												<p class="list_item_detail inner_data_block">
+													<span>HELLO BANK ACCOUNT test1</span> 
+													<span>
+														<span class="no_wrap">BE24 2349 1092 3928</span> 
+														<span class="badge badge-gray">MEMo DATE 11/22/1122</span> 
+													</span>
+													
+													
+												</p>
+											</div>
+											<div class="list_col_r">
+												<p class="nowrap list_amount">
+													<span>
+													<span>240,00</span><span> USD</span>
+													</span>
+												</p>
+												<div class="dropdown extra">
+													<button href="#" data-toggle="dropdown" class="dropdown-toggle menu drpdwn_menu" aria-expanded="false"><i class="fontcon-extra menu drpdwn_menu"></i></button>
+													<ul class="dropdown-menu animated fadeInDown">
+														<li class="menuItem"><button>Menu item 1</button></li>
+														<li class="menuItem"><button href="#">Menu item 2</button></li>
+														<li class="menuItem"><button href="#">Menu item 3</button></li>
+														<li class="menuItem"><button href="#">Menu item 4</button></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list_item list_extra list_indent_check">
+									<!-- 'list_extra' is used, when we have extra button -->
+									<div class="list_item_inner">
+										<div class="list_check_left">
+											<input class="css-checkbox" type="checkbox" id="checkBox1" name="checkBox1"> 
+											<label class="css-label" for="checkBox1"> 
+											<span class=""></span> 
+											</label>
+										</div>
+										<div class="column_5050">
+											<div class="list_col_l">
+												<h4>
+													<a class="list_item_title lnk_primary txt_default" href="javascript:void(0);">Dominique Declerq 12 </a>
+												</h4>
+												<p class="list_item_detail">
+													<span>HELLO BANK ACCOUNT test1</span> 
+													<span class="hide_s">-</span> 
+													<span class="no_wrap">BE24 2349 1092 3928</span> 
+													<span class="badge badge-gray">MEMo DATE 11/22/1122</span> 
+												</p>
+											</div>
+											<div class="list_col_r">
+												<p class="nowrap list_amount">
+													<span>
+													<span>240,00</span><span> USD</span>
+													</span>
+												</p>
+												<div class="dropdown extra">
+													<button href="#" data-toggle="dropdown" class="dropdown-toggle menu drpdwn_menu" aria-expanded="false"><i class="fontcon-extra menu drpdwn_menu"></i></button>
+													<ul class="dropdown-menu animated fadeInDown">
+														<li class="menuItem"><button>Menu item 1</button></li>
+														<li class="menuItem"><button href="#">Menu item 2</button></li>
+														<li class="menuItem"><button href="#">Menu item 3</button></li>
+														<li class="menuItem"><button href="#">Menu item 4</button></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list_item noclk">
+									<div class="list_item_inner">
+										<div class="column_5050">
+											<div class="list_col_l">
+												<h4>
+													<a class="list_item_title txt_default" href="javascript:void(0);">Dominique Declerq 12 </a>
+												</h4>
+												<p class="list_item_detail span_block_s"><span>HELLO BANK ACCOUNT</span> <span class="hide_s">-</span> <span class="no_wrap">BE24 2349 1092 3928</span> </p>
+											</div>
+											<div class="list_col_r">
+												<p class="nowrap list_amount">
+													<span>
+													<span>240,00</span><span> USD</span>
+													</span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list_block ">
+						<div class="list_head possible">
+							<div class="list_item pad_rl30 ">
+								<div class="list_item_inner">
+									<span class="fontcon-arrow-right-filled list_arrow"></span>
+									<div class="column_100">
+										<div class="list_col">
+											<h3 class="list_header_title">
+												<a href="javascript:void(0)">DOMINIQUE Head 1 </a>
+											</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list_body collapse" id="collapse1">
+							<!-- sub heading type 3 -->
+							<div class="list_item lh_theme2 pad_rl30 noclk">
+								<div class="list_item_inner">
+									<div class="column_5050">
+										<div class="list_col_l">
+											<p class="list_data_info">05.06.2015 to 12.12.2015 Due date 22.12.15</p>
+										</div>
+										<div class="list_col_r">
+											<div class="nowrap">
+												<div class="action_icon_heading">
+													<span class="action_icons__global innerPrint" data-rv-checkprint="">
+													<a class="fontcon-print global_print" href="javascript:void(0);" aria-label="Print"></a>
+													</span>
+													<span class="action_icons__global">
+													<a class="fontcon-pdf" href="javascript:void(0);" aria-label="Download as PDF"></a>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<!-- sub heading type 1 -->
+							<div class="list_item lh_theme2 pad_rl30 noclk">
+								<div class="list_item_inner">
+									<div class="column_5050">
+										<div class="list_col_l">
+											<h4>DOMINIQUE DECLERQ Sub head</h4>
+										</div>
+										<div class="list_col_r">
+											<p class="nowrap">
+												<span>
+												<span>240,00</span><span> USD</span>
+												</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<!-- sub heading type 2 -->
+							<div class="list_item lh_theme2 pad_rl30 noclk">
+								<div class="list_item_inner">
+									<div class="column_5050">
+										<div class="list_col_l">
+											<h4>DOMINIQUE DECLERQ Sub head</h4>
+										</div>
+										<div class="list_col_r">
+											<div class="nowrap lnk_currency">
+												<!-- add "active" class for active case--> 
+												<a href="javascript:void(0);" class="lnk_primary" id="new_curr" onclick="document.getElementById('new_curr').parentNode.className += ' active';">
+												<span>240,00</span><span> USD</span>
+												</a>
+												<div class="overlay_curreny animated fadeInDown">
+													<p>Total balance per currency</p>
+													<p>
+														<span>-591,11</span><span>EUR</span>
+													</p>
+													<p>
+														<span>76,58</span><span>AUD</span>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="list_group pad_rl30">
+								<div class="list_item">
+									<div class="list_item_inner">
+										<div class="column_100">
+											<div class="list_col">
+												<h4>
+													<a href="javascript:void(0);" class="list_item_title lnk_primary">DOMINIQUE DECLERQ 11 </a>
+												</h4>
+												<p class="list_item_detail span_block_s"><span>HELLO BANK ACCOUNT</span> <span class="hide_s">-</span> <span class="no_wrap">BE24 2349 1092 3928</span> </p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list_item list_extra">
+									<!-- 'list_extra' is used, when we have extra button -->
+									<div class="list_item_inner">
+										<div class="column_5050">
+											<div class="list_col_l">
+												<h4>
+													<a class="list_item_title lnk_primary" href="javascript:void(0);">DOMINIQUE DECLERQ 12 </a>
+												</h4>
+												<p class="list_item_detail span_block_s"><span>HELLO BANK ACCOUNT</span> <span class="hide_s">-</span> <span class="no_wrap">BE24 2349 1092 3928</span> </p>
+											</div>
+											<div class="list_col_r">
+												<p class="nowrap list_amount">
+													<span>
+													<span>240,00</span><span> USD</span>
+													</span>
+												</p>
+												<div class="dropdown extra">
+													<button href="#" data-toggle="dropdown" class="dropdown-toggle menu drpdwn_menu" aria-expanded="false"><i class="fontcon-extra menu drpdwn_menu"></i></button>
+													<ul class="dropdown-menu animated fadeInDown">
+														<li class="menuItem"><button>Menu item 1</button></li>
+														<li class="menuItem"><button href="#">Menu item 2</button></li>
+														<li class="menuItem"><button href="#">Menu item 3</button></li>
+														<li class="menuItem"><button href="#">Menu item 4</button></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list_item">
+									<div class="list_item_inner">
+										<div class="column_5050">
+											<div class="list_col_l">
+												<h4>
+													<a class="list_item_title lnk_primary" href="javascript:void(0);">DOMINIQUE DECLERQ 13 </a>
+												</h4>
+												<p class="list_item_detail span_block_s"><span>HELLO BANK ACCOUNT</span> <span class="hide_s">-</span> <span class="no_wrap">BE24 2349 1092 3928</span> </p>
+											</div>
+											<div class="list_col_r">
+												<p class="nowrap list_amount">
+													<span>
+													<span>240,00</span><span> USD</span>
+													</span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list_item">
+									<div class="list_item_inner">
+										<div class="column_5050">
+											<div class="list_col_l">
+												<h4>
+													<a class="list_item_title lnk_primary" href="javascript:void(0);">DOMINIQUE DECLERQ 13 </a>
+												</h4>
+												<p class="list_item_detail span_block_s"><span>HELLO BANK ACCOUNT</span> <span class="hide_s">-</span> <span class="no_wrap">BE24 2349 1092 3928</span> </p>
+											</div>
+											<div class="list_col_r">
+												<p class="nowrap list_amount">
+													<span>
+													<span>240,00</span><span> USD</span>
+													</span>
+													<span class="diff_currency">240,00 EUR</span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list_item list_extra list_indent_check">
+									<!-- 'list_extra' is used, when we have extra button -->
+									<div class="list_item_inner">
+										<div class="list_check_left">
+											<input class="css-checkbox" type="checkbox" id="checkBox1" name="checkBox1"> 
+											<label class="css-label" for="checkBox1"> 
+											<span class=""></span> 
+											</label>
+										</div>
+										<div class="column_5050">
+											<div class="list_col_l">
+												<h4>
+													<a class="list_item_title lnk_primary txt_default" href="javascript:void(0);">Dominique Declerq 12 </a>
+												</h4>
+												<p class="list_item_detail">
+													<span>HELLO BANK ACCOUNT</span> 
+													<span class="hide_s">-</span> 
+													<span class="no_wrap">BE24 2349 1092 3928</span> 
+													<span class="badge badge-gray">MEMo DATE 11/22/1122</span> 
+												</p>
+											</div>
+											<div class="list_col_r">
+												<p class="nowrap list_amount">
+													<span>
+													<span>240,00</span><span> USD</span>
+													</span>
+												</p>
+												<div class="dropdown extra">
+													<button href="#" data-toggle="dropdown" class="dropdown-toggle menu drpdwn_menu" aria-expanded="false"><i class="fontcon-extra menu drpdwn_menu"></i></button>
+													<ul class="dropdown-menu animated fadeInDown">
+														<li class="menuItem"><button>Menu item 1</button></li>
+														<li class="menuItem"><button href="#">Menu item 2</button></li>
+														<li class="menuItem"><button href="#">Menu item 3</button></li>
+														<li class="menuItem"><button href="#">Menu item 4</button></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list_item noclk">
+									<div class="list_item_inner">
+										<div class="column_5050">
+											<div class="list_col_l">
+												<h4>
+													<a class="list_item_title txt_default" href="javascript:void(0);">Dominique Declerq 12 </a>
+												</h4>
+												<p class="list_item_detail span_block_s"><span>HELLO BANK ACCOUNT</span> <span class="hide_s">-</span> <span class="no_wrap">BE24 2349 1092 3928</span> </p>
+											</div>
+											<div class="list_col_r">
+												<p class="nowrap list_amount">
+													<span>
+													<span>240,00</span><span> USD</span>
+													</span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Simple listing code -->
+				<figure class="highlight">
+					<pre>
+				<code class="language-html" data-lang="html">
+
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_block &quot;</span><span class="nt">&gt;</span>
+	
+		<span style="color: #888888">&lt;!-- Accordion header with possible scenariors --&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_head&quot;</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item pad_rl30  list_active&quot;</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item_inner&quot;</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;fontcon-arrow-right-filled list_arrow&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;column_100&quot;</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col&quot;</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;list_header_title&quot;</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;javascript:void(0)&quot;</span><span class="nt">&gt;</span>DOMINIQUE Head 1 <span class="nt">&lt;/a&gt;</span>
+							<span class="nt">&lt;/h3&gt;</span>
+							<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;list_desc&quot;</span><span class="nt">&gt;</span>Description can be loaded in th eheading 1<span class="nt">&lt;/p&gt;</span>
+							<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;list_desc&quot;</span><span class="nt">&gt;</span>Testiong descrption level one<span class="nt">&lt;/p&gt;</span>
+						<span class="nt">&lt;/div&gt;</span>
+					<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		<span style="color: #888888">&lt;!-- Accordion header ends --&gt;</span>
+		
+		<span style="color: #888888">&lt;!-- Accordion body which can contain simple list/simple paaragraph or multiple variations. --&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_body collapse in&quot;</span> <span class="na">id=</span><span class="s">&quot;collapse1&quot;</span> <span class="na">aria-expanded=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+			
+			<span style="color: #888888">&lt;!-- sub heading type 1 --&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item lh_theme2 pad_rl30 noclk&quot;</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item_inner&quot;</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;column_5050&quot;</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_l&quot;</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;h4&gt;</span>DOMINIQUE DECLERQ Sub head<span class="nt">&lt;/h4&gt;</span>
+						<span class="nt">&lt;/div&gt;</span>	
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_r&quot;</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;nowrap&quot;</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;span&gt;</span>
+									<span class="nt">&lt;span&gt;</span>240,00<span class="nt">&lt;/span&gt;&lt;span&gt;</span> USD<span class="nt">&lt;/span&gt;</span>
+								<span class="nt">&lt;/span&gt;</span>
+							<span class="nt">&lt;/p&gt;</span>
+						<span class="nt">&lt;/div&gt;</span>	
+					<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;hr&gt;</span>
+			
+			<span style="color: #888888">&lt;!-- sub heading type 2 --&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item lh_theme2 pad_rl30 noclk&quot;</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item_inner&quot;</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;column_5050&quot;</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_l&quot;</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;h4&gt;</span>DOMINIQUE DECLERQ Sub head<span class="nt">&lt;/h4&gt;</span>
+						<span class="nt">&lt;/div&gt;</span>	
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_r&quot;</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;nowrap lnk_currency&quot;</span><span class="nt">&gt;</span>  <span style="color: #888888">&lt;!-- add &quot;active&quot; class for active case--&gt;</span> 
+								<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;javascript:void(0);&quot;</span> <span class="na">class=</span><span class="s">&quot;lnk_primary&quot;</span> <span class="na">id=</span><span class="s">&quot;new_curr&quot;</span> <span class="na">onclick=</span><span class="s">&quot;document.getElementById(&#39;new_curr&#39;).parentNode.className += &#39; active&#39;;&quot;</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;span&gt;</span>240,00<span class="nt">&lt;/span&gt;&lt;span&gt;</span> USD<span class="nt">&lt;/span&gt;</span>
+								<span class="nt">&lt;/a&gt;</span>
+								<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;overlay_curreny animated fadeInDown&quot;</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;p&gt;</span>Total balance per currency<span class="nt">&lt;/p&gt;</span>
+									<span class="nt">&lt;p&gt;</span>
+										<span class="nt">&lt;span&gt;</span>-591,11<span class="nt">&lt;/span&gt;&lt;span&gt;</span>EUR<span class="nt">&lt;/span&gt;</span>
+									<span class="nt">&lt;/p&gt;</span>
+									<span class="nt">&lt;p&gt;</span>
+										<span class="nt">&lt;span&gt;</span>76,58<span class="nt">&lt;/span&gt;&lt;span&gt;</span>AUD<span class="nt">&lt;/span&gt;</span>
+									<span class="nt">&lt;/p&gt;</span>
+								<span class="nt">&lt;/div&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>
+						<span class="nt">&lt;/div&gt;</span>	
+					<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			
+			<span style="color: #888888">&lt;!-- sub heading type 3 --&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item lh_theme2 pad_rl30 noclk&quot;</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item_inner&quot;</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;column_5050&quot;</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_l&quot;</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;list_data_info&quot;</span><span class="nt">&gt;</span>05.06.2015 to 12.12.2015 Due date 22.12.15<span class="nt">&lt;/p&gt;</span>
+						<span class="nt">&lt;/div&gt;</span>	
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_r&quot;</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;nowrap&quot;</span><span class="nt">&gt;</span> 
+								<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;action_icon_heading&quot;</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;action_icons__global innerPrint&quot;</span> <span class="na">data-rv-checkprint=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+										<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;fontcon-print global_print&quot;</span> <span class="na">href=</span><span class="s">&quot;javascript:void(0);&quot;</span> <span class="na">aria-label=</span><span class="s">&quot;Print&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>
+									<span class="nt">&lt;/span&gt;</span>
+									<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;action_icons__global&quot;</span><span class="nt">&gt;</span>
+										<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;fontcon-pdf&quot;</span> <span class="na">href=</span><span class="s">&quot;javascript:void(0);&quot;</span> <span class="na">aria-label=</span><span class="s">&quot;Download as PDF&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>
+									<span class="nt">&lt;/span&gt;</span>
+								 <span class="nt">&lt;/div&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>
+						<span class="nt">&lt;/div&gt;</span>	
+					<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;hr&gt;</span>
+			
+			<span style="color: #888888">&lt;!-- List group wrapper which contains simple list --&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_group pad_rl30&quot;</span><span class="nt">&gt;</span>
+			
+				<span style="color: #888888">&lt;!-- List item is same replica of the simple list and here list_item div has to be iterated to get proper structure --&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item&quot;</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item_inner&quot;</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;column_100&quot;</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col&quot;</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;h4&gt;</span>
+									<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;javascript:void(0);&quot;</span> <span class="na">class=</span><span class="s">&quot;list_item_title lnk_primary&quot;</span><span class="nt">&gt;</span>DOMINIQUE DECLERQ 11 <span class="nt">&lt;/a&gt;</span>
+								<span class="nt">&lt;/h4&gt;</span>
+								<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;list_item_detail span_block_s&quot;</span><span class="nt">&gt;&lt;span&gt;</span>HELLO BANK ACCOUNT<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;hide_s&quot;</span><span class="nt">&gt;</span>-<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;no_wrap&quot;</span><span class="nt">&gt;</span>BE24 2349 1092 3928<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;/p&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>
+						<span class="nt">&lt;/div&gt;</span>
+					<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+				
+				<span style="color: #888888">&lt;!-- List item is same replica of the simple list and is the variation of having list with extra button on right "list_extra" class need to be added beside list_item--&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item list_extra&quot;</span><span class="nt">&gt;</span> <span style="color: #888888">&lt;!-- &#39;list_extra&#39; is used, when we have extra button --&gt;</span>
+					<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item_inner&quot;</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;column_5050&quot;</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_l&quot;</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;h4&gt;</span>
+									<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;list_item_title lnk_primary&quot;</span> <span class="na">href=</span><span class="s">&quot;javascript:void(0);&quot;</span><span class="nt">&gt;</span>DOMINIQUE DECLERQ 12 <span class="nt">&lt;/a&gt;</span>
+								<span class="nt">&lt;/h4&gt;</span>
+								<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;list_item_detail span_block_s&quot;</span><span class="nt">&gt;&lt;span&gt;</span>HELLO BANK ACCOUNT<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;hide_s&quot;</span><span class="nt">&gt;</span>-<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;no_wrap&quot;</span><span class="nt">&gt;</span>BE24 2349 1092 3928<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;/p&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>	
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_r&quot;</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;nowrap list_amount&quot;</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;span&gt;</span>
+										<span class="nt">&lt;span&gt;</span>240,00<span class="nt">&lt;/span&gt;&lt;span&gt;</span> USD<span class="nt">&lt;/span&gt;</span>
+									<span class="nt">&lt;/span&gt;</span>
+								<span class="nt">&lt;/p&gt;</span>
+								<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;dropdown extra&quot;</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;button</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;dropdown&quot;</span> <span class="na">class=</span><span class="s">&quot;dropdown-toggle menu drpdwn_menu&quot;</span> <span class="na">aria-expanded=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">&quot;fontcon-extra menu drpdwn_menu&quot;</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;</span>
+									<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;dropdown-menu animated fadeInDown&quot;</span><span class="nt">&gt;</span>
+										<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;menuItem&quot;</span><span class="nt">&gt;&lt;button&gt;</span>Menu item 1<span class="nt">&lt;/button&gt;&lt;/li&gt;</span>
+										<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;menuItem&quot;</span><span class="nt">&gt;&lt;button</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Menu item 2<span class="nt">&lt;/button&gt;&lt;/li&gt;</span>
+										<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;menuItem&quot;</span><span class="nt">&gt;&lt;button</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Menu item 3<span class="nt">&lt;/button&gt;&lt;/li&gt;</span>
+										<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;menuItem&quot;</span><span class="nt">&gt;&lt;button</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Menu item 4<span class="nt">&lt;/button&gt;&lt;/li&gt;</span>
+									<span class="nt">&lt;/ul&gt;</span>
+								<span class="nt">&lt;/div&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>	
+						<span class="nt">&lt;/div&gt;</span>
+					<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+				
+				<span style="color: #888888">&lt;!-- List item is same replica of the simple list and is the variation of having check box in left side "list_indent_check" class need to be added beside list_item --&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item list_extra list_indent_check&quot;</span><span class="nt">&gt;</span> <span style="color: #888888">&lt;!-- &#39;list_extra&#39; is used, when we have extra button --&gt;</span>
+					<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item_inner&quot;</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_check_left&quot;</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">&quot;css-checkbox&quot;</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">id=</span><span class="s">&quot;checkBox1&quot;</span> <span class="na">name=</span><span class="s">&quot;checkBox1&quot;</span><span class="nt">&gt;</span> 
+							<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;css-label&quot;</span> <span class="na">for=</span><span class="s">&quot;checkBox1&quot;</span><span class="nt">&gt;</span> 
+								<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;&lt;/span&gt;</span> 
+							<span class="nt">&lt;/label&gt;</span>
+						<span class="nt">&lt;/div&gt;</span>
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;column_5050&quot;</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_l&quot;</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;h4&gt;</span>
+									<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;list_item_title lnk_primary txt_default&quot;</span> <span class="na">href=</span><span class="s">&quot;javascript:void(0);&quot;</span><span class="nt">&gt;</span>Dominique Declerq 12 <span class="nt">&lt;/a&gt;</span>
+								<span class="nt">&lt;/h4&gt;</span>
+								<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;list_item_detail&quot;</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;span&gt;</span>HELLO BANK ACCOUNT<span class="nt">&lt;/span&gt;</span> 
+									<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;hide_s&quot;</span><span class="nt">&gt;</span>-<span class="nt">&lt;/span&gt;</span> 
+									<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;no_wrap&quot;</span><span class="nt">&gt;</span>BE24 2349 1092 3928<span class="nt">&lt;/span&gt;</span> 
+									<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;badge badge-gray&quot;</span><span class="nt">&gt;</span>MEMo DATE 11/22/1122<span class="nt">&lt;/span&gt;</span> 
+								<span class="nt">&lt;/p&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>	
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_r&quot;</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;nowrap list_amount&quot;</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;span&gt;</span>
+										<span class="nt">&lt;span&gt;</span>240,00<span class="nt">&lt;/span&gt;&lt;span&gt;</span> USD<span class="nt">&lt;/span&gt;</span>
+									<span class="nt">&lt;/span&gt;</span>
+								<span class="nt">&lt;/p&gt;</span>
+								<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;dropdown extra&quot;</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;button</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;dropdown&quot;</span> <span class="na">class=</span><span class="s">&quot;dropdown-toggle menu drpdwn_menu&quot;</span> <span class="na">aria-expanded=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">&quot;fontcon-extra menu drpdwn_menu&quot;</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;</span>
+									<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;dropdown-menu animated fadeInDown&quot;</span><span class="nt">&gt;</span>
+										<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;menuItem&quot;</span><span class="nt">&gt;&lt;button&gt;</span>Menu item 1<span class="nt">&lt;/button&gt;&lt;/li&gt;</span>
+										<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;menuItem&quot;</span><span class="nt">&gt;&lt;button</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Menu item 2<span class="nt">&lt;/button&gt;&lt;/li&gt;</span>
+										<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;menuItem&quot;</span><span class="nt">&gt;&lt;button</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Menu item 3<span class="nt">&lt;/button&gt;&lt;/li&gt;</span>
+										<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;menuItem&quot;</span><span class="nt">&gt;&lt;button</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Menu item 4<span class="nt">&lt;/button&gt;&lt;/li&gt;</span>
+									<span class="nt">&lt;/ul&gt;</span>
+								<span class="nt">&lt;/div&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>	
+						<span class="nt">&lt;/div&gt;</span>
+					<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+				
+				<span style="color: #888888">&lt;!-- List item is same replica of the simple list and varaition of having non clickable, "noclk" class need to be added beside list_item --&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item noclk&quot;</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item_inner&quot;</span><span class="nt">&gt;</span>																																																																													
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;column_5050&quot;</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_l&quot;</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;h4&gt;</span>
+									<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;list_item_title txt_default&quot;</span> <span class="na">href=</span><span class="s">&quot;javascript:void(0);&quot;</span><span class="nt">&gt;</span>Dominique Declerq 12 <span class="nt">&lt;/a&gt;</span>
+								<span class="nt">&lt;/h4&gt;</span>
+								<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;list_item_detail span_block_s&quot;</span><span class="nt">&gt;&lt;span&gt;</span>HELLO BANK ACCOUNT<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;hide_s&quot;</span><span class="nt">&gt;</span>-<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;no_wrap&quot;</span><span class="nt">&gt;</span>BE24 2349 1092 3928<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;/p&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>	
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_r&quot;</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;nowrap list_amount&quot;</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;span&gt;</span>
+										<span class="nt">&lt;span&gt;</span>240,00<span class="nt">&lt;/span&gt;&lt;span&gt;</span> USD<span class="nt">&lt;/span&gt;</span>
+									<span class="nt">&lt;/span&gt;</span>
+								<span class="nt">&lt;/p&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>	
+						<span class="nt">&lt;/div&gt;</span>
+					<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+
+				
+
+<p><span class="s">"list_block"</span><span class="c"> is the parent block for the accordion block - it can contain head and body of the accordion </span></p>
+<p><span class="s">"list_head "</span><span class="c"> is the parent block for the accordion heading - it can contain heading click block of the accordion</span></p>
+<p><span class="s">"fontcon-arrow-right-filled"</span><span class="c"> is used to inject font icon arrow</span></p>
+<p><span class="s">"list_arrow"</span><span class="c"> is used position the arrow and apply animation to the arrow </span></p>
+<p><span class="s">"list_header_title"</span><span class="c"> is the class used to style the title of the header, it is recommended to use this with h3 tag. </span></p>
+<p><span class="s">"list_desc"</span><span class="c"> is the class second line text with p tag which uses light font and general styles.</span></p>
+<p><span class="s">"list_body"</span><span class="c"> is the class which wrapps the body of the accordion.</span></p>
+<p><span class="s">"lh_theme2 "</span><span class="c"> is the class which add the secondary grey color to the header.</span></p>
+<p><span class="s">"nowrap"</span><span class="c"> is the class which avoids the content wrapping.</span></p>
+<p><span class="s">"list_group"</span><span class="c"> is the parent block for all the listing block</span></p>
+<p><span class="s">"pad_rl30"</span><span class="c"> is the generic class which will inject the 30px padding in right and left side of the container</span></p>
+<p><span class="s">"list_item"</span><span class="c"> is the parent of single listing, its relative and 100% width</span></p>
+<p><span class="s">"list_item_inner"</span><span class="c"> it contain top and bottom padding with border bottom for teh listing</span></p>
+<p><span class="s">"column_5050"</span><span class="c"> This is a type of column spliting, adding to this we have some more types of column spliting "column_100", "column_5050", "column_6733", "column_3367"</span></p>
+<p><span class="s">"list_col_l, list_col_r"</span><span class="c"> This is column spliting parent class</span></p>
+<p><span class="s">"list_item_title"</span><span class="c"> Title class for the listing</span></p>
+<p><span class="s">"lnk_primary"</span><span class="c"> generic primary link class, which inject theme color</span></p>
+<p><span class="s">"nowrap"</span><span class="c"> generic class, to maintain the text in single link, mostly used for amount and iban</span></p>
+<p><span class="s">"list_amount"</span><span class="c"> used to style amount</span></p>
+<p><span class="s">"span_block_s"</span><span class="c"> this class is used, when there inner child should be in full row for "s" screen </span></p>
+<p><span class="s">"list_extra"</span><span class="c"> it will apply right indent for the listing for creating space for extra button </span></p>
+<p><span class="s">"list_indent_check"</span><span class="c"> it will apply left indent for the listing for creating space for checkbox</span></p>
+<p><span class="s">"txt_default"</span><span class="c"> This class will remove the uppercase for the text, and use the regular data coming from backend</span></p>
+</code>
+			</pre>
+				</figure>
+				<br><br><br><br><br><br>
+			</div>
+			
+			<div class="component 3 module_bg">
+				<!-- Multi level accordion -->
+				<h1 class="heading">Accordion listing with date component - (View Transaction / Zoomit)</h1>
+				<div>
+					<div class="list_block ">
+						<div class="list_head lh_theme possible">
+							<div class="list_item pad_rl30 ">
+								<div class="list_item_inner">
+									<span class="fontcon-arrow-right-filled list_arrow"></span>
+									<div class="column_100">
+										<div class="list_col">
+											<h3 class="list_header_title">
+												<a href="javascript:void(0)">PLANNED Head 1 </a>
+											</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list_body collapse" id="collapse1">
+							<div class="list_group pad_rl30">
+								<div class="list_group_item">
+									<div class="list_item_head">
+										<div class="list_item">
+											<div class="list_item_inner">
+												<div class="list_calender">
+													<p class="list_date">22</p>
+													<p class="list_month">Maart</p>
+												</div>
+												<div class="list_column_block">
+													<div class="column_5050">
+														<div class="list_col_l">
+															<h4>
+																<a class="list_item_title lnk_primary" href="#collapse3" data-toggle="collapse">DOMINIQUE DECLERQ 13 </a>
+															</h4>
+															<p class="list_item_detail">BRUGTSXYZ-SCHOHY  </p>
+															<p class="list_item_detail">BE79001406454833  </p>
+														</div>
+														<div class="list_col_r">
+															<p class="nowrap list_amount">
+																<span>
+																<span>240,00</span><span> USD</span>
+																</span>
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="list_item_body collapse" id="collapse3">
+										<div class="list_item noclk">
+											<div class="list_item_inner list_alignment list_column_block">
+												<div class="column_100">
+													<div class="list_col">
+														<p class="list_item_detail">
+															BICGEBABEBBVIAOBILEBANKINGBICGEBABEBBVIAOBILEBANKINGBICGEBABEBBVIAOBILEBANKING <br>
+															ZONDER MEDEDELING <br>
+															VALUTADATUM : 29/012015
+														</p>
+														<div class="extra_contentdetails">
+															<div class="list_details" data-rv-checkobject="movements.executionDate">
+																<label class="details_label" data-rv-text="config.app.message.Label.accounttransactions.accounttransactions.executiondate">Execution date</label>
+																<div class="listitem_details">
+																	<p data-rv-text="movements.executionDate|date">24.12.2014</p>
+																</div>
+															</div>
+															<div class="list_details" data-rv-checkobject="movements.valueDate">
+																<label class="details_label" data-rv-text="config.app.message.Label.accounttransactions.accounttransactions.valuedate">Value date</label>
+																<div class="listitem_details">
+																	<p data-rv-text="movements.valueDate|date">10.12.2014</p>
+																</div>
+															</div>
+															<div class="list_details">
+																<label class="details_label" data-rv-text="config.app.message.Label.accounttransactions.accounttransactions.sequencenumber">Sequence number</label>
+																<div class="listitem_details">
+																	<p data-rv-text="movements.sequenceNb">0003</p>
+																</div>
+															</div>
+														</div>
+														<div class="list_view_more">
+															<div class="list_head">
+																<div class="list_item ">
+																	<div class="list_item_inner">
+																		<span class="fontcon-arrow-right-filled list_arrow"></span>
+																		<div class="column_100">
+																			<div class="list_col">
+																				<p>
+																					<a href="#viewmore1" data-toggle="collapse" class="lnk_primary">View more details </a>
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="list_body collapse" id="viewmore1">
+																<div class="list_item noclk">
+																	<div class="list_item_inner list_alignment">
+																		<div class="column_100">
+																			<div class="list_col">
+																				<p>001-1493873-52/GBP BLAD : 1
+																					CREDITBERICHT KEUZEDIVIDEND
+																					NAAM M M DOORNAERT - HOSTE GB0005405286
+																					BETREFFENDE: KEUZEDIVIDEND ZONDER RECHTEN
+																					FRACTIE BETAALD OP 09-10-2014
+																					HSBC HOLDINGS
+																					ISIN : GB0005405286
+																					OP EFFECTENREKENING 013-1015974-14
+																					WIJ CREDITEREN U VOOR GBP 2,62
+																					ALS TEGENWAARDE VAN
+																					0,434 A
+																					TEGEN DE PRIJS VAN GBP 6,0391
+																					(0,434 * GBP 6,0391)
+																					VALUTADATUM 09-10-2014
+																					VERVOLG OP BLAD 2 ONZE REFERTE: 103462023500000000#593
+																					#r#n001-1493873-52/GBP BLAD : 2
+																					WISSELKOERS : 1 EUR = 0,793 GBP INDICATIEVE KOERS
+																					INSTRUCTIE REFERENTIE : 010896103201409188251000
+																					ONZE REFERTE: 103462023500000000#593
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Simple listing code -->
+				<figure class="highlight">
+					<pre>
+				<code class="language-html" data-lang="html">
+<span style="color: #888888"> it is just the combination of date component, Simple listing and Accordion listing. Please refer to the date component and use specific classes on the level</span>
+		
+		<p><span class="s">"list_column_block"</span><span class="c"> This class is additionally used to wrap the column</span></p>
+		
+</code>
+			</pre>
+				</figure>
+				<br><br><br><br><br>
+			</div>
+			
+			
+			
+			<div class="component 4 module_bg">
+				<!-- Multi level accordion -->
+				<h1 class="heading">Accordion listing with check box - (Transaction show and hide)</h1>
+				<div>
+					<div class="list_block ">
+						<div class="list_head lh_theme possible">
+							<div class="list_item pad_rl30 ">
+								<div class="list_item_inner">
+									<span class="fontcon-arrow-right-filled list_arrow"></span>
+									<div class="column_100">
+										<div class="list_col">
+											<h3 class="list_header_title">
+												<a href="javascript:void(0)">PLANNED Head 1 </a>
+											</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list_body collapse" id="collapse1">
+							<div class="list_group pad_rl30">
+								<div class="list_group_item">
+									<div class="list_item noclk">
+										<div class="list_item_inner">
+											<div class="column_5050">
+												<div class="list_col_l">
+													<h4>
+														<a class="list_item_title" href="#collapse3" data-toggle="collapse">DOMINIQUE DECLERQ 13 </a>
+													</h4>
+													<p class="list_item_detail">BRUGTSXYZ-SCHOHY  </p>
+													<p class="list_item_detail">BE79001406454833  </p>
+												</div>
+												<div class="list_col_r txt_left_s">
+													<p class="nowrap list_amount">
+														<span>
+														<span>240,00</span><span> USD</span>
+														</span>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list_group_item">
+									<div class="list_item list_disable noclk">
+										<div class="list_item_inner">
+											<div class="column_5050">
+												<div class="list_col_l">
+													<h4>
+														<a class="list_item_title" href="#collapse3" data-toggle="collapse">DOMINIQUE DECLERQ 13 </a>
+													</h4>
+													<p class="list_item_detail">BRUGTSXYZ-SCHOHY  </p>
+													<p class="list_item_detail">BE79001406454833  </p>
+												</div>
+												<div class="list_col_r txt_left_s">
+													<p class="nowrap list_amount">
+														<span>
+														<span>240,00</span><span> USD</span>
+														</span>
+														<span class="diff_currency">240,00 EUR</span>
+													</p>
+													<p class="list_check">
+														<input class="css-checkbox" type="checkbox" id="checkBox1" name="checkBox1"> 
+														<label class="css-label" for="checkBox1"> 
+														<span class=""></span> 
+														</label>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list_group_item">
+									<div class="list_item noclk">
+										<div class="list_item_inner">
+											<div class="column_5050">
+												<div class="list_col_l">
+													<h4>
+														<a class="list_item_title" href="#collapse3" data-toggle="collapse">DOMINIQUE DECLERQ 13 </a>
+													</h4>
+													<p class="list_item_detail">BRUGTSXYZ-SCHOHY  </p>
+													<p class="list_item_detail">BE79001406454833  </p>
+												</div>
+												<div class="list_col_r txt_left_s">
+													<p class="nowrap list_amount">
+														<span>
+														<span>240,00</span><span> USD</span>
+														</span>
+														<span class="diff_currency">240,00 EUR</span>
+													</p>
+													<p class="list_check">
+														<input class="css-checkbox" type="checkbox" id="checkBox2" name="checkBox2"> 
+														<label class="css-label" for="checkBox2"> 
+														<span class=""></span> 
+														</label>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list_group_item">
+									<div class="list_item noclk">
+										<div class="list_item_inner">
+											<div class="column_5050">
+												<div class="list_col_l">
+													<h4>
+														<a class="list_item_title" href="#collapse3" data-toggle="collapse">DOMINzxxzxIQUE DECLERQ 13 </a>
+													</h4>
+													<p class="list_item_detail">BRUGTSXYZ-ereSCHOHY  </p>
+													<p class="list_item_detail">BE79001406454554833  </p>
+												</div>
+												<div class="list_col_r txt_left_s">
+													<p class="nowrap list_amount">
+														<span>
+														<span>242,00</span><span> USD</span>
+														</span>
+														<span class="diff_currency">250,00 EUR</span>
+													</p>
+													<p class="list_check">
+														<input class="css-checkbox" type="checkbox" id="checkBox2" name="checkBox2"> 
+														<label class="css-label" for="checkBox2"> 
+														<span class=""></span> 
+														</label>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Simple listing code -->
+				<figure class="highlight">
+					<pre>
+				<code class="language-html" data-lang="html">
+<span style="color: #888888"> This accordion list is to form a right side check box layout and also to represent the disabled view. Remain list is the comibination of the date component, Simple listing and Accordion listing</span>
+		
+		<p><span class="s">"list_check"</span><span class="c"> This class should be used in right column last paragraph to wrapp the checkbox</span></p>
+		
+</code>
+			</pre>
+				</figure>
+				<br>
+				
+				<br><br><br><br>
+			</div>
+			
+			<div class="component 5">
+				<!-- Multi level accordion -->
+				<h1 class="heading">Accordion listing with diffrent theme - E-Lending accordion </h1>
+				<div class="g_theme3 pad_rl30">
+					<div class="list_block lh_theme3">
+						<div class="list_head possible">
+							<div class="list_item pad_rl15 list_extra">
+								<div class="list_item_inner">
+									<span class="fontcon-arrow-right-filled list_arrow"></span>
+									<div class="column_5050">
+										<div class="list_col_l">
+											<h4>
+												<a class="list_item_title lnk_primary" href="#collapseE" data-toggle="collapse">Elending accordion 1</a>
+											</h4>
+										</div>
+										<div class="list_col_r">
+											<p class="nowrap list_amount">
+												<span>
+												<span>240,00</span><span> USD</span>
+												</span>
+											</p>
+											<div class="dropdown extra dropup">
+												<button href="#" data-toggle="dropdown" class="dropdown-toggle menu drpdwn_menu" aria-expanded="false"><i class="fontcon-extra menu drpdwn_menu"></i></button>
+												<ul class="dropdown-menu animated fadeInDown">
+													<li class="menuItem"><button>Menu item 1</button></li>
+													<li class="menuItem"><button href="#">Menu item 2</button></li>
+													<li class="menuItem"><button href="#">Menu item 3</button></li>
+													<li class="menuItem"><button href="#">Menu item 4</button></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list_body collapse" id="collapseE">
+							<div class="list_group pad_rl15 lh_theme3">
+								<div class="list_item noclk">
+									<div class="list_item_inner left_indent">
+										<div class="column_5050">
+											<div class="list_col_l">
+												<label>
+												Amount from credit
+												</label>
+											</div>
+											<div class="list_col_r txt_left">
+												<p class="nowrap">
+													<span>240,00</span><span> USD</span>
+												</p>
+											</div>
+										</div>
+										<div class="column_5050">
+											<div class="list_col_l">
+												<label>
+												Remaining amount from
+												</label>
+											</div>
+											<div class="list_col_r txt_left">
+												<p class="nowrap">
+													<span>BE12 1234 1234 1234</span>
+												</p>
+											</div>
+										</div>
+										<div class="column_5050">
+											<div class="list_col_l">
+												<label>
+												Invoice date
+												</label>
+											</div>
+											<div class="list_col_r txt_left">
+												<p class="nowrap">
+													<span>22-02-2014</span>
+												</p>
+											</div>
+										</div>
+										<div class="column_5050">
+											<div class="list_col_l">
+												<label>
+												Invoice communication
+												</label>
+											</div>
+											<div class="list_col_r txt_left">
+												<p class="nowrap">
+													<span>+++012/34567/89012+++</span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list_block ">
+						<!-- parent container of the full list -->
+						<div class="list_head lh_theme3 possible">
+							<!-- heading block with theme. possible class is used for JS - dummy -->
+							<div class="list_item pad_rl15 list_extra">
+								<!-- list item with padding and list_extra clas for the extra menu -->
+								<div class="list_item_inner">
+									<!-- item inner to define the padding -->
+									<span class="fontcon-arrow-right-filled list_arrow"></span>  <!-- for arrow icon -->
+									<div class="column_5050">
+										<!-- type of column 5050, that is 50% in left and 50% in right -->
+										<div class="list_col_l">
+											<!-- left column -->
+											<h4>
+												<!-- h4 for sematics  -->
+												<a class="list_item_title lnk_primary" href="#collapseE1" data-toggle="collapse">Elending accordion 2</a> <!-- for the heading green text -->
+											</h4>
+											<p class="list_desc">Description can be loaded in th eheading 1</p>
+											<p class="list_desc">Description can be loaded in th eheading 1</p>
+										</div>
+										<div class="list_col_r">
+											<!-- right column -->
+											<p class="nowrap list_amount">
+												<!-- to load ammount block -->
+												<span>
+													<!-- to group multiple datas -->
+													<span>240,00</span><span> USD</span>  <!-- n number of span can be used to create to inject datas -->
+												</span>
+											</p>
+											<div class="dropdown extra">
+												<!-- extra menu -->
+												<button href="#" data-toggle="dropdown" class="dropdown-toggle menu drpdwn_menu" aria-expanded="false"><i class="fontcon-extra menu drpdwn_menu"></i></button>   <!-- using button for accessablity -->
+												<ul class="dropdown-menu animated fadeInDown">
+													<!-- options in the extra menu -->
+													<li class="menuItem"><button>Menu item 1</button></li>
+													<li class="menuItem"><button href="#">Menu item 2</button></li>
+													<li class="menuItem"><button href="#">Menu item 3</button></li>
+													<li class="menuItem"><button href="#">Menu item 4</button></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list_body collapse" id="collapseE1">
+							<!-- body block with bootstrap collapse id -->
+							<div class="list_group lh_theme3 pad_rl15">
+								<!-- list group with theme and spacing -->
+								<div class="list_item noclk">
+									<!-- list item with no click event, so no cursor -->
+									<div class="list_item_inner left_indent">
+										<!-- list iten for spacer and left indent to align with arrow -->
+										<div class="column_5050">
+											<!-- type of column 5050, that is 50% in left and 50% in right -->
+											<div class="list_col_l">
+												<!-- left column -->
+												<label>
+												Amount from credit
+												</label>
+											</div>
+											<div class="list_col_r txt_left">
+												<!-- right column with text aligned to left -->
+												<p class="">
+													<!-- nowrap to keep the ammount and currency type in same row -->
+													heading block with theme. possible class is used for JS - dummy heading block with theme. possible class is used for JS - dummy heading block with theme. possible class is used for JS - dummyheading block with theme. possible class is used for JS - dummyheading block with theme. possible class is used for JS - dummy heading block with theme. possible class is used for JS - dummy heading block with theme. possible class is used for JS - dummyheading block with theme. possible class is used for JS - dummy  <!-- n number of span can be used to create to inject datas -->
+												</p>
+											</div>
+										</div>
+										<div class="column_5050">
+											<div class="list_col_l">
+												<label>
+												Remaining amount from
+												</label>
+											</div>
+											<div class="list_col_r txt_left">
+												<p class="nowrap">
+													<span>BE12 1234 1234 1234</span>
+												</p>
+											</div>
+										</div>
+										<div class="column_5050">
+											<div class="list_col_l">
+												<label>
+												Invoice date
+												</label>
+											</div>
+											<div class="list_col_r txt_left">
+												<p class="nowrap">
+													<span>22-02-2014</span>
+												</p>
+											</div>
+										</div>
+										<div class="column_5050">
+											<div class="list_col_l">
+												<label>
+												Invoice communication
+												</label>
+											</div>
+											<div class="list_col_r txt_left">
+												<p class="nowrap">
+													<span>+++012/34567/89012+++</span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<!-- Simple listing code -->
+				<figure class="highlight">
+					<pre>
+				<code class="language-html" data-lang="html">
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;g_theme3 pad_rl30&quot;</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_block lh_theme3&quot;</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_head possible&quot;</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item pad_rl15 list_extra list_active&quot;</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item_inner&quot;</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;fontcon-arrow-right-filled list_arrow&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;column_5050&quot;</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_l&quot;</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;h4&gt;</span>
+									<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;list_item_title lnk_primary&quot;</span> <span class="na">href=</span><span class="s">&quot;#collapseE&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;collapse&quot;</span> <span class="na">aria-expanded=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>Elending accordion 1<span class="nt">&lt;/a&gt;</span>
+								<span class="nt">&lt;/h4&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_r&quot;</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;nowrap list_amount&quot;</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;span&gt;</span>
+									<span class="nt">&lt;span&gt;</span>240,00<span class="nt">&lt;/span&gt;&lt;span&gt;</span> USD<span class="nt">&lt;/span&gt;</span>
+									<span class="nt">&lt;/span&gt;</span>
+								<span class="nt">&lt;/p&gt;</span>
+								<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;dropdown extra dropup&quot;</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;button</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">data-toggle=</span><span class="s">&quot;dropdown&quot;</span> <span class="na">class=</span><span class="s">&quot;dropdown-toggle menu drpdwn_menu&quot;</span> <span class="na">aria-expanded=</span><span class="s">&quot;false&quot;</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">&quot;fontcon-extra menu drpdwn_menu&quot;</span><span class="nt">&gt;&lt;/i&gt;&lt;/button&gt;</span>
+									<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;dropdown-menu animated fadeInDown&quot;</span><span class="nt">&gt;</span>
+										<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;menuItem&quot;</span><span class="nt">&gt;&lt;button&gt;</span>Menu item 1<span class="nt">&lt;/button&gt;&lt;/li&gt;</span>
+										<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;menuItem&quot;</span><span class="nt">&gt;&lt;button</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Menu item 2<span class="nt">&lt;/button&gt;&lt;/li&gt;</span>
+										<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;menuItem&quot;</span><span class="nt">&gt;&lt;button</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Menu item 3<span class="nt">&lt;/button&gt;&lt;/li&gt;</span>
+										<span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">&quot;menuItem&quot;</span><span class="nt">&gt;&lt;button</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Menu item 4<span class="nt">&lt;/button&gt;&lt;/li&gt;</span>
+									<span class="nt">&lt;/ul&gt;</span>
+								<span class="nt">&lt;/div&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>
+						<span class="nt">&lt;/div&gt;</span>
+					<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_body collapse in&quot;</span> <span class="na">id=</span><span class="s">&quot;collapseE&quot;</span> <span class="na">aria-expanded=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_group pad_rl15 lh_theme3&quot;</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item noclk&quot;</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item_inner left_indent&quot;</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;column_5050&quot;</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_l&quot;</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;label&gt;</span>Amount from credit<span class="nt">&lt;/label&gt;</span>
+								<span class="nt">&lt;/div&gt;</span>
+								<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_r txt_left&quot;</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;nowrap&quot;</span><span class="nt">&gt;</span>
+										<span class="nt">&lt;span&gt;</span>240,00<span class="nt">&lt;/span&gt;&lt;span&gt;</span> USD<span class="nt">&lt;/span&gt;</span>
+									<span class="nt">&lt;/p&gt;</span>
+								<span class="nt">&lt;/div&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;column_5050&quot;</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_l&quot;</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;label&gt;</span>Remaining amount from<span class="nt">&lt;/label&gt;</span>
+								<span class="nt">&lt;/div&gt;</span>
+								<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_r txt_left&quot;</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;nowrap&quot;</span><span class="nt">&gt;</span>
+										<span class="nt">&lt;span&gt;</span>BE12 1234 1234 1234<span class="nt">&lt;/span&gt;</span>
+									<span class="nt">&lt;/p&gt;</span>
+								<span class="nt">&lt;/div&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;column_5050&quot;</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_l&quot;</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;label&gt;</span>Invoice date<span class="nt">&lt;/label&gt;</span>
+								<span class="nt">&lt;/div&gt;</span>
+								<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_r txt_left&quot;</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;nowrap&quot;</span><span class="nt">&gt;</span>
+										<span class="nt">&lt;span&gt;</span>22-02-2014<span class="nt">&lt;/span&gt;</span>
+									<span class="nt">&lt;/p&gt;</span>
+								<span class="nt">&lt;/div&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>
+							<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;column_5050&quot;</span><span class="nt">&gt;</span>
+								<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_l&quot;</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;label&gt;</span>Invoice communication<span class="nt">&lt;/label&gt;</span>
+								<span class="nt">&lt;/div&gt;</span>
+								<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_r txt_left&quot;</span><span class="nt">&gt;</span>
+									<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;nowrap&quot;</span><span class="nt">&gt;</span>
+										<span class="nt">&lt;span&gt;</span>+++012/34567/89012+++<span class="nt">&lt;/span&gt;</span>
+									<span class="nt">&lt;/p&gt;</span>
+								<span class="nt">&lt;/div&gt;</span>
+							<span class="nt">&lt;/div&gt;</span>
+						<span class="nt">&lt;/div&gt;</span>
+					<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>		
+		
+		<p><span class="s">"g_theme3"</span><span class="c"> To form this kind of Accordion, this class should be used as a parent wrapper.</span></p>
+		<span style="color: #888888"> This accordion is another variation of the Accordion and simple listing with very minor changes in Structure. rest follow the same strucure of the Accordion and Simple listing </span>
+</code>
+			</pre>
+				</figure>
+				<br>
+			</div><br><br><br><br>
+			
+			<div class="component 7 module_bg">
+				<h1 class="heading">Accordion listing with looping inner childs - (Statements)</h1>
+				<div>
+					<div class="list_block">
+						<div class="list_head lh_theme possible">
+							<div class="list_item pad_rl30 ">
+								<div class="list_item_inner">
+									<span class="fontcon-arrow-right-filled list_arrow"></span>
+									<div class="column_100">
+										<div class="list_col">
+											<h3 class="list_header_title">
+												<a href="javascript:void(0)">2016 </a>
+											</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list_body collapse" id="collapse1">
+							<div class="list_block ">
+								<div class="list_head lh_theme5 possible">
+									<div class="list_item pad_rl30 ">
+										<div class="list_item_inner">
+											<div class="column_100">
+												<div class="list_col">
+													<h4>
+														<a href="javascript:void(0)" data-rv-aria-label="statementlist:monthName" aria-expanded="false" data-rv-text="statementlist:monthName" aria-label="February">February</a>										
+														<span class="space_left bracket">(</span>
+														<span data-rv-text="statementlist.stmts.length |formatstmtcount" class="statementcount">4</span>
+														<span class="bracket">)</span>
+													</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list_body collapse" id="collapse1">
+									<div class="list_group pad_rl30">
+										<div class="list_item list_dl">
+											<div class="list_item_inner">
+												<span class="fontcon-download list_dl_icon"></span>
+												<div class="column_5050">
+													<div class="list_col_l">
+														<h4>
+															<a class="list_item_title lnk_primary" href="javascript:void(0);">STATEMENTS </a>
+														</h4>
+														<p class="list_item_detail"><span>PDF</span> <span>-</span> <span class="no_wrap">80</span><span>KB</span> </p>
+													</div>
+													<div class="list_col_r">
+														<p class="nowrap list_amount">
+															<span>
+															<span>2No. 11 of year 2016</span>
+															</span>
+															<span class="diff_currency">09.02.2016 - 15.02.2016</span>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="list_item list_dl">
+											<div class="list_item_inner">
+												<span class="fontcon-download list_dl_icon"></span>
+												<div class="column_5050">
+													<div class="list_col_l">
+														<h4>
+															<a class="list_item_title lnk_primary" href="javascript:void(0);">STATEMENTS </a>
+														</h4>
+														<p class="list_item_detail"><span>PDF</span> <span>-</span> <span class="no_wrap">80</span><span>KB</span> </p>
+													</div>
+													<div class="list_col_r">
+														<p class="nowrap list_amount">
+															<span>
+															<span>2No. 11 of year 2016</span>
+															</span>
+															<span class="diff_currency">09.02.2016 - 15.02.2016</span>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="list_item list_dl">
+											<div class="list_item_inner">
+												<span class="fontcon-download list_dl_icon"></span>
+												<div class="column_5050">
+													<div class="list_col_l">
+														<h4>
+															<a class="list_item_title lnk_primary" href="javascript:void(0);">STATEMENTS </a>
+														</h4>
+														<p class="list_item_detail"><span>PDF</span> <span>-</span> <span class="no_wrap">80</span><span>KB</span> </p>
+													</div>
+													<div class="list_col_r">
+														<p class="nowrap list_amount">
+															<span>
+															<span>2No. 11 of year 2016</span>
+															</span>
+															<span class="diff_currency">09.02.2016 - 15.02.2016</span>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="list_block ">
+								<div class="list_head lh_theme5 possible">
+									<div class="list_item pad_rl30 ">
+										<div class="list_item_inner">
+											<div class="column_100">
+												<div class="list_col">
+													<h4>
+														<a href="javascript:void(0)" data-rv-aria-label="statementlist:monthName" aria-expanded="false" data-rv-text="statementlist:monthName" aria-label="February">February</a>										
+														<span class="space_left bracket">(</span>
+														<span data-rv-text="statementlist.stmts.length |formatstmtcount" class="statementcount">4</span>
+														<span class="bracket">)</span>
+													</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list_body collapse" id="collapse1">
+									<div class="list_group pad_rl30">
+										<div class="list_item list_dl">
+											<div class="list_item_inner">
+												<span class="fontcon-download list_dl_icon"></span>
+												<div class="column_5050">
+													<div class="list_col_l">
+														<h4>
+															<a class="list_item_title lnk_primary" href="javascript:void(0);">STATEMENTS </a>
+														</h4>
+														<p class="list_item_detail"><span>PDF</span> <span>-</span> <span class="no_wrap">80</span><span>KB</span> </p>
+													</div>
+													<div class="list_col_r">
+														<p class="nowrap list_amount">
+															<span>
+															<span>2No. 11 of year 2016</span>
+															</span>
+															<span class="diff_currency">09.02.2016 - 15.02.2016</span>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="list_item list_dl">
+											<div class="list_item_inner">
+												<span class="fontcon-download list_dl_icon"></span>
+												<div class="column_5050">
+													<div class="list_col_l">
+														<h4>
+															<a class="list_item_title lnk_primary" href="javascript:void(0);">STATEMENTS </a>
+														</h4>
+														<p class="list_item_detail"><span>PDF</span> <span>-</span> <span class="no_wrap">80</span><span>KB</span> </p>
+													</div>
+													<div class="list_col_r">
+														<p class="nowrap list_amount">
+															<span>
+															<span>2No. 11 of year 2016</span>
+															</span>
+															<span class="diff_currency">09.02.2016 - 15.02.2016</span>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="list_item list_dl">
+											<div class="list_item_inner">
+												<span class="fontcon-download list_dl_icon"></span>
+												<div class="column_5050">
+													<div class="list_col_l">
+														<h4>
+															<a class="list_item_title lnk_primary" href="javascript:void(0);">STATEMENTS </a>
+														</h4>
+														<p class="list_item_detail"><span>PDF</span> <span>-</span> <span class="no_wrap">80</span><span>KB</span> </p>
+													</div>
+													<div class="list_col_r">
+														<p class="nowrap list_amount">
+															<span>
+															<span>2No. 11 of year 2016</span>
+															</span>
+															<span class="diff_currency">09.02.2016 - 15.02.2016</span>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Simple listing code -->
+				<figure class="highlight">
+					<pre>
+				<code class="language-html" data-lang="html">
+<span style="color: #888888"> This accordion list is combination of the Accordion and simple listing only change is below code to form.</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col&quot;</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;h4&gt;</span>
+		<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;javascript:void(0)&quot;</span> <span class="na">data-rv-aria-label=</span><span class="s">&quot;statementlist:monthName&quot;</span> <span class="na">aria-expanded=</span><span class="s">&quot;false&quot;</span> <span class="na">data-rv-text=</span><span class="s">&quot;statementlist:monthName&quot;</span> <span class="na">aria-label=</span><span class="s">&quot;February&quot;</span><span class="nt">&gt;</span>February<span class="nt">&lt;/a&gt;</span>										
+		<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;space_left bracket&quot;</span><span class="nt">&gt;</span>(<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;span</span> <span class="na">data-rv-text=</span><span class="s">&quot;statementlist.stmts.length |formatstmtcount&quot;</span> <span class="na">class=</span><span class="s">&quot;statementcount&quot;</span><span class="nt">&gt;</span>4<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;bracket&quot;</span><span class="nt">&gt;</span>)<span class="nt">&lt;/span&gt;</span>
+	<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+		
+		<p><span class="c"> Anchor link is mandatory to add the accessibility.</span></p>
+		
+</code>
+			</pre>
+				</figure>
+				<br>
+			</div>
+			
+			<div class="component "><br><br><br><br>
+			<h1 class="heading">AG tab 3 list - accordion with calender and pdf</h1>
+			<div class="list_block ">
+					<div class="list_head possible">
+						<div class="list_item pad_rl30">
+							<div class="list_item_inner">
+								<span class="fontcon-arrow-right-filled list_arrow"></span>
+								<div class="column_100">
+									<div class="list_col">
+										<h3 class="list_header_title">
+											<a href="javascript:void(0)">2016</a>
+										</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list_body collapse" id="collapse1" aria-expanded="true">
+						<div class="list_group pad_rl30">
+							<div class="list_group_item">
+								<div class="list_item list_pdf">
+									<div class="list_item_inner">
+										<div class="list_calender">
+											<p class="list_date">22</p>
+											<p class="list_month">Maart</p>
+										</div>
+										<div class="list_column_block">
+											<span class="fontcon-pdf list_pdf_icon"></span>
+											<div class="column_100">
+												<div class="list_col">
+													<h4>
+														<a class="list_item_title lnk_primary" href="#collapse3" data-toggle="collapse">DOMINIQUE DECLERQ 13 </a>
+													</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list_item list_pdf">
+									<div class="list_item_inner">
+										<div class="list_calender">
+											<p class="list_date">22</p>
+											<p class="list_month">Maart</p>
+										</div>
+										<div class="list_column_block">
+											<span class="fontcon-pdf list_pdf_icon"></span>
+											<div class="column_100">
+												<div class="list_col">
+													<h4>
+														<a class="list_item_title lnk_primary" href="#collapse3" data-toggle="collapse">DOMINIQUE DECLERQ 13 </a>
+													</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list_item list_pdf">
+									<div class="list_item_inner">
+										<div class="list_calender">
+											<p class="list_date">22</p>
+											<p class="list_month">Maart</p>
+										</div>
+										<div class="list_column_block">
+											<span class="fontcon-pdf list_pdf_icon"></span>
+											<div class="column_100">
+												<div class="list_col">
+													<h4>
+														<a class="list_item_title lnk_primary" href="#collapse3" data-toggle="collapse">DOMINIQUE DECLERQ 13 </a>
+													</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			
+			
+			<div class="component d"><br><br><br><br>
+				<h1 class="heading">Headings</h1>
+				<div class="list_item pad_rl30 noclk simple_list">
+					<!-- "simple_list" this is just for bg color - ignore this class -->
+					<div class="list_item_inner border_none">
+						<!-- "border_none" this remove the border bottom - ignore this class if you need border -->
+						<div class="column_100">
+							<div class="list_col">
+								<h4 class="detail_group_title">
+									You will sign 4 transactions
+								</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="list_item pad_rl30 noclk simple_list">
+					<!-- "simple_list" this is just for bg color - ignore this class -->
+					<div class="list_item_inner border_none">
+						<div class="column_5050">
+							<div class="list_col_r">
+								<p class="detail_group_title">
+									<span>Amount for control </span><span>(</span><span>sum of the totals</span><span>)</span>
+									<span class="amount_highlight">50,00</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="list_item pad_rl30 noclk simple_list">
+					<!-- "simple_list" this is just for bg color - ignore this class -->
+					<div class="list_item_inner border_none">
+						<div class="column_5050">
+							<div class="list_col_l">
+								<h4 class="detail_group_title">
+									You will sign 4 transactions
+								</h4>
+							</div>
+							<div class="list_col_r">
+								<p class="detail_group_title">
+									<span>Amount for control </span><span>(</span><span>sum of the totals</span><span>)</span>
+									<span class="amount_highlight">50,00</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="list_item pad_rl30 noclk simple_list">
+					<!-- "simple_list" this is just for bg color - ignore this class -->
+					<div class="list_item_inner border_none">
+						<!-- "border_none" this remove the border bottom - ignore this class if you need border -->
+						<div class="column_5050">
+							<div class="list_col_l">
+								<h4 class="detail_group_title show_inline-block">
+									You will sign 4 transactions
+								</h4>
+								<span class="info_icon fontcon-information help_icon tooltipstered"></span>
+							</div>
+							<div class="list_col_r">
+								<div class="action_icon_heading">
+									<span class="action_icons__global innerPrint" data-rv-checkprint="">
+									<a class="fontcon-print global_print" href="javascript:void(0);" aria-label="Print"></a>
+									</span>
+									<span class="action_icons__global">
+									<a class="fontcon-pdf" href="javascript:void(0);" aria-label="Download as PDF"></a>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="list_item pad_rl30 noclk simple_list">
+					<!-- "simple_list" this is just for bg color - ignore this class -->
+					<div class="list_item_inner">
+						<!-- "border_none" this remove the border bottom - ignore this class if you need border -->
+						<div class="column_5050">
+							<div class="list_col_l">
+							</div>
+							<div class="list_col_r">
+								<div class="action_icon_heading">
+									<span class="action_icons__global innerPrint" data-rv-checkprint="">
+									<a class="fontcon-print global_print" href="javascript:void(0);" aria-label="Print"></a>
+									</span>
+									<span class="action_icons__global">
+									<a class="fontcon-pdf" href="javascript:void(0);" aria-label="Download as PDF"></a>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<figure class="highlight">
+					<pre><code class="language-html" data-lang="html">
+					
+		<span style="color: #888888">Sub headers with full column</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item pad_rl30 noclk simple_list&quot;</span><span class="nt">&gt;</span>
+		<span style="color: #888888">&lt;!-- &quot;simple_list&quot; this is just for bg color - ignore this class --&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item_inner border_none&quot;</span><span class="nt">&gt;</span>
+				<span style="color: #888888">&lt;!-- &quot;border_none&quot; this remove the border bottom - ignore this class if you need border --&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;column_100&quot;</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col&quot;</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;detail_group_title&quot;</span><span class="nt">&gt;</span>
+							You will sign 4 transactions
+						<span class="nt">&lt;/h4&gt;</span>
+					<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		
+		<span style="color: #888888">Sub headers with full column on right text</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item pad_rl30 noclk simple_list&quot;</span><span class="nt">&gt;</span>
+			<span style="color: #888888">&lt;!-- &quot;simple_list&quot; this is just for bg color - ignore this class --&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item_inner border_none&quot;</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;column_5050&quot;</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_r&quot;</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;detail_group_title&quot;</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span&gt;</span>Amount for control <span class="nt">&lt;/span&gt;&lt;span&gt;</span>(<span class="nt">&lt;/span&gt;&lt;span&gt;</span>sum of the totals<span class="nt">&lt;/span&gt;&lt;span&gt;</span>)<span class="nt">&lt;/span&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;amount_highlight&quot;</span><span class="nt">&gt;</span>50,00<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/p&gt;</span>
+					<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		
+		<span style="color: #888888">Sub headers with two side text</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item pad_rl30 noclk simple_list&quot;</span><span class="nt">&gt;</span>
+			<span style="color: #888888">&lt;!-- &quot;simple_list&quot; this is just for bg color - ignore this class --&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item_inner border_none&quot;</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;column_5050&quot;</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_l&quot;</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;detail_group_title&quot;</span><span class="nt">&gt;</span>
+							You will sign 4 transactions
+						<span class="nt">&lt;/h4&gt;</span>
+					<span class="nt">&lt;/div&gt;</span>
+					<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_r&quot;</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;detail_group_title&quot;</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span&gt;</span>Amount for control <span class="nt">&lt;/span&gt;&lt;span&gt;</span>(<span class="nt">&lt;/span&gt;&lt;span&gt;</span>sum of the totals<span class="nt">&lt;/span&gt;&lt;span&gt;</span>)<span class="nt">&lt;/span&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;amount_highlight&quot;</span><span class="nt">&gt;</span>50,00<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/p&gt;</span>
+					<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+		
+		<span style="color: #888888">Sub headers with text and icons on right</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item pad_rl30 noclk simple_list&quot;</span><span class="nt">&gt;</span>
+			<span style="color: #888888">&lt;!-- &quot;simple_list&quot; this is just for bg color - ignore this class --&gt;</span>
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item_inner border_none&quot;</span><span class="nt">&gt;</span>
+				<span style="color: #888888">&lt;!-- &quot;border_none&quot; this remove the border bottom - ignore this class if you need border --&gt;</span>
+				<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;column_5050&quot;</span><span class="nt">&gt;</span>
+					<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_l&quot;</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">&quot;detail_group_title show_inline-block&quot;</span><span class="nt">&gt;</span>
+							You will sign 4 transactions
+						<span class="nt">&lt;/h4&gt;</span>
+						<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;info_icon fontcon-information help_icon tooltipstered&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+					<span class="nt">&lt;/div&gt;</span>
+					<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_col_r&quot;</span><span class="nt">&gt;</span>
+						<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;action_icon_heading&quot;</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;action_icons__global innerPrint&quot;</span> <span class="na">data-rv-checkprint=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;fontcon-print global_print&quot;</span> <span class="na">href=</span><span class="s">&quot;javascript:void(0);&quot;</span> <span class="na">aria-label=</span><span class="s">&quot;Print&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>
+							<span class="nt">&lt;/span&gt;</span>
+							<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;action_icons__global&quot;</span><span class="nt">&gt;</span>
+							<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;fontcon-pdf&quot;</span> <span class="na">href=</span><span class="s">&quot;javascript:void(0);&quot;</span> <span class="na">aria-label=</span><span class="s">&quot;Download as PDF&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>
+							<span class="nt">&lt;/span&gt;</span>
+						<span class="nt">&lt;/div&gt;</span>
+					<span class="nt">&lt;/div&gt;</span>
+				<span class="nt">&lt;/div&gt;</span>
+			<span class="nt">&lt;/div&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+					
+					
+					
+					
+					
+<p><span class="c"> This heading is exact the same structure of Generic listing </span></p>
+<p><span class="s">"pad_rl30"</span><span class="c"> is the generic class which will inject the 30px padding in right and left side of the container</span></p>
+<p><span class="s">"list_item"</span><span class="c"> is the parent of single listing, its relative and 100% width</span></p>
+<p><span class="s">"list_item_inner"</span><span class="c"> it contain top and bottom padding with border bottom for teh listing</span></p>
+<p><span class="s">"column_5050"</span><span class="c"> This is a type of column spliting, adding to this we have some more types of column spliting "column_100", "column_5050", "column_6733", "column_3367"</span></p>
+<p><span class="s">"list_col_l, list_col_r"</span><span class="c"> This is column spliting parent class</span></p>
+
+<p><span class="s">"detail_group_title"</span><span class="c"> This class has the font family, size and lineheight</span></p>
+<p><span class="s">"border_none"</span><span class="c"> to remov the border bottom for the list</span></p>
+<p><span class="s">"noclk "</span><span class="c"> to remove the click cursor pointer</span></p>
+<p><span class="s">"action_icon_heading "</span><span class="c"> parent container for the icon group, to inject negative values for the alignment inside the heading list </span></p>
+<p><span class="s">"show_inline-block "</span><span class="c"> make the item as "In a line" so the added data next to it, willl be placed in the same line</span></p>
+<p><span class="s">"amount_highlight "</span><span class="c"> to apply blue color for the currency - this is the same color which we use for M1/M2 signatures</span></p>
+</code>
+			</pre>
+				</figure>
+				<!-- START OF SmartSource Data Collector TAG -->
+				<!-- END OF SmartSource Data Collector TAG --><!--ls:end[body]-->
+			</div><br><br><br><br>
+			
+			<div class="component a">
+				<h1 class="heading">Three column listing - Accounts setting</h1>
+				<br>
+				<div class="module_bg">
+					<div class="t_list">
+						<div class="t_list_row lh_theme2 t_list_head hide_s">
+							<div class="t_list_col t_spacer"></div>
+							<div class="t_list_col">
+							</div>
+							<div class="t_list_col">
+								<p><label>Account</label></p>
+							</div>
+							<div class="t_list_col">
+								<p>
+									<a href="javascript:void(0);">
+									<label>Frequency</label>
+									<span class="fontcon-arrow-up-filled t_list_sort"></span>
+									<span class="fontcon-arrow-down-filled t_list_sort hide"></span>
+									</a>
+								</p>
+							</div>
+							<div class="t_list_col">
+								<p class="border_none"><label>Post</label></p>
+							</div>
+							<div class="t_list_col t_spacer"></div>
+						</div>
+						<div class="t_list_row">
+							<div class="t_list_col t_spacer"></div>
+							<div class="t_list_col t_list_check">
+								<input class="css-checkbox" type="checkbox" id="checkBoxb" name="checkBoxb"> 
+								<label class="css-label" for="checkBoxb"> 
+								<span class=""></span> 
+								</label>
+							</div>
+							<div class="t_list_col">
+								<h4>
+									<a class="list_item_title lnk_primary txt_default" href="javascript:void(0);">Dominique Declerq 12 </a>
+								</h4>
+								<p class="list_item_detail">
+									<span>HELLO BANK ACCOUNT</span> 
+								</p>
+								<p class="list_item_detail">
+									<span class="no_wrap">BE24 2349 1092 3928</span>
+								</p>
+							</div>
+							<div class="t_list_col t_list_block">
+								<p class="">
+									<label class="show_s">Frequency</label>
+									<span>Monthly</span>
+								</p>
+							</div>
+							<div class="t_list_col t_list_block t_list_border">
+								<p class="">
+									<label class="show_s">Post</label>
+									<span>No</span>
+								</p>
+							</div>
+							<div class="t_list_col t_spacer"></div>
+						</div>
+						<div class="t_list_row">
+							<div class="t_list_col t_spacer"></div>
+							<div class="t_list_col t_list_check">
+								<input class="css-checkbox" type="checkbox" id="checkBoxb" name="checkBoxb"> 
+								<label class="css-label" for="checkBoxb"> 
+								<span class=""></span> 
+								</label>
+							</div>
+							<div class="t_list_col">
+								<h4>
+									<a class="list_item_title lnk_primary txt_default" href="javascript:void(0);">Dominique Declerq 12 </a>
+								</h4>
+								<p class="list_item_detail">
+									<span>HELLO BANK ACCOUNT</span> 
+								</p>
+								<p class="list_item_detail">
+									<span class="no_wrap">BE24 2349 1092 3928</span>
+								</p>
+							</div>
+							<div class="t_list_col t_list_block">
+								<p class="">
+									<label class="show_s">Frequency</label>
+									<span>Monthly</span>
+								</p>
+							</div>
+							<div class="t_list_col t_list_block t_list_border">
+								<p class="">
+									<label class="show_s">Post</label>
+									<span>No</span>
+								</p>
+							</div>
+							<div class="t_list_col t_spacer"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		
+		<div class="component 9 module_bg"><br><br><br>
+				<h1 class="heading">Back</h1>
+				<div class="back_navigation border_b1 lh_theme4">
+					<div class="back_link pad_rl20" data-rv-isiosapp="config.app.message.label.beneficiary.beneficiaryDetail.back">
+						<a href="javascript:void(0);" class="back_btn dummyclass1">
+							<!-- dont use this class "dummyclass1" -->
+							<span class="fontcon-arrow-left arrow_left "></span><span class="lnk_primary">Back</span>
+						</a>
+					</div>
+				</div>
+				<br>
+				<div class="pad_rl30 lh_theme4">
+					<div class="back_navigation border_b1">
+						<div class="back_link" data-rv-isiosapp="config.app.message.label.beneficiary.beneficiaryDetail.back">
+							<a href="javascript:void(0);" class="back_btn dummyclass1">
+								<!-- dont use this class "dummyclass1" -->
+								<span class="fontcon-arrow-left arrow_left "></span><span class="lnk_primary">Back</span>
+							</a>
+						</div>
+						<div class="action_content">
+							<a href="javascript:void(0)" class="action_icons__global" data-rv-aria-label="config.app.message.Label.standingorder.Accessibility.pdficon" aria-label="PDF">                                    
+							<span class="fontcon-pdf action_icon_align f_right"></span>
+							</a>
+						</div>
+					</div>
+				</div><br>
+			<br>
+			<br>
+			<br>
+			</div>
+			
+		<div class="component sticky">
+			<h1 class="heading">Sticky listing</h1>
+			<!-- template for sticky sign button -->
+			<div class="list_item list_sticky">
+				<div class="list_item_inner pad_rl30">
+					<div class="column_5050">
+						<div class="list_col_l">
+							<div class="">
+								<input class="css-checkbox" type="checkbox" id="checkBox1q" name="checkBox1q"> 
+								<label class="css-label" for="checkBox1q"> 
+								<span class="">Select all transfers</span> 
+								</label>
+							</div>
+						</div>
+						<div class="list_col_r">
+							<span class="pad-r10">
+							<span>5</span><span> transactions selected</span>
+							</span>
+							<button class="btn_default btn_primary mar-r0">
+							<span>Sign</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div><br><br><br>
+		</div>
+			
+		
+		
+		
+			
+		<div class="component b"><br><br><br>
+				<h1 class="heading">IA Alerts</h1>
+		
+		<div class="ia_alert">
+         <!-- rivets: each-error -->
+		<div class="alert_messages_information">
+			<div class="alert_messages__inner clearfix ">
+				<span class="error_icon fontcon-info"></span>
+				<div class="alert_message_content">
+					<h2>Security Message</h2>
+					<p>This particular module is not available in this resolution EN.CLose Icon Text</p>
+					<a href="/sites/web-banking/about-us.page" target="_self">click</a>
+				</div>
+				<button class="fontcon-close icon_dismiss"><span class="icon_txt">CLose Icon Text</span></button>
+			</div>
+		</div>
+		<br>
+		<div class="alert_messages_information">
+			<div class="alert_messages show_table">
+				<div class="alert_messages__inner clearfix">
+					<div class="alert_message_content">INFORMATION --- the information on this page. <a href="#">Click here </a>to update the information on this page.Click here to update the information on this page.Click here to update the information on this page.Click here to update the information on this page. Click here to update the information on this page.Click here to update the information on this page.Click here to update the information on this page.</div>
+				   <button class="fontcon-close icon_dismiss close_alert" data-rv-aria-label="config.app.message.Label.zoomit.ZoomitHome.popupclose" aria-label="Close"> </button>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="alert_messages_error">
+			<div class="alert_messages show_table">
+				<div class="alert_messages__inner clearfix">
+				<div class="alert_message_content">ERROR --- here to update the information on this page. Click here to update the information on this page.Click here to update the information on this page.Click here to update the information on this page.Click here to update the information on this page. Click here to update the information on this page.Click here to update the information on this page.Click here to update the information on this page.</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="alert_messages_severity">
+			<div class="alert_messages show_table">
+				<div class="alert_messages__inner clearfix">
+					<span class="error_icon fontcon-information"></span>
+					<div class="alert_message_content">SEVERITY --- here to update the information on this page. Click here to update the information on this page.Click here to update the information on this page.Click here to update the information on this page.Click here to update the information on this page. Click here to update the information on this page.Click here to update the information on this page.Click here to update the information on this page.</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="alert_messages_warning">
+			<div class="alert_messages show_table">
+				<div class="alert_messages__inner clearfix">
+				<div class="alert_message_content">WARNING --- here to update the information on this page. Click here to update the information on this page.Click here to update the information on this page.Click here to update the information on this page.Click here to update the information on this page. Click here to update the information on this page.Click here to update the information on this page.Click here to update the information on this page.</div>
+				   <button class="fontcon-close icon_dismiss close_alert" data-rv-aria-label="config.app.message.Label.zoomit.ZoomitHome.popupclose" aria-label="Close"> </button>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+	
+	<!-- AG -->
+	<div class="component c"><br><br><br>
+		<h1 class="heading">Multi column structures</h1>
+		<h2 class="heading1">1 column structure</h2>
+			
+		<div class="list_details_col col_1">
+			<div class="list_details">
+				<label class="details_label">
+					<span>Voorspelde waarde</span><span>:</span>
+				</label>
+				<div class="listitem_details">
+					<span>41.764,7</span>
+					<span>EUR</span>                   
+				</div>
+			</div>
+		</div>		
+		
+		<h2 class="heading1">2 column structure</h2>
+			
+		<div class="list_details_col col_2">
+			<div class="list_details">
+				<label class="details_label">
+					<span>Voorspelde waarde</span><span>:</span>
+				</label>
+				<div class="listitem_details">
+					<span>41.764,7</span>
+					<span>EUR</span>                   
+				</div>
+			</div>
+			<div class="list_details">
+				<label class="details_label">
+					<span>Verzekerde</span><span>:</span>
+				</label>
+				<div class="listitem_details">
+					<span>Zoé Van Vaerenbergh</span>              
+				</div>
+			</div>
+		</div>		
+		
+		<h2 class="heading1">3 column structure</h2>
+			
+		<div class="list_details_col col_3">
+			<div class="list_details">
+				<label class="details_label">
+					<span>Voorspelde waarde</span><span>:</span>
+				</label>
+				<div class="listitem_details">
+					<span>41.764,7</span>
+					<span>EUR</span>                   
+				</div>
+			</div>
+			<div class="list_details">
+				<label class="details_label">
+					<span>Verzekerde</span><span>:</span>
+				</label>
+				<div class="listitem_details">
+					<span>Zoé Van Vaerenbergh</span>              
+				</div>
+			</div>
+			<div class="list_details">
+				<label class="details_label">
+					<span>Einde van de waarborg</span><span>:</span>
+				</label>
+				<div class="listitem_details">
+					<span>01/11/2014</span>              
+				</div>
+			</div>
+		</div>	
+		
+		<h2 class="heading1">4 column structure</h2>
+			
+		<div class="list_details_col col_2">
+			<div class="list_details">
+				<label class="details_label">
+					<span>Voorspelde waarde</span><span>:</span>
+				</label>
+				<div class="listitem_details">
+					<span>41.764,7</span>
+					<span>EUR</span>                   
+				</div>
+			</div>
+			<div class="list_details">
+				<label class="details_label">
+					<span>Verzekerde</span><span>:</span>
+				</label>
+				<div class="listitem_details">
+					<span>Zoé Van Vaerenbergh</span>              
+				</div>
+			</div>
+			<div class="list_details">
+				<label class="details_label">
+					<span>Einde van de waarborg</span><span>:</span>
+				</label>
+				<div class="listitem_details">
+					<span>01/11/2014</span>              
+				</div>
+			</div>
+			<div class="list_details">
+				<label class="details_label">
+					<span>Type verzekering</span><span>:</span>
+				</label>
+				<div class="listitem_details">
+					<span>Pension Libre Complémentaire pour Indépendants</span>              
+				</div>
+			</div>
+		</div>		
+				
+	</div>
+	<br>
+	
+	
+	<br>
+	<div class="component"><br><br><br>
+		<h1 class="heading">AG column panel</h1>
+	
+			<div class="list_group pad_rl30 pad-b30 pad-t30">
+				<div class="listpanel active">
+					<div class="listpanel_heading">
+						<h3 class="listpanel_title">R.C Auto</h3>
+						<div class="listpanel_icon"><span class="fontcon-circle-done"></span></div>
+					</div>
+					<div class="listpanel_body">
+						<div class="listpanel_row">
+							<p>Une assurance obligatoire qui va plus loin que les exigences légales</p>
+						</div>
+						<div class="listpanel_row collapse" id="collapseExample2">
+							<div class="listpanel_row_inner">
+								<p>
+									Ma RC Auto couvre les blessures des passagers de mon véhicule et les dégâts causés aux autres usagers de la route en cas d’accident dont je suis responsable
+									En cas d’accident ou de pneu crevé, je bénéficie d’une assistance immédiate et gratuite et d’un véhicule de remplacement <a href="#" class="underline">durant</a> 24 heures ; en Belgique : 
+									<span class="highlight_text">0800 555 05</span>, et à l'étranger (jusqu'à 30 km de la frontière belge) : <span class="highlight_text">+32 78 0555 05&#8203;.</span>
+								</p>
+							</div>
+						</div>
+						<div class="listpanel_row">
+							<div class="list_item">
+								<div class="list_item_inner"> <!-- "list_active" to be added when the accordion is active -->
+									<span class="fontcon-arrow-right-filled list_arrow top"></span>
+									<div class="column_100">
+										<div class="list_col">
+										<p>
+											<a href="#collapseExample2" data-toggle="collapse" class="lnk_primary" aria-expanded="false" aria-controls="collapseExample2">En savoir plus</a>
+										</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="listpanel active">
+					<div class="listpanel_heading">
+						<h3 class="listpanel_title">Multirisques Top Omnium</h3>
+						<div class="listpanel_icon"><span class="fontcon-circle-done active"></span></div>
+					</div>
+					<div class="listpanel_body">
+						<div class="listpanel_row">
+							<p>Mon véhicule couvert en cas de vol, incendie, tempête, bris de vitres…</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="listpanel">
+					<div class="listpanel_heading">
+						<h3 class="listpanel_title">Dégâts Matériels Top Omnium</h3>
+						<div class="listpanel_icon"><span class="fontcon-circle-done active"></span></div>
+					</div>
+					<div class="listpanel_body">
+						<div class="listpanel_row">
+							<p>Mon véhicule couvert en cas de dégâts causés par moi ou un tiers</p>
+							<ul>
+								<li>This is a list item</li>
+								<li>Here a second one</li>
+								<li>Do you want a third</li>
+								<li>Or a last one</li>
+							</ul>
+						</div>
+						<div class="listpanel_row collapse" id="collapseExample3">
+							<div class="listpanel_row_inner">
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+								<ul>
+									<li>This is a list item</li>
+									<li>Here a second one</li>
+									<li>Do you want a aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+									<li>Or a last one
+										<ul>
+											<li>This is a list item</li>
+											<li>Here a second one</li>
+											<li>Do you want a third</li>
+											<li>Or a last one</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="listpanel_row">
+							<div class="list_item">
+								<div class="list_item_inner">
+									<span class="fontcon-arrow-right-filled list_arrow top"></span>
+									<div class="column_100">
+										<div class="list_col">
+										<p>
+											<a href="#collapseExample3" data-toggle="collapse" class="lnk_primary" aria-expanded="false" aria-controls="collapseExample3">En savoir plus</a>
+										</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="listpanel">
+					<div class="listpanel_heading">
+						<h3 class="listpanel_title">Dégâts Matériels Top Omnium</h3>
+						<div class="listpanel_icon"><span class="fontcon-circle-done"></span></div>
+					</div>
+					<div class="listpanel_body">
+						<div>
+							<p class="inline_alert inline_alert_info"><span class="fontcon-information-active"></span>Garantie nog niet actief. Begint vanaf 15/10/2016</p>
+							<p class="inline_alert inline_alert_error"><span class="fontcon-information-active"></span>Garantie nog niet actief. Begint vanaf 15/10/2016</p>
+							<p class="inline_alert inline_alert_warning"><span class="fontcon-information-active"></span>Garantie nog niet actief. Begint vanaf 15/10/2016</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+	
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	</body>
+</html>

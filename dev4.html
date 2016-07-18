@@ -1,0 +1,187 @@
+<html lang="en" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths win chrome chrome4 webkit webkit5 js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths nav-down">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	  <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" /> <!-- used to load spl characters -->
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=edge,chrome=1" http-equiv="X-UA-compatible">
+      
+      <!--ls:begin[stylesheet]-->
+      <title>Tooltips</title>
+      <!--ls:end[stylesheet]-->
+      <!--ls:begin[meta-keywords]-->
+      <meta name="keywords" content="">
+      <!--ls:end[meta-keywords]-->
+      <!--ls:begin[meta-description]-->
+      <meta name="description" content="">
+      <!--ls:end[meta-description]-->
+      <!--ls:begin[meta-vpath]-->
+      <meta name="vpath" content="">
+      <!--ls:end[meta-vpath]-->
+      <!--ls:begin[meta-page-locale-name]-->
+      <meta name="page-locale-name" content="">
+      <!--ls:end[meta-page-locale-name]-->
+      <!--ls:begin[stylesheet]-->
+      <link type="text/css" href="/rsc/contrib/graphicaltheme/bnpp-fortis/brand.css" rel="stylesheet">
+      <link type="text/css" href="/rsc/contrib/graphicaltheme/bnpp-fortis/dev_slide.css" rel="stylesheet">
+      <link type="text/css" href="http://wdh00043:8080/documents/css/doc.min.css" rel="stylesheet">
+      <!--ls:end[stylesheet]-->
+      <!--ls:begin[stylesheet]-->
+      <link type="text/css" href="/rsc/sys/css/player/mediaelementplayer.min.css" rel="stylesheet">
+
+      <!--ls:end[stylesheet]-->
+      <!--ls:begin[script]-->
+      <script type="text/javascript" src="/rsc/contrib/script/js/common/lib/jquery-1.9.1.min.js"></script>
+      <style type="text/css"></style>
+	  <script>
+		$( document ).ready(function() {
+			$(".possible .list_item").on("click",function(e){
+				var view = this;
+					$current = $(e.currentTarget);
+					//$previousSelected = $('.list_body.in');
+					
+				/*if ($previousSelected.hasClass("collapse")) {				
+					$previousSelected.collapse('toggle');
+					$(".list_head .list_item").removeClass("list_arrow_active");
+				}*/				
+				if (!$current.hasClass('disabled')) {					
+					$current.parent().next().collapse('toggle');
+					$current.toggleClass("list_active");
+				}
+			});
+			
+			$(".links").click(function(){
+				$("figure").toggle(200);
+			});
+			
+		});				
+	  </script>
+      <!--ls:end[script]-->
+
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/modernizr/modernizr-min.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/pagebus/pagebus.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/require/require.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/lib/iscroll.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/lib/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/rsc/contrib/script/js/common/package/custom/splashPageScripts.js"></script>	
+	<script type="text/javascript" src="/rsc/contrib/script/js/common/lib/jquery.tooltipster.js"></script>
+	
+      <!--ls:end[script]-->
+
+      <!--ls:end[script]-->
+      <!--ls:begin[favicon]-->
+      <link type="image/x-icon" href="/rsc/contrib/graphicaltheme/bnpp-fortis/images/favicon.ico" rel="shortcut icon">
+      <!--ls:end[favicon]-->
+      <!--ls:begin[head-injection]-->
+      <meta name="siteid" content="web-banking">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="msapplication-tap-highlight" content="no">
+      <meta name="referrer" content="origin">
+      <meta name="format-detection" content="telephone=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+      
+ <style type="text/css">
+	  
+		.heading{
+    color: #182D26;
+    text-align: center;
+    font-family: regular;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #232927;
+    background: hsl(160, 17%, 86%);
+    padding: 10px 30px;
+		}
+		
+	.heading1{
+        color: #182D26;
+    text-align: center;
+    font-family: light;
+    background: hsl(160, 13%, 76%);
+    padding: 4px 30px;
+    font-size: 15px;
+		}
+		
+		figure{
+			display:none;
+		}
+		.modal{
+			position:relative;
+		}
+		
+	  </style>
+
+	  
+	  
+      
+   </head>
+   <body class="en PC fb priv nextgen" cz-shortcut-listen="true">
+     
+	<div class="portal_wrapper">
+		<h1 class="heading">Tooltip</h1>
+		<h2 class="">DEMO: </h2>
+		<br>
+		<a role="tooltip" aria-describedby="icon-description" class="info_icon fontcon-information help_icon" href="javascript:void(0)" analytics="extended-service">
+			<span class="icon-description" aria-hidden="false">Vertrouw op ons uitgebreide dienstenaanbod voor het beheer en de overdracht van uw patrimonium. Onze aanpak is uniek in België.</span>
+		</a>
+	
+
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2 class="">CODE:</h2>
+	 <!-- code details -->
+	  <style>
+	  .code{
+		margin: 20px;
+	  }
+	  .code p{
+		margin-bottom: 6px;
+	  }
+	  .code b{
+		font-weight: bold;
+	  }
+	  .code i{
+		font-style: italic;
+	  }
+	  </style>
+	  <xmp>
+ <a role="tooltip" aria-describedby="icon-description" class="info_icon fontcon-information help_icon" href="javascript:void(0)" analytics="extended-service">
+	<span class="icon-description" aria-hidden="false"> uniek in België.</span>
+ </a>
+	  </xmp>
+	  <div class="code">
+		<p><b>info_icon </b> <i>- Used to call the plugin which will add a class in the element "tooltipstered"</i></p>
+		<p><b>help_icon </b> <i>- Used to position the tooltip and apply help icon</i></p>
+		<p><b>fontcon-information </b> <i>- Used to inject the font icon</i></p>
+		<p><b>icon-description </b> <i>- this will be display none - just used for accessablity reading</i></p>
+	  </div>
+	  
+	<br>
+	<h2 class="">USED:</h2>
+	 <div class="code">
+	<p><b>Used in </b> <i>- Login page, Splash page</i></p>
+	</div> 
+
+<br>
+	<h2 class="">SCRIPT:</h2>
+	 <xmp>
+ <script type="text/javascript" src="/rsc/contrib/script/js/common/package/custom/splashPageScripts.js"></script>	
+ <script type="text/javascript" src="/rsc/contrib/script/js/common/lib/jquery.tooltipster.js"></script>
+	 </xmp>
+
+	
+	</div>  
+	
+	  
+	  
+
+   </body>
+</html>

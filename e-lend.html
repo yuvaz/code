@@ -1,0 +1,329 @@
+<html lang="en" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths win chrome chrome4 webkit webkit5 js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths nav-down">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=edge,chrome=1" http-equiv="X-UA-compatible">
+      <script type="text/javascript">var sfAxes1 = "en";var sfAxes2 = "PC";var sfAxes3 = "fb";var sfAxes4 = "priv";var sfSiteId = "web-banking";var sfCookieErrorPage = "cookieErrorPage.page";var sfCustomerDacLevel = "0";</script><script type="text/javascript">var sfPID = "xopusall035";var sfHP = "dev-demo788";var sfSID = "yoKrEJ9RwVgfqZ1z6P_8mR7_1382436692862";var sfNodeId = "xopusall035";var sfVID = "2967d03b4c114cf5922a54810be27cc9";var sfSg = "Primary";</script>
+      <!--ls:begin[stylesheet]-->
+      <title>E-lend</title>
+      <link href="/iwov-resources/fixed-layout/Single-Column-Offcanvas.css" type="text/css" rel="stylesheet">
+      <!--ls:end[stylesheet]-->
+      <!--ls:begin[meta-keywords]-->
+      <meta name="keywords" content="">
+      <!--ls:end[meta-keywords]-->
+      <!--ls:begin[meta-description]-->
+      <meta name="description" content="">
+      <!--ls:end[meta-description]-->
+      <!--ls:begin[meta-vpath]-->
+      <meta name="vpath" content="">
+      <!--ls:end[meta-vpath]-->
+      <!--ls:begin[meta-page-locale-name]-->
+      <meta name="page-locale-name" content="">
+      <!--ls:end[meta-page-locale-name]-->
+      <!--ls:begin[stylesheet]-->
+      <link type="text/css" href="/rsc/contrib/graphicaltheme/bnpp-fortis/brand.css" rel="stylesheet">
+      <link type="text/css" href="/rsc/contrib/graphicaltheme/bnpp-fortis/dev.css" rel="stylesheet">
+      <!--ls:end[stylesheet]-->
+      <!--ls:begin[stylesheet]-->
+      <link type="text/css" href="/rsc/sys/css/player/mediaelementplayer.min.css" rel="stylesheet">
+      <!--ls:end[stylesheet]-->
+      <!--ls:begin[script]-->
+      <script type="text/javascript" src="/rsc/contrib/script/js/common/lib/jquery-1.9.1.min.js"></script>
+      <style type="text/css"></style>
+	  <script>
+		$( document ).ready(function() {
+			$(".possible .list_item").on("click",function(e){
+				var view = this;
+					$current = $(e.currentTarget);
+					//$previousSelected = $('.list_body.in');
+					
+				/*if ($previousSelected.hasClass("collapse")) {				
+					$previousSelected.collapse('toggle');
+					$(".list_head .list_item").removeClass("list_arrow_active");
+				}*/				
+				if (!$current.hasClass('disabled')) {					
+					$current.parent().next().collapse('toggle');
+					$current.toggleClass("list_active");
+				}
+			});
+		});				
+	  </script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/lib/jquery-migrate-1.1.1.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/package/custom/cookieConfig.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/modernizr/modernizr-min.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/pagebus/pagebus.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/require/require.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/lib/iscroll.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/lib/bootstrap.min.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/wcm-config.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/wcm-config-sf-new.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/lib/placeholder.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/package/custom/browsercheck.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/sf-comp-wcm-config.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/player/mediaelement-and-player.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sf" src="/rsc/contrib/script/js/common/lib/sf-min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="comp" src="/rsc/contrib/script/js/common/lib/sf-comp.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="progress" src="/rsc/contrib/script/js/common/package/custom/progressIndicator.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/lib/jquery.bxslider.min.4.1.2.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/package/custom/public-site-functions.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pagebus" src="/rsc/sys/script/js/pagebus/pagebus.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/lib/datepicker.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/package/custom/e-banner.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="text" src="/rsc/contrib/script/js/common/lib/require-text/text.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/bnpp-fortis/adobe/c54ae400c05361ab6db918d8d84745f6ffd2b7cd/satelliteLib-15a4884ed46c647a3827aacff323aa0744ea9896.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="/rsc/contrib/script/js/common/lib/underscore.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modernizer" src="/rsc/sys/script/js/modernizr/modernizr-min.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/package/custom/commonFunctions.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[favicon]-->
+      <link type="image/x-icon" href="/rsc/contrib/graphicaltheme/bnpp-fortis/images/favicon.ico" rel="shortcut icon">
+      <!--ls:end[favicon]-->
+      <!--ls:begin[head-injection]-->
+      <meta name="siteid" content="web-banking">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="msapplication-tap-highlight" content="no">
+      <meta name="referrer" content="origin">
+      <meta name="format-detection" content="telephone=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+      <script type="text/javascript" src="/rsc/sys/script/js/sitefactory/sitefactory.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="backbone" src="/rsc/contrib/script/js/common/lib/backbone.js"></script><script type="text/javascript" src="/rsc/sys/script/js/mediator/mediator-target-config.js"></script><script type="text/javascript" src="/rsc/sys/script/js/sitefactory/mediator.js"></script><!--ls:end[head-injection]--><!--ls:begin[script]--><!--ls:end[script]--><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="fbunauthenticated" src="/rsc/contrib/script/js/bnpp-fortis/package/custom/unauthenticated.js"></script><script src="https://easybanking.qabnpparibasfortis.be/rsc/contrib/script/js/bnpp-fortis/adobe/c54ae400c05361ab6db918d8d84745f6ffd2b7cd/scripts/satellite-5639dff664746d1db4004080.js"></script><script src="https://easybanking.qabnpparibasfortis.be/rsc/contrib/script/js/bnpp-fortis/adobe/c54ae400c05361ab6db918d8d84745f6ffd2b7cd/s-code-contents-34abb622b821270602fca88b7a695c75858497b0.js"></script>
+      <style>.product_header:before{background-image:none;}</style>
+      <style type="text/css"></style>
+      
+   </head>
+   <body class="en PC fb priv nextgen" cz-shortcut-listen="true">
+      
+	  
+	<!-- new -->
+	<div class="portal_wrapper" style="background: #fff;">
+
+	<br><br><br><br>
+	
+	
+		<!-- Multi level accordion -->
+	<h1 style="
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 16px;
+">---------------E-lending new accordion-------------</h1>
+	<br><br>
+	<h2 style="
+    font-size: 19px;
+    text-align: left;
+    margin-bottom: 16px;
+">------Demo-----</h2>
+<div class="g_theme3 pad_rl30">
+	<div class="list_block lh_theme3">
+		<div class="list_head possible">
+			<div class="list_item pad_rl15 list_extra">
+				<div class="list_item_inner">
+					<span class="fontcon-arrow-right-filled list_arrow"></span>
+					<div class="column_5050">
+						<div class="list_col_l">
+							<h4>
+								<a class="list_item_title lnk_primary" href="#collapseE" data-toggle="collapse">Elending accordion 1</a>
+							</h4>
+						</div>
+						<div class="list_col_r">
+							<p class="nowrap list_amount">
+								<span>
+									<span>240,00</span><span> USD</span>
+								</span>
+							</p>
+							<div class="dropdown extra">
+								<button href="#" data-toggle="dropdown" class="dropdown-toggle menu drpdwn_menu" aria-expanded="false"><i class="fontcon-extra menu drpdwn_menu"></i></button>
+								<ul class="dropdown-menu animated fadeInDown">
+									<li class="menuItem"><button>Menu item 1</button></li>
+									<li class="menuItem"><button href="#">Menu item 2</button></li>
+									<li class="menuItem"><button href="#">Menu item 3</button></li>
+									<li class="menuItem"><button href="#">Menu item 4</button></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list_body collapse" id="collapseE">
+			<div class="list_group pad_rl15 lh_theme3">
+				<div class="list_item noclk">
+					<div class="list_item_inner left_indent">
+						<div class="column_5050">
+							<div class="list_col_l">
+								<label>
+										Amount from credit
+								</label>
+							</div>
+							<div class="list_col_r txt_left">
+								<p class="nowrap">
+										<span>240,00</span><span> USD</span>
+								</p>
+							</div>
+						</div>
+						<div class="column_5050">
+							<div class="list_col_l">
+								<label>
+										Remaining amount from
+								</label>
+							</div>
+							<div class="list_col_r txt_left">
+								<p class="nowrap">
+										<span>BE12 1234 1234 1234</span>
+								</p>
+							</div>
+						</div>
+						<div class="column_5050">
+							<div class="list_col_l">
+								<label>
+										Invoice date
+								</label>
+							</div>
+							<div class="list_col_r txt_left">
+								<p class="nowrap">
+										<span>22-02-2014</span>
+								</p>
+							</div>
+						</div>
+						<div class="column_5050">
+							<div class="list_col_l">
+								<label>
+										Invoice communication
+								</label>
+							</div>
+							<div class="list_col_r txt_left">
+								<p class="nowrap">
+										<span>+++012/34567/89012+++</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<div class="list_block ">   <!-- parent container of the full list -->
+		<div class="list_head lh_theme3 possible">  <!-- heading block with theme. possible class is used for JS - dummy -->
+			<div class="list_item pad_rl15 list_extra">  <!-- list item with padding and list_extra clas for the extra menu -->
+				<div class="list_item_inner">  <!-- item inner to define the padding -->
+					<span class="fontcon-arrow-right-filled list_arrow"></span>  <!-- for arrow icon -->
+					<div class="column_5050">  <!-- type of column 5050, that is 50% in left and 50% in right -->
+						<div class="list_col_l">   <!-- left column -->
+							<h4>   <!-- h4 for sematics  -->
+								<a class="list_item_title lnk_primary" href="#collapseE1" data-toggle="collapse">Elending accordion 2</a> <!-- for the heading green text -->
+							</h4>
+							<p class="list_desc">Description can be loaded in th eheading 1</p>
+							<p class="list_desc">Description can be loaded in th eheading 1</p>
+						</div>
+						<div class="list_col_r">  <!-- right column -->
+							<p class="nowrap list_amount"> <!-- to load ammount block -->
+								<span> <!-- to group multiple datas -->
+									<span>240,00</span><span> USD</span>  <!-- n number of span can be used to create to inject datas -->
+								</span>
+							</p>
+							<div class="dropdown extra">  <!-- extra menu -->
+								<button href="#" data-toggle="dropdown" class="dropdown-toggle menu drpdwn_menu" aria-expanded="false"><i class="fontcon-extra menu drpdwn_menu"></i></button>   <!-- using button for accessablity -->
+								<ul class="dropdown-menu animated fadeInDown">  <!-- options in the extra menu -->
+									<li class="menuItem"><button>Menu item 1</button></li>  
+									<li class="menuItem"><button href="#">Menu item 2</button></li>
+									<li class="menuItem"><button href="#">Menu item 3</button></li>
+									<li class="menuItem"><button href="#">Menu item 4</button></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list_body collapse" id="collapseE1">  <!-- body block with bootstrap collapse id -->
+			<div class="list_group lh_theme3 pad_rl15">   <!-- list group with theme and spacing -->
+				<div class="list_item noclk">   <!-- list item with no click event, so no cursor -->
+					<div class="list_item_inner left_indent">   <!-- list iten for spacer and left indent to align with arrow -->
+						<div class="column_5050">   <!-- type of column 5050, that is 50% in left and 50% in right -->
+							<div class="list_col_l">  <!-- left column -->
+								<label>
+										Amount from credit
+								</label>
+							</div>
+							<div class="list_col_r txt_left">  <!-- right column with text aligned to left -->
+								<p class=""> <!-- nowrap to keep the ammount and currency type in same row -->
+										heading block with theme. possible class is used for JS - dummy heading block with theme. possible class is used for JS - dummy heading block with theme. possible class is used for JS - dummyheading block with theme. possible class is used for JS - dummyheading block with theme. possible class is used for JS - dummy heading block with theme. possible class is used for JS - dummy heading block with theme. possible class is used for JS - dummyheading block with theme. possible class is used for JS - dummy  <!-- n number of span can be used to create to inject datas -->
+								</p>
+							</div>
+						</div>
+						<div class="column_5050">
+							<div class="list_col_l">
+								<label>
+										Remaining amount from
+								</label>
+							</div>
+							<div class="list_col_r txt_left">
+								<p class="nowrap">
+										<span>BE12 1234 1234 1234</span>
+								</p>
+							</div>
+						</div>
+						<div class="column_5050">
+							<div class="list_col_l">
+								<label>
+										Invoice date
+								</label>
+							</div>
+							<div class="list_col_r txt_left">
+								<p class="nowrap">
+										<span>22-02-2014</span>
+								</p>
+							</div>
+						</div>
+						<div class="column_5050">
+							<div class="list_col_l">
+								<label>
+										Invoice communication
+								</label>
+							</div>
+							<div class="list_col_r txt_left">
+								<p class="nowrap">
+										<span>+++012/34567/89012+++</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+</div>
+	
+	
+	<br><br><br><br>
+	
+	
+	
+	
+	<b>  know issue</b> - while clicking extra menu accordion is opening, it needs to be controlled in functionality 
+	<br/><br/>
+	  
+	  
+	  
+	  
+      <!-- START OF SmartSource Data Collector TAG -->
+      <script src="/rsc/contrib/script/comScore/sitestat.js"></script>
+      <script src="/rsc/contrib/script/comScore/web-banking/custom.js"></script>
+      <!-- END OF SmartSource Data Collector TAG --><!--ls:end[body]-->
+
+   </body>
+</html>

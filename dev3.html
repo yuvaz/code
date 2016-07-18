@@ -1,0 +1,1341 @@
+<html lang="en" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths win chrome chrome4 webkit webkit5 js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths nav-down">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	  <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" /> <!-- used to load spl characters -->
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=edge,chrome=1" http-equiv="X-UA-compatible">
+      
+      <!--ls:begin[stylesheet]-->
+      <title>IA Heading</title>
+      <!--ls:end[stylesheet]-->
+      <!--ls:begin[meta-keywords]-->
+      <meta name="keywords" content="">
+      <!--ls:end[meta-keywords]-->
+      <!--ls:begin[meta-description]-->
+      <meta name="description" content="">
+      <!--ls:end[meta-description]-->
+      <!--ls:begin[meta-vpath]-->
+      <meta name="vpath" content="">
+      <!--ls:end[meta-vpath]-->
+      <!--ls:begin[meta-page-locale-name]-->
+      <meta name="page-locale-name" content="">
+      <!--ls:end[meta-page-locale-name]-->
+      <!--ls:begin[stylesheet]-->
+      <link type="text/css" href="/rsc/contrib/graphicaltheme/bnpp-fortis/brand.css" rel="stylesheet">
+      <link type="text/css" href="/rsc/contrib/graphicaltheme/bnpp-fortis/dev_slide.css" rel="stylesheet">
+      <link type="text/css" href="http://wdh00043:8080/documents/css/doc.min.css" rel="stylesheet">
+      <!--ls:end[stylesheet]-->
+      <!--ls:begin[stylesheet]-->
+      <link type="text/css" href="/rsc/sys/css/player/mediaelementplayer.min.css" rel="stylesheet">
+      <!--ls:end[stylesheet]-->
+      <!--ls:begin[script]-->
+      <script type="text/javascript" src="/rsc/contrib/script/js/common/lib/jquery-1.9.1.min.js"></script>
+      <style type="text/css"></style>
+	  <script>
+		$( document ).ready(function() {
+			$(".possible .list_item").on("click",function(e){
+				var view = this;
+					$current = $(e.currentTarget);
+					//$previousSelected = $('.list_body.in');
+					
+				/*if ($previousSelected.hasClass("collapse")) {				
+					$previousSelected.collapse('toggle');
+					$(".list_head .list_item").removeClass("list_arrow_active");
+				}*/				
+				if (!$current.hasClass('disabled')) {					
+					$current.parent().next().collapse('toggle');
+					$current.toggleClass("list_active");
+				}
+			});
+			
+			$(".links").click(function(){
+				$("figure").toggle(200);
+			});
+			
+		});				
+	  </script>
+      <!--ls:end[script]-->
+
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/modernizr/modernizr-min.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/pagebus/pagebus.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/require/require.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/lib/iscroll.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/lib/bootstrap.min.js"></script>
+      <!--ls:end[script]-->
+
+      <!--ls:end[script]-->
+      <!--ls:begin[favicon]-->
+      <link type="image/x-icon" href="/rsc/contrib/graphicaltheme/bnpp-fortis/images/favicon.ico" rel="shortcut icon">
+      <!--ls:end[favicon]-->
+      <!--ls:begin[head-injection]-->
+      <meta name="siteid" content="web-banking">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="msapplication-tap-highlight" content="no">
+      <meta name="referrer" content="origin">
+      <meta name="format-detection" content="telephone=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+      
+ <style type="text/css">
+	  
+		.heading{
+    color: #182D26;
+    text-align: center;
+    font-family: regular;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #232927;
+    background: hsl(160, 17%, 86%);
+    padding: 10px 30px;
+		}
+		
+	.heading1{
+        color: #182D26;
+    text-align: center;
+    font-family: light;
+    background: hsl(160, 13%, 76%);
+    padding: 4px 30px;
+    font-size: 15px;
+		}
+		
+		figure{
+			display:none;
+		}
+		.modal{
+			position:relative;
+		}
+		
+	  </style>
+
+	  
+	  
+      
+   </head>
+   <body class="en PC fb priv nextgen" cz-shortcut-listen="true">
+     
+	<div class="portal_wrapper">
+		<h1 class="heading">Heading - IA Header</h1>
+		<h2 class="heading1">Heading with two column with truncating and data above the main heading</h2>
+		<br>
+		<div class="module_header mh_theme">
+			<div class="module_header_inner clearfix">
+				<div class="left_col">
+					<h1>
+						<p class="clearfix" data-rv-text="">PLANNING FOR PENSION</p>
+					</h1>
+				<div class="switcher">
+					<div class="switcher_header">
+						<h1>
+							<a href="javascript:void(0)" aria-expanded="false" data-rv-aria-label="" class="module_title" id="accountSwitcher_anchor" aria-label="CONSTITUTION DE CAPING">
+								<span data-rv-class-noclk=""><span class="switch_userName" data-rv-text="">CONSTITUTION DE CAPING</span>
+								</span>
+							</a>
+						</h1>
+						<p>
+							<span class="long_account_type clearfix" data-rv-text="">ZOE VAN VAEREBERGEN</span>
+							<span class="short_account_type clearfix" data-rv-text="">ZOE VAN</span>
+						</p>
+						<p>
+							<span data-rv-text="">006-0381360-24 </span>
+						</p>
+                    </div>
+				</div>
+			</div>
+				<div class="right_col module_header_subrow">
+					<div class="mh_title_subheader">
+						<p data-rv-text="">Huidige waarde</p>
+						<p class="mh_subtitle">
+							<span data-rv-text="">6.588,80</span>
+							<span data-rv-text="">EUR</span>
+						</p>
+						<p class="mh_converted hide">
+							<span data-rv-text="">11.340,58</span>
+							<span data-rv-text="">USD</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<br>
+		<h2 class="heading1">Heading with two column</h2>
+		<br>
+		<div class="module_header mh_theme">
+			<div class="module_header_inner clearfix">
+				<div class="left_col">
+				<div class="switcher">
+					<div class="switcher_header">
+						<h1>
+							<a href="javascript:void(0)" aria-expanded="false" data-rv-aria-label="" class="module_title" id="accountSwitcher_anchor" aria-label="PENSION INVEST PLAN">
+								<span data-rv-class-noclk=""><span class="switch_userName" data-rv-text="">PENSION INVEST PLAN</span>
+								</span>
+							</a>
+						</h1>
+						<p>
+							<span class="long_account_type clearfix" data-rv-text="">ZOE VAN VAEREBERGEN</span>
+							<span class="short_account_type clearfix" data-rv-text="">ZOE VAN</span>
+						</p>
+						<p>
+							<span data-rv-text="">006-0381360-24 </span>
+						</p>
+                    </div>
+				</div>
+			</div>
+				<div class="right_col module_header_subrow">
+					<div class="mh_title_subheader">
+						<p data-rv-text="">Huidige waarde</p>
+						<p class="mh_subtitle">
+							<span data-rv-text="">9.316,87</span>
+							<span data-rv-text="">EUR</span>
+						</p>
+						<p class="mh_converted hide">
+							<span data-rv-text="">11.340,58</span>
+							<span data-rv-text="">USD</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<h2 class="heading1">Heading with one column</h2>
+		<br>
+		<div class="module_header mh_theme">
+			<div class="module_header_inner clearfix">
+				<div class="left_col">
+					<div class="switcher">
+						<div class="switcher_header">
+							<h1>
+								<a href="javascript:void(0)" aria-expanded="false" data-rv-aria-label="" class="module_title" id="accountSwitcher_anchor" aria-label="TOP FAMILIALE">
+									<span data-rv-class-noclk=""><span class="switch_userName" data-rv-text="">TOP FAMILIALE</span>
+									</span>
+								</a>
+							</h1>
+							<p>
+								<span class="long_account_type clearfix" data-rv-text="">ZOE VAN VAEREBERGEN</span>
+								<span class="short_account_type clearfix" data-rv-text="">ZOE VAN</span>
+							</p>
+							<p>
+								<span data-rv-text="">006-0381360-24 </span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<h2 class="heading1">Heading with two column and three row in the right</h2>
+		<br>
+		<div class="module_header mh_theme">
+			<div class="module_header_inner clearfix">
+				<div class="left_col">
+				<div class="switcher">
+					<div class="switcher_header">
+						<h1>
+							<a href="javascript:void(0)" aria-expanded="false" data-rv-aria-label="" class="module_title" id="accountSwitcher_anchor" aria-label="Yuvaraj ganesan">
+								<span data-rv-class-noclk=""><span class="switch_userName" data-rv-text="">TOP WONING</span>
+								</span>
+							</a>
+						</h1>
+						<p>
+							<span class="long_account_type clearfix" data-rv-text="">ZOE VAN VAEREBERGEN</span>
+							<span class="short_account_type clearfix" data-rv-text="">ZOE VAN</span>
+						</p>
+						<p>
+							<span data-rv-text="">028-0000057-88</span>
+						</p>
+                    </div>
+				</div>
+			</div>
+				<div class="right_col module_header_subrow">
+					<div class="mh_title_subheader">
+						<p data-rv-text="">Adres</p>
+						<p>
+							<span class="highlight_text" data-rv-text="">KERKSTRAAT 15  </span>
+						</p>
+						<p>
+							<span class="highlight_text" data-rv-text="">3500 GERAARDSBERGEN </span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<h2 class="heading1">Heading with subheading and steps counter</h2>
+		<br>
+		<div class="module_header mh_theme noPrint">
+			<div class="module_header_inner clearfix">
+				<div class="module_title_block f_left">
+					<h1 class="module_title" >Transfer</h1>
+					<h2 class="module_operation_title" >Create</h2>
+					<h2 class="module_operation_title hide" >Modify</h2>
+				</div>
+				<div class="module_steps" aria-label="1 Active"><span id="currentPageStep">1</span> <span>/</span> <span>3</span></div>
+			</div>
+		</div>
+		<br>
+		<h2 class="heading1">Heading with <b style="color:red; font-weight: bold;">Switcher</b></h2>
+		<br>
+		
+		<div class="module_header mh_theme flyout switcher_right dummyswitcher">  <!-- dont use this call in MC "dummyswitcher" -->
+		  <div class="module_header_inner clearfix">
+			 <div class="left_col">
+				<h1 class="module_title" data-rv-text="config.app.message.Label.sepadd.SepaAccountsHeader.sepaddTitle">Direct debits</h1>
+			 </div>
+			 <div class="right_col">
+				<div class="switcher">
+				   <div class="switcher_header" data-rv-on-tap="current:allAccountClicked | current" data-rv-on-click="current:allAccountClicked | current">
+					  <h1>
+						 <a href="javascript:void(0)" class="module_title" id="accountSwitcher_anchor" aria-expanded="false">
+							 <span id="switcherTrigger" data-rv-class-noclk="selectaccount.isSingleAccount"><span class="switch_userName" data-rv-text="selectaccount.AccAlias">MARJONNA MAJA</span>
+								<span class="fontcon-arrow-down-filled switcher_icon"></span>
+							 </span>
+						 </a>
+					  </h1>
+					  <p>
+						 <span class="long_account_type clearfix" data-rv-text="selectaccount.AccTypeFull">HELLO CURRENT ACCOUNT</span>
+						 <span class="short_account_type clearfix" data-rv-text="selectaccount.AccTypeSmall">HELLO ACCOUNT</span>
+					  </p>
+					  <p>
+						 <span data-rv-text="selectaccount.AccNumber|formatIBAN">BE36 0011 9596 9681 </span>
+						 <span class="hello_icon show_inline-block" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+					  </p>
+				   </div>
+				   <div class="switcher_content" style="padding-top: 106px; height: 852px;">
+					  <div class="switcher_list">
+						 <!-- rivets: if selectaccount.ownCurrentLength | notEqual 0 --><div class="switcher_list_group">
+							<h3 class="switcher_group_header" data-rv-text="config.app.message.Label.sepadd.SepaAccountsHeader.ownPrivateAccounts">Own accounts</h3>
+							<!-- rivets: each-account --><div class="switcher_list_item accounts selected" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE36001195969681">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="MARJONNA MAJA">MARJONNA MAJA</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">3.995,84</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">HELLO CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">HELLO ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE36 0011 9596 9681 </span>
+								  <span class="hello_icon show_hello" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE02001391051940">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="MARJONNA MAJA">MARJONNA MAJA</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">2.425,78</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">COMFORT PACK</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">COMFORT PACK</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE02 0013 9105 1940 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE69001516205178">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">1.519,66</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">INVESTOR'S ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">INVESTOR'S ACC</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE69 0015 1620 5178 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE64001782583952">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">7.802,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE64 0017 8258 3952 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE53001782584053">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">-1,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE53 0017 8258 4053 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE31001782584255">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">-1,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE31 0017 8258 4255 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE20001782584356">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">12,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">HELLO CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">HELLO ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE20 0017 8258 4356 </span>
+								  <span class="hello_icon show_hello" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE09001782584457">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">-1,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE09 0017 8258 4457 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE95001782584558">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">26,01</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE95 0017 8258 4558 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE51001782584962">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">-10,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE51 0017 8258 4962 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE90001782659532">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">48,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">HELLO CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">HELLO ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE90 0017 8265 9532 </span>
+								  <span class="hello_icon show_hello" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE58001782673979">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">599,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE58 0017 8267 3979 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE47001782674080">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">599,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE47 0017 8267 4080 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE36001782674181">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">599,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE36 0017 8267 4181 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE25001782674282">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">599,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE25 0017 8267 4282 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE14001782674383">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">599,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE14 0017 8267 4383 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE03001782674484">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">599,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE03 0017 8267 4484 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE89001782674585">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">49.599,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE89 0017 8267 4585 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE78001782674686">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">599,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE78 0017 8267 4686 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE67001782674787">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="MARJONNA MAJA">MARJONNA MAJA</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">599,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE67 0017 8267 4787 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE56001782674888">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="MARJONNA MAJA">MARJONNA MAJA</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">599,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE56 0017 8267 4888 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE92001782678023">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">600,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">INVESTOR'S ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">INVESTOR'S ACC</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE92 0017 8267 8023 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE44001782680245">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">600,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">INVESTOR'S ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">INVESTOR'S ACC</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE44 0017 8268 0245 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE33001782680346">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">600,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">INVESTOR'S ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">INVESTOR'S ACC</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE33 0017 8268 0346 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE22001782680447">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">600,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">INVESTOR'S ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">INVESTOR'S ACC</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE22 0017 8268 0447 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE11001782680548">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">600,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">INVESTOR'S ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">INVESTOR'S ACC</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE11 0017 8268 0548 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE58001782683679">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="account.AccAlias" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">-1,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p> 
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE58 0017 8268 3679 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div>
+						 </div>
+						 <!-- rivets: if selectaccount.otherCurrentLength | notEqual 0 --><div class="switcher_list_group">
+							<h3 class="switcher_group_header" data-rv-text="config.app.message.Label.sepadd.SepaAccountsHeader.otherPrivateAccounts">Other accounts</h3>
+							<!-- rivets: each-account --><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE08001782735213">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias">FMKLIMRCNVAG PTSRUCFF</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">2.399,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p>
+								  <!--use spans to handle short and Long account types -->
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE08 0017 8273 5213 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE94001782735314">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias">FMKLIMRCNVAG PTSRUCFF</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">2.399,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p>
+								  <!--use spans to handle short and Long account types -->
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE94 0017 8273 5314 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE83001782735415">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias">FMKLIMRCNVAG PTSRUCFF</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">2.399,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p>
+								  <!--use spans to handle short and Long account types -->
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE83 0017 8273 5415 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE72001782735516">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias">FMKLIMRCNVAG PTSRUCFF</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">2.399,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p>
+								  <!--use spans to handle short and Long account types -->
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE72 0017 8273 5516 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE61001782735617">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias">FMKLIMRCNVAG PTSRUCFF</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">2.399,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p>
+								  <!--use spans to handle short and Long account types -->
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE61 0017 8273 5617 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE50001782735718">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias">FMKLIMRCNVAG PTSRUCFF</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">2.399,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p>
+								  <!--use spans to handle short and Long account types -->
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE50 0017 8273 5718 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE39001782735819">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias">FMKLIMRCNVAG PTSRUCFF</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">2.399,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p>
+								  <!--use spans to handle short and Long account types -->
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE39 0017 8273 5819 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE28001782735920">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias">FMKLIMRCNVAG PTSRUCFF</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">2.399,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p>
+								  <!--use spans to handle short and Long account types -->
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE28 0017 8273 5920 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE17001782736021">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias">FMKLIMRCNVAG PTSRUCFF</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">2.399,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p>
+								  <!--use spans to handle short and Long account types -->
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE17 0017 8273 6021 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div><div class="switcher_list_item accounts" data-rv-data-accnumber="account.AccNumber" data-rv-on-tap="accountList:chooseAccount| view" data-rv-on-click="accountList:chooseAccount| view" data-accnumber="BE06001782736122">
+							   <div class="switcher_column switcher6040 clearfix">
+								  <h4 class="switcher_title">
+									 <a href="javascript:void(0)" class="lnk_primary" data-rv-text="account.AccAlias" data-rv-showhide="account.AccAlias">FMKLIMRCNVAG PTSRUCF</a>
+								  </h4>
+								  <div class="switcher_subtitle">
+									 <p data-rv-checkobject="account.balance">
+										<span data-rv-text="account.balance">2.399,00</span>
+										<span data-rv-text="account.currency">EUR</span>	
+									 </p>
+								  </div>
+							   </div>
+							   <p>
+								  <!--use spans to handle short and Long account types -->
+								  <span class="long_account_type" data-rv-text="account.AccTypeFull">CURRENT ACCOUNT</span>
+								  <span class="short_account_type" data-rv-text="account.AccTypeSmall">CURRENT ACCOUNT</span>
+							   </p>
+							   <p>
+								  <span data-rv-text="account.AccNumber| formatIBAN" data-rv-showhide="account.AccNumber">BE06 0017 8273 6122 </span>
+								  <span class="hello_icon" data-rv-class-show_hello="account.isBlue" data-rv-aria-label="config.app.message.Label.sepadd.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							   </p>
+							</div>
+						 </div>
+					  </div>
+				   </div>
+				</div>
+			 </div>
+		  </div>
+	   </div>
+		<script>
+		$( document ).ready(function() {
+		
+			$(".dummyswitcher .module_title").click(function(){
+				$( ".dummyswitcher .switcher" ).toggleClass( "active" );
+				$( ".dummyswitcher .switcher_content" ).toggleClass( "show" );
+			});
+			
+		});
+		</script>
+		<br>
+		<h2 class="heading1">Heading for STO</h2>
+		<br>
+		<div class="module_header mh_theme flyout addBtn switcher_right">
+			<div class="module_header_inner clearfix">
+				<div class="left_col exp">
+					<h1 class="module_title" data-rv-text="config.app.message.Label.standingorder.StandingOrderList.standingOrdersTitle">STANDING ORDERS</h1>
+				</div>
+				<div class="right_col exp">
+					<div class="switcher"> 
+						<div class="switcher_header">
+							<h1>
+								<a href="javascript:void(0)" class="module_title" id="accountSwitcher_anchor" aria-expanded="false" data-rv-aria-label="accountListModel.AccAlias" aria-label="MARJONNA MAJA">
+									<span id="switcherTrigger" data-rv-class-noclk="accountListModel.isSingleAccount"><span class="switch_userName" data-rv-text="accountListModel.AccAlias">MARJONNA MAJA</span>
+										<span class="fontcon-arrow-down-filled switcher_icon"></span>
+									</span>
+								</a>
+							</h1>
+							<p>
+								<span class="long_account_type clearfix" data-rv-text="accountListModel.AccTypeFull">HELLO CURRENT ACCOUNT</span>
+								<span class="short_account_type clearfix" data-rv-text="accountListModel.AccTypeSmall">HELLO ACCOUNT</span>
+							</p> 
+							<p>
+								<span data-rv-text="accountListModel.AccNumber|formatIBAN">BE36 0011 9596 9681 </span>
+								<span class="hello_icon show_inline-block" data-rv-aria-label="config.app.message.Label.standingorder.Accessibility.helloicon" aria-label="Hello bank!"></span>
+							</p>
+						</div>
+						
+					</div>
+				</div>
+				<div class="add_btn sec">
+					<button class="extra_button" data-rv-aria-label="config.app.message.Label.standingorder.StandingOrderList.addNewStandingOrder" aria-label="New standing order">
+						<span class="fontcon-add add_icon"></span>
+						<span class="add_btn_text" data-rv-text="config.app.message.Label.standingorder.StandingOrderList.addNewStandingOrder">New standing order</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		
+		<br>
+		<h2 class="heading1">Heading for Zoomit</h2>
+		<br>
+		
+		<div class="module_header mh_theme flyout switcher_right">
+         <div class="module_header_inner clearfix">
+            <div class="left_col">
+               <h1 class="module_title" data-rv-text="config.app.message.Label.zoomit.ZoomitHome.Zoomit">Zoomit</h1>
+                  <!--  <span class="refresh">
+                     <span class="icon_refresh fontcon-refresh"></span>
+                     <span class="refresh_txt" data-rv-text="config.app.message.Label.zoomit.ZoomitHome.Refresh"></span>
+                  </span>-->
+                  <button class="redirect_lnk gotozoomit hide_on_app" data-rv-text="config.app.message.Label.zoomit.ZoomitHome.GoToZoomit">Go to Zoomit</button>
+            </div>
+            <div class="right_col">
+               <div class="switcher">
+                  <div class="switcher_header">
+                     <h1>
+                        <a href="javascript:void(0)" data-rv-aria-label="zoomit.zoomitAccAlias" class="module_title" id="accountSwitcher_anchor" aria-label="SEKAR KRISHNAKUMAR">
+						<span id="switcherTrigger" data-rv-class-noclk="zoomit.isSingleAccount" class=" noclk"><span class="switch_userName" data-rv-text="zoomit.zoomitAccAlias">SEKAR KRISHNAKUMAR</span>
+						<span class="fontcon-arrow-down-filled switcher_icon hide"></span></span>
+                        </a>
+                     </h1>
+                     <p>
+                        <span class="long_account_type clearfix" data-rv-text="zoomit.zoomitAccTypeFull">CURRENT ACCOUNT</span>
+                        <span class="short_account_type clearfix" data-rv-text="zoomit.zoomitAccTypeNew">CURRENT ACCOUNT</span>
+                     </p>
+                     <p>
+                        <span data-rv-text="zoomit.zoomitAccHeader">BE58 0017 8268 3679 </span>
+                        <span class="hello_icon" data-rv-class-show_inline-block="zoomit.isBlue"></span>
+                     </p>
+                  </div>
+                  <div class="switcher_content">
+                     <div class="switcher_list">
+                        <!-- Own Occounts -->
+                        <div class="switcher_list_group">
+						   <div class="switcher_list_item accounts allAccountText" data-rv-on-tap="accountList:selectAccount | view" data-rv-on-click="accountList:selectAccount | view">
+								<h4 class="switcher_title ">
+                                    <a href="javascript:void(0)" class="lnk_primary" data-rv-aria-label="config.app.message.Label.zoomit.ZoomitHome.AllAccounts" data-rv-text="config.app.message.Label.zoomit.ZoomitHome.AllAccounts" aria-label="ALL ACCOUNTS">ALL ACCOUNTS</a>
+                                 </h4>
+                           </div>
+						</div>
+						<!-- rivets: if zoomitCount.ownCurrentAccLength | notEqual 0 --><div class="switcher_list_group">
+						<h3 class="switcher_group_header current_accounts" data-rv-text="config.app.message.Label.zoomit.ZoomitHome.OwnPrivateAccount">Own accounts</h3>
+						<!-- rivets: each-account --><div>
+						   <div class="switcher_list_item accounts zoomItAccount" data-rv-on-tap="accountList:selectAccount| view" data-rv-on-click="accountList:selectAccount| view">
+                              <div class="switcher_column switcher6040 clearfix">
+                                 <h4 class="switcher_title ">
+                                    <a href="javascript:void(0)" class="lnk_primary" data-rv-text="account.alias" data-rv-aria-label="account.alias" data-rv-showhide="account.alias" aria-label="SEKAR KRISHNAKUMAR">SEKAR KRISHNAKUMAR</a>
+                                 </h4>
+                                 <div class="switcher_subtitle">
+                                    <p data-rv-checkobject="account.balance">
+                                       <span data-rv-text="account.balance.amount">-1,00</span>
+                                       <span data-rv-text="account.balance.currency">EUR</span>	
+                                    </p>
+                                 </div>
+                              </div>
+                              <p> 
+                                 <span class="long_account_type" data-rv-text="account.accountTypeFullName" data-rv-checkobject="account.accountTypeFullName">CURRENT ACCOUNT</span>
+                                 <span class="short_account_type" data-rv-text="account.accountType" data-rv-checkobject="account.accountType">CURRENT ACCOUNT</span>
+                              </p>
+                              <p>
+                                 <span data-rv-text="account.accountNumber| formatIBAN" data-rv-showhide="account.accountNumber">BE58 0017 8268 3679 </span>
+                                 <span class="hello_icon" data-rv-class-show_inline-block="account.isBlue"></span>
+                              </p>
+                           </div>
+						   </div>
+                           <!-- rivets: each-account -->
+                        </div>
+                        <!-- Other Occounts -->
+                        <!-- rivets: if zoomitCount.otherAccountLength | notEqual 0 -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="tabs_row">
+            <div class="eb_tabs tab_colored functions" data-rv-tabtoggle="zoomitNew.zoomitTab">
+               <a href="javascript:void(0)" data-rv-aria-label="config.app.message.Label.zoomit.ZoomitHome.DocumentTab" class="eb_tab_txt new_tab active" data-tab-index="New" data-rv-on-click="current:tabSelect | view" aria-label="DOCUMENTS">
+                  <div class="eb_tab_inner">
+                     <span class="clearfix space_right" data-rv-text="config.app.message.Label.zoomit.ZoomitHome.DocumentTab">DOCUMENTS</span><span><!-- rivets: unless zoomitCount.documentCounter | type 0 --><span>(</span><!-- rivets: unless zoomitCount.documentCounter | type 0 --><span data-rv-text="zoomitCount.documentCounter">102</span><!-- rivets: unless zoomitCount.documentCounter | type 0 --><span>)</span></span>
+                  </div>
+               </a>
+               <a href="javascript:void(0)" data-rv-aria-label="config.app.message.Label.zoomit.ZoomitHome.SenderTab" class="eb_tab_txt history_tab" data-tab-index="History" data-rv-on-click="current:tabSelect | view" aria-label="SENDERS">
+                  <div class="eb_tab_inner">
+                     <span class="clearfix" data-rv-text="config.app.message.Label.zoomit.ZoomitHome.SenderTab">SENDERS</span><span><!-- rivets: unless zoomitCount.senderCounter | type 0 --><span>(</span><!-- rivets: unless zoomitCount.senderCounter | type 0 --><span data-rv-text="zoomitCount.senderCounter">5</span><!-- rivets: unless zoomitCount.senderCounter | type 0 --><span>)</span></span>
+                  </div>
+               </a>
+            </div>
+         </div>
+      </div>
+	 <br>
+		<h2 class="heading1">Heading for Transaction - with left switcher</h2>
+	<br>
+	  <div class="module_header mh_theme flyout switcher_left">
+			<div class="module_header_inner clearfix">
+				<div class="left_col">
+				<div class="switcher">
+					<div class="switcher_header">
+                            <h1>
+                                <a href="javascript:void(0)" aria-expanded="false" data-rv-aria-label="accountInfo.username" class="module_title" id="accountSwitcher_anchor" aria-label="SEKAR KRISHNAKUMAR">
+                                	<span id="switcherTrigger" data-rv-class-noclk="accountlist.isOneAccount"><span class="switch_userName clearfix" data-rv-text="accountInfo.username">SEKAR KRISHNAKUMAR</span>
+                                		<span class="fontcon-arrow-down-filled switcher_icon" data-rv-class-hide="accountlist.isOneAccount"></span>
+                                	</span>
+                                </a>
+                            </h1>
+							<p>
+								<span class="long_account_type clearfix" data-rv-text="accountInfo.userAccTypeFull">CURRENT ACCOUNT</span>
+								<span class="short_account_type clearfix" data-rv-text="accountInfo.userAccType">CURRENT ACCOUNT</span>
+							</p>
+                            <p>
+								<span data-rv-text="accountInfo.userAccIban | formatIBAN">BE64 0017 8258 3952 </span>
+								<span class="hello_icon" data-rv-class-show_inline-block="accountInfo.userAccflag"></span>
+							</p>
+                    </div>
+					
+				</div>
+			</div>
+				<div class="right_col module_header_subrow">
+					<div class="mh_title_subheader">
+						<p data-rv-text="config.app.message.Label.accounttransactions.accountsheader.balance">Balance</p>
+						<p class="mh_subtitle">
+							<span data-rv-text="accountInfo.userAccBalance.amount|currency">7,802.00</span>
+							<span data-rv-text="accountInfo.userAccBalance.currency">EUR</span>
+						</p>
+						<p class="mh_converted hide" data-rv-checkconverted="accountInfo.userAccBalance.currency">
+							<span data-rv-text="accountInfo.userAccConvertedBalance.amount|currency">7,802.00</span>
+							<span data-rv-text="accountInfo.userAccConvertedBalance.currency">EUR</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="tabs_row">
+			<div class="eb_tabs tab_colored accounts" data-rv-tabtoggle="tabChange.tabDefault">
+				<a data-rv-aria-label="config.app.message.Label.accounttransactions.accountsheader.transactionList" href="javascript:void(0)" class="eb_tab_txt transaction_tab active" data-tab-index="transactions" aria-label="Transactions">
+					<div class="eb_tab_inner">
+						<span class="clearfix" data-rv-text="config.app.message.Label.accounttransactions.accountsheader.transactionList">Transactions</span>
+					</div>
+				</a>
+				<a data-rv-aria-label="config.app.message.Label.accounttransactions.accountsheader.statements" href="javascript:void(0)" class="eb_tab_txt statements_tab" data-tab-index="statements" aria-label="Statements">
+					<div class="eb_tab_inner">
+						<span class="clearfix" data-rv-text="config.app.message.Label.accounttransactions.accountsheader.statements">Statements</span>
+					</div>
+				</a>
+				<a data-rv-aria-label="config.app.message.Label.accounttransactions.accountsheader.details" href="javascript:void(0)" class="eb_tab_txt details_tab" data-tab-index="details" aria-label="Details">
+					<div class="eb_tab_inner">
+						<span class="clearfix" data-rv-text="config.app.message.Label.accounttransactions.accountsheader.details">Details</span>
+					</div>
+				</a>
+			</div>
+		</div>
+		</div>
+	<br>
+	<h2 class="heading1">Beneficiaries IA header</h2>
+	<br>
+	
+	<div class="module_header mh_theme">
+            <div class="module_header_inner clearfix">
+                <div class="module_title_block f_left">
+                    <h1 class="module_title" data-rv-text="config.app.message.label.beneficiary.beneficiaryList.beneficiaries">Beneficiaries</h1>
+                </div>
+                <div class="add_btn f_right">
+                    <button>
+                        <span class="fontcon-add add_icon"></span>
+                        <span class="add_btn_text" data-rv-text="config.app.message.label.beneficiary.beneficiaryList.addNewBeneficiary">New beneficiary</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+	
+		
+		
+	</div>  
+	<br>
+	<h2 class="heading1">Accounts panaromo with new dropdown - click the add button to see the extra menus</h2>
+	<br>
+	
+	<div class="module_header mh_theme switcher_right ">
+        <div class="module_header_inner clearfix">
+            <div class="module_title_block f_left">
+                <h1 class="module_title">MY ACCOUNTS</h1>
+            </div>
+            <div class="add_btn f_right">                
+                <div class="dropdown link">
+					<button href="#" data-toggle="dropdown" class="dropdown-toggle menu drpdwn_menu" aria-expanded="false">
+						 <span class="fontcon-add add_icon"></span>
+					    <span class="add_btn_text">Add an account</span>
+					</button>
+					<ul class="dropdown-menu animated fadeInDown">
+						<li class="menuItem dropdown-header">
+		                  <span class="">Individuals</span>
+		               </li>
+						<li class="menuItem">
+							<a class="" href="javascript:void(0);">Add a current account</a>
+						</li>
+						<li class="menuItem">
+							<a class="" href="javascript:void(0);">Add a saving account</a>
+						</li>
+						<li class="menuItem dropdown-header">
+		                  <span class="">Professionals</span>
+		               </li>
+						<li class="menuItem">
+							<a class="" href="javascript:void(0);">Add a new pack</a>
+						</li>
+					</ul>
+				</div>
+            </div>
+        </div>
+    </div>
+	
+	
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+   </body>
+</html>

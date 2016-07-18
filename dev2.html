@@ -1,0 +1,702 @@
+<html lang="en" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths win chrome chrome4 webkit webkit5 js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths nav-down">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	  <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" /> <!-- used to load spl characters -->
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=edge,chrome=1" http-equiv="X-UA-compatible">
+      
+      <!--ls:begin[stylesheet]-->
+      <title>slide List</title>
+      <!--ls:end[stylesheet]-->
+      <!--ls:begin[meta-keywords]-->
+      <meta name="keywords" content="">
+      <!--ls:end[meta-keywords]-->
+      <!--ls:begin[meta-description]-->
+      <meta name="description" content="">
+      <!--ls:end[meta-description]-->
+      <!--ls:begin[meta-vpath]-->
+      <meta name="vpath" content="">
+      <!--ls:end[meta-vpath]-->
+      <!--ls:begin[meta-page-locale-name]-->
+      <meta name="page-locale-name" content="">
+      <!--ls:end[meta-page-locale-name]-->
+      <!--ls:begin[stylesheet]-->
+      <link type="text/css" href="/rsc/contrib/graphicaltheme/bnpp-fortis/brand.css" rel="stylesheet">
+      <link type="text/css" href="/rsc/contrib/graphicaltheme/bnpp-fortis/dev_slide.css" rel="stylesheet">
+      <link type="text/css" href="http://wdh00043:8080/documents/css/doc.min.css" rel="stylesheet">
+      <!--ls:end[stylesheet]-->
+      <!--ls:begin[stylesheet]-->
+      <link type="text/css" href="/rsc/sys/css/player/mediaelementplayer.min.css" rel="stylesheet">
+      <!--ls:end[stylesheet]-->
+      <!--ls:begin[script]-->
+      <script type="text/javascript" src="/rsc/contrib/script/js/common/lib/jquery-1.9.1.min.js"></script>
+      <style type="text/css"></style>
+	  <script>
+		$( document ).ready(function() {
+			$(".possible .list_item").on("click",function(e){
+				var view = this;
+					$current = $(e.currentTarget);
+					//$previousSelected = $('.list_body.in');
+					
+				/*if ($previousSelected.hasClass("collapse")) {				
+					$previousSelected.collapse('toggle');
+					$(".list_head .list_item").removeClass("list_arrow_active");
+				}*/				
+				if (!$current.hasClass('disabled')) {					
+					$current.parent().next().collapse('toggle');
+					$current.toggleClass("list_active");
+				}
+			});
+			
+			$(".links").click(function(){
+				$("figure").toggle(200);
+			});
+			
+		});				
+	  </script>
+      <!--ls:end[script]-->
+
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/modernizr/modernizr-min.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/pagebus/pagebus.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/require/require.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/lib/iscroll.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/lib/bootstrap.min.js"></script>
+      <!--ls:end[script]-->
+
+      <!--ls:end[script]-->
+      <!--ls:begin[favicon]-->
+      <link type="image/x-icon" href="/rsc/contrib/graphicaltheme/bnpp-fortis/images/favicon.ico" rel="shortcut icon">
+      <!--ls:end[favicon]-->
+      <!--ls:begin[head-injection]-->
+      <meta name="siteid" content="web-banking">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="msapplication-tap-highlight" content="no">
+      <meta name="referrer" content="origin">
+      <meta name="format-detection" content="telephone=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+      
+ <style type="text/css">
+	  
+		.heading{
+    color: #182D26;
+    text-align: center;
+    font-family: regular;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #232927;
+    background: hsl(160, 17%, 86%);
+    padding: 10px 30px;
+		}
+		
+	.heading1{
+        color: #182D26;
+    text-align: center;
+    font-family: light;
+    background: hsl(160, 13%, 76%);
+    padding: 4px 30px;
+    font-size: 15px;
+		}
+		
+		figure{
+			display:none;
+		}
+		.modal{
+			position:relative;
+		}
+		
+	  </style>
+	  <script>
+	$( document ).ready(function() {
+	  
+		$(".new_ben").click(function(){
+			$(".containerRight").animate({"right": "0px"}, 300);
+			$(".containerLeft").animate({"right": "100%"}, 300);
+		});
+		$(".back1").click(function(){
+			$(".containerRight").animate({"right": "-100%"}, 300);
+			$(".containerLeft").animate({"right": "0"}, 300);
+		});
+		$(".country").click(function(){
+			$(".containerLast").animate({"right": "0px"}, 300);
+			$(".containerRight").animate({"right": "100%"}, 300);
+		});
+		$(".back2").click(function(){
+			$(".containerLast").animate({"right": "-100%"}, 300);
+			$(".containerRight").animate({"right": "0px"}, 300);
+		});
+		
+	});		
+	  </script>
+	  
+	  
+	  
+      
+   </head>
+   <body class="en PC fb priv nextgen" cz-shortcut-listen="true">
+     
+	<div class="portal_wrapper">
+		<div class="container_slider">
+			<div class=" containerLeft">	
+				
+				<span class="new_ben">New ben</span>
+				<div class="eg_col 1">
+<h2 class="heading1">Account listing</h2>	
+
+
+<!-- Account switcher start -->
+
+
+<div class="simple_list">
+	<div class="simple_list_group" data-rv-checkobject="ownAccList">
+		<h3 class="simple_group_header" data-rv-text="config.app.message.Label.accounttransactions.accountsheader.ownPrivateAccounts">Own accounts</h3>
+		<!-- rivets: each-account -->
+		<!-- rivets: each-account -->
+		<div class="simple_list_item" data-rv-on-click="selectedAcc:selectAccount| view">
+			<div class="simple_column simple6040 clearfix" data-rv-data-productid="account.productId" data-productid="BE75001719475651#EUR#00">
+				<h4 class="simple_title_l1">
+					<a href="javascript:void(0)" class="lnk_primary" data-rv-checkalias="account.defaultName" data-rv-checkprevious="account.alias" aria-label="MIHAITA NSONSA">DOMINIQUE DECLERQ</a>
+				</h4>
+				<div class="simple_subtitle_l1">
+					<span data-rv-text="account.balance.amount|currency">409,00</span>
+					<span data-rv-text="account.balance.currency">EUR</span>
+				</div>
+			</div>
+			<div class="simple_column simple6040 clearfix" data-rv-data-productid="account.productId" data-productid="BE75001719475651#EUR#00">
+				<p class="simple_title_l2">
+					<span class="long_account_type" data-rv-text="account.accountTypeFullName" data-rv-checkobject="account.accountTypeFullName">PREMIUM PACK</span>
+					<span class="short_account_type" data-rv-text="account.accountType" data-rv-checkobject="account.accountType">ZICHTREKENING</span>
+				</p>
+				<div class="simple_subtitle_l2">
+					<span data-rv-text="account.convertedBalance.amount|currency">409,00</span>
+					<span data-rv-text="account.convertedBalance.currency">EUR</span>
+				</div>
+			</div>
+			<p>
+				<span data-rv-text="account.iban | formatIBAN" data-rv-checkobject="account.iban">BE75 0017 1947 5651 </span>
+				<span class="hello_icon show_hello" data-rv-class-show_hello="account.flagBlue"></span>
+			</p>
+				
+		</div>
+		<div class="simple_list_item" data-rv-on-click="selectedAcc:selectAccount| view">
+			<div class="simple_column simple6040 clearfix" data-rv-data-productid="account.productId" data-productid="BE75001719475651#EUR#00">
+				<h4 class="simple_title_l1">
+					<a href="javascript:void(0)" class="lnk_primary" data-rv-checkalias="account.defaultName" data-rv-checkprevious="account.alias" aria-label="MIHAITA NSONSA">DOMINIQUE DECLweERQ</a>
+				</h4>
+				<div class="simple_subtitle_l1">
+					<span data-rv-text="account.balance.amount|currency">409,00</span>
+					<span data-rv-text="account.balance.currency">EUR</span>
+				</div>
+			</div>
+			<div class="simple_column simple6040 clearfix" data-rv-data-productid="account.productId" data-productid="BE75001719475651#EUR#00">
+				<p class="simple_title_l2">
+					<span class="long_account_type" data-rv-text="account.accountTypeFullName" data-rv-checkobject="account.accountTypeFullName">PREMIUM PACK</span>
+					<span class="short_account_type" data-rv-text="account.accountType" data-rv-checkobject="account.accountType">ZICHTREKENING</span>
+				</p>
+				<div class="simple_subtitle_l2">
+					<span data-rv-text="account.convertedBalance.amount|currency">409,00</span>
+					<span data-rv-text="account.convertedBalance.currency">EUR</span>
+				</div>
+			</div>
+			<p>
+				<span data-rv-text="account.iban | formatIBAN" data-rv-checkobject="account.iban">BE75 0017 1947 5651 </span>
+				<span class="hello_icon" data-rv-class-show_hello="account.flagBlue"></span>
+			</p>
+				
+		</div>
+		
+		
+	</div>
+	<div class="simple_list_group" data-rv-checkobject="ownAccList">
+		<h3 class="simple_group_header" data-rv-text="config.app.message.Label.accounttransactions.accountsheader.ownPrivateAccounts">Other accounts</h3>
+		<!-- rivets: each-account -->
+		<!-- rivets: each-account -->
+		<div class="simple_list_item" data-rv-on-click="selectedAcc:selectAccount| view">
+			<div class="simple_column simple6040 clearfix" data-rv-data-productid="account.productId" data-productid="BE75001719475651#EUR#00">
+				<h4 class="simple_title_l1">
+					<a href="javascript:void(0)" class="lnk_primary" data-rv-checkalias="account.defaultName" data-rv-checkprevious="account.alias" aria-label="MIHAITA NSONSA">DOMINIQUE DECLERQ</a>
+				</h4>
+				<div class="simple_subtitle_l1">
+					<span data-rv-text="account.balance.amount|currency">409,00</span>
+					<span data-rv-text="account.balance.currency">EUR</span>
+				</div>
+			</div>
+			<div class="simple_column simple6040 clearfix" data-rv-data-productid="account.productId" data-productid="BE75001719475651#EUR#00">
+				<p class="simple_title_l2">
+					<span class="long_account_type" data-rv-text="account.accountTypeFullName" data-rv-checkobject="account.accountTypeFullName">PREMIUM PACK</span>
+					<span class="short_account_type" data-rv-text="account.accountType" data-rv-checkobject="account.accountType">ZICHTREKENING</span>
+				</p>
+				<div class="simple_subtitle_l2">
+					<span data-rv-text="account.convertedBalance.amount|currency">409,00</span>
+					<span data-rv-text="account.convertedBalance.currency">EUR</span>
+				</div>
+			</div>
+			<p>
+				<span data-rv-text="account.iban | formatIBAN" data-rv-checkobject="account.iban">BE75 0017 1947 5651 </span>
+				<span class="hello_icon" data-rv-class-show_hello="account.flagBlue"></span>
+			</p>
+				
+		</div>
+		<div data-selectable="" class="selected">
+		<div class="simple_list_item selected" data-rv-on-click="selectedAcc:selectAccount| view">
+			<div class="simple_column simple6040 clearfix" data-rv-data-productid="account.productId" data-productid="BE75001719475651#EUR#00">
+				<h4 class="simple_title_l1">
+					<a href="javascript:void(0)" class="lnk_primary" data-rv-checkalias="account.defaultName" data-rv-checkprevious="account.alias" aria-label="MIHAITA NSONSA">DOMINIQUE DECLERQ</a>
+				</h4>
+				<div class="simple_subtitle_l1">
+					<span data-rv-text="account.balance.amount|currency">409,00</span>
+					<span data-rv-text="account.balance.currency">EUR</span>
+				</div>
+			</div>
+			<div class="simple_column simple6040 clearfix" data-rv-data-productid="account.productId" data-productid="BE75001719475651#EUR#00">
+				<p class="simple_title_l2">
+					<span class="long_account_type" data-rv-text="account.accountTypeFullName" data-rv-checkobject="account.accountTypeFullName">PREMIUM PACK</span>
+					<span class="short_account_type" data-rv-text="account.accountType" data-rv-checkobject="account.accountType">ZICHTREKENING</span>
+				</p>
+				<div class="simple_subtitle_l2">
+					<span data-rv-text="account.convertedBalance.amount|currency">409,00</span>
+					<span data-rv-text="account.convertedBalance.currency">EUR</span>
+				</div>
+			</div>
+			<p>
+				<span data-rv-text="account.iban | formatIBAN" data-rv-checkobject="account.iban">BE75 0017 1947 5651 </span>
+				<span class="hello_icon" data-rv-class-show_hello="account.flagBlue"></span>
+			</p>
+				
+		</div>
+		</div>
+		<div class="simple_list_item" data-rv-on-click="selectedAcc:selectAccount| view">
+			<div class="simple_column simple6040 clearfix" data-rv-data-productid="account.productId" data-productid="BE75001719475651#EUR#00">
+				<h4 class="simple_title_l1">
+					<a href="javascript:void(0)" class="lnk_primary" data-rv-checkalias="account.defaultName" data-rv-checkprevious="account.alias" aria-label="MIHAITA NSONSA">DOMINIQUE DECLERQ</a>
+				</h4>
+				<div class="simple_subtitle_l1">
+					<span data-rv-text="account.balance.amount|currency">409,00</span>
+					<span data-rv-text="account.balance.currency">EUR</span>
+				</div>
+			</div>
+			<div class="simple_column simple6040 clearfix" data-rv-data-productid="account.productId" data-productid="BE75001719475651#EUR#00">
+				<p class="simple_title_l2">
+					<span class="long_account_type" data-rv-text="account.accountTypeFullName" data-rv-checkobject="account.accountTypeFullName">PREMIUM PACK</span>
+					<span class="short_account_type" data-rv-text="account.accountType" data-rv-checkobject="account.accountType">ZICHTREKENING</span>
+				</p>
+				<div class="simple_subtitle_l2">
+					<span data-rv-text="account.convertedBalance.amount|currency">409,00</span>
+					<span data-rv-text="account.convertedBalance.currency">EUR</span>
+				</div>
+			</div>
+			<p>
+				<span data-rv-text="account.iban | formatIBAN" data-rv-checkobject="account.iban">BE75 0017 1947 5651 </span>
+				<span class="hello_icon" data-rv-class-show_hello="account.flagBlue"></span>
+			</p>
+				
+		</div>
+	</div>
+</div>
+
+
+
+<h2 class="heading1">Currency listing</h2>	
+
+<div class="simple_list">
+	<div class="simple_list_group " data-rv-checkobject="">
+		<div class="simple_list_item single_row">
+			<p>
+				<a href="javascript:void(0)">FJD - Dollar de Fiji</a>
+			</p>
+		</div>		
+		<div data-selectable="" class="selected">
+			<div class="simple_list_item single_row">
+				<p>
+					<a href="javascript:void(0)">FKP - Livre des iles Malouines</a>
+				</p>
+			</div>		
+		</div>
+		<div class="simple_list_item single_row">
+			<p>
+				<a href="javascript:void(0)">GBP - Livre britannique</a>
+			</p>
+		</div>
+	
+	</div>
+</div>
+
+
+<h2 class="heading1">Communication (Temporary structure)</h2>	
+
+<div class="simple_list">
+	<div class="simple_list_group " data-rv-checkobject="">
+		<div class="simple_list_item single_row">
+			<p>
+				<a href="javascript:void(0)">Free communication</a>
+			</p>
+		</div>		
+		<div data-selectable="" class="selected">
+		<div class="simple_list_item single_row ">
+			<p>
+				<a href="javascript:void(0)">Belgian structured communication</a>
+			</p>
+		</div>		
+		</div>		
+		<div class="simple_list_item single_row">
+			<p>
+				<a href="javascript:void(0)">European structured communication</a>
+			</p>
+		</div>
+	
+	</div>
+</div>
+
+</div>
+			</div>
+			<div class=" containerRight">
+				
+				<span class="back1">back1</span><br><br>
+				<span class="country">country</span>
+				<div class="eg_col 2">
+
+<h2 class="heading1">New ben form</h2>	
+
+<div class="simple_list">
+	<div class="form_inner_block list_group_item">
+		<div class="form_fields">
+			<div class="form_labels">
+				<label for="Iban">IBAN</label>
+			</div>
+			<div class="form_details">
+				<p class="field_error_message">The beneficiary's account number is incorrect. Please correct this.</p>
+				<p class="field_error_message">Please enter the beneficiary's account number.</p>
+				<div class="default_input_field unknown_input">
+					<input type="text" maxlength="42" id="Iban" name="Iban" spellcheck="false" autocomplete="off">
+				</div>
+			</div>
+		</div>
+		<div class="form_fields">
+			<div class="form_labels">
+				<label for="bank_info">Bank information</label>
+			</div>
+			<div class="form_details form_check">
+				<p class="field_error_message"></p>
+				<div class="form_input default_input_control">
+				   <div class="form_check_row">
+						<input class="css-checkbox radio" type="radio" id="checkBox1" name="checkBox1"> 
+						<label class="css-label radio" for="checkBox1"> 
+						<span class="">Bic</span> 
+						</label>					
+					</div>
+					<div class="form_check_row">
+						<input class="css-checkbox radio" type="radio" id="checkBox2" name="checkBox2"> 
+						<label class="css-label radio" for="checkBox2"> 
+						<span class="">Bank identifier</span> 
+						</label>					
+					</div>
+				</div>
+			 </div>
+		</div>
+		<div class="form_fields">
+			<div class="form_labels">
+				<label for="bank_name">Bank name</label>
+			</div>
+			<div class="form_details">
+				<p class="field_error_message">The beneficiary's account number is incorrect. Please correct this.</p>
+				<p class="field_error_message">Please enter the beneficiary's account number.</p>
+				<div class="default_input_field unknown_input">
+					<input type="text" id="bank_name" name="bank_name" spellcheck="false" autocomplete="off">
+				</div>
+			</div>
+		</div>
+		<div class="form_fields">
+			<div class="form_labels">
+				<label for="city">City</label>
+			</div>
+			<div class="form_details">
+				<p class="field_error_message">The beneficiary's account number is incorrect. Please correct this.</p>
+				<p class="field_error_message">Please enter the beneficiary's account number.</p>
+				<div class="default_input_field unknown_input">
+					<input type="text" id="city" name="city" spellcheck="false" autocomplete="off">
+				</div>
+			</div>
+		</div>
+		<div class="form_fields">
+			<div class="form_labels">
+				<label for="country">Country</label>
+			</div>
+			<div class="form_details">
+				<p class="field_error_message">The beneficiary's account number is incorrect. Please correct this.</p>
+				<p class="field_error_message">Please enter the beneficiary's account number.</p>
+				<!-- sf selection start -->
+				<div class="selectize-control single">
+					<div class="selectize-input items not-full has-options mobilebackground no-after countryBtn">
+						<span data-rv-text="beneficiaryModel.bankCountrySelected">AFGHANISTAN</span>
+					</div>
+				</div>
+				<!--<div class="selectize_field fromAccount cursor_action">
+					<div class="form-group">
+						<label class="control-label" for="sf-gen-2"></label>
+						<div class="inner-component">
+							<div class="selectize_field sf-selection-list sf-mobile sf-mobile-carousel">
+								<div class="selectize-control single">
+									<a href="javascript:void(0)" class="selectize-input-overlay default_input_field" aria-label="Choose your own account"></a>
+									<div class="selectize-input items not-full has-options mobilebackground no-after">
+										<input id="sf-gen-2" type="text" autocomplete="off" placeholder="Choose your own account" tabindex="-1" readonly="">
+									</div>
+								</div>
+							</div>
+							<input type="hidden" name="sf-gen-2">
+						</div>
+					</div>
+				</div>-->	
+				<!-- sf selection ends -->
+			</div>
+		</div>
+	</div>
+	<div class="form_inner_block">	
+		<div class="form_fields">
+			<div class="form_labels">
+				<label for="ben_name">Beneficiary name</label>
+			</div>
+			<div class="form_details">
+				<p class="field_error_message">The beneficiary's account number is incorrect. Please correct this.</p>
+				<p class="field_error_message">Please enter the beneficiary's account number.</p>
+				<div class="default_input_field unknown_input">
+					<input type="text" id="ben_name" name="ben_name" spellcheck="false" autocomplete="off">
+				</div>
+			</div>
+		</div>
+		<div class="form_fields">
+			<div class="form_labels">
+				<label for="Street">Street</label>
+			</div>
+			<div class="form_details">
+				<p class="field_error_message">The beneficiary's account number is incorrect. Please correct this.</p>
+				<p class="field_error_message">Please enter the beneficiary's account number.</p>
+				<div class="default_input_field unknown_input">
+					<input type="text" id="Street" name="Street" spellcheck="false" autocomplete="off">
+				</div>
+			</div>
+		</div>
+		<div class="form_fields">
+			<div class="form_labels">
+				<label for="Post code">Post code</label>
+			</div>
+			<div class="form_details">
+				<p class="field_error_message">The beneficiary's account number is incorrect. Please correct this.</p>
+				<p class="field_error_message">Please enter the beneficiary's account number.</p>
+				<div class="default_input_field unknown_input">
+					<input type="text" id="Post code" name="Post code" spellcheck="false" autocomplete="off">
+				</div>
+			</div>
+		</div>
+		<div class="form_fields">
+			<div class="form_labels">
+				<label for="City">City</label>
+			</div>
+			<div class="form_details">
+				<p class="field_error_message">The beneficiary's account number is incorrect. Please correct this.</p>
+				<p class="field_error_message">Please enter the beneficiary's account number.</p>
+				<div class="default_input_field unknown_input">
+					<input type="text" id="City" name="City" spellcheck="false" autocomplete="off">
+				</div>
+			</div>
+		</div>
+		<div class="form_fields">
+			<div class="form_labels">
+				<label for="country">Country</label>
+			</div>
+			<div class="form_details">
+				<p class="field_error_message">The beneficiary's account number is incorrect. Please correct this.</p>
+				<p class="field_error_message">Please enter the beneficiary's account number.</p>
+				<!-- sf selection start -->
+				<div class="selectize_field fromAccount cursor_action">
+					<div class="form-group">
+						<label class="control-label" for="sf-gen-2"></label>
+						<div class="inner-component">
+							<div class="selectize_field sf-selection-list sf-mobile sf-mobile-carousel">
+								<div class="selectize-control single">
+									<a href="javascript:void(0)" class="selectize-input-overlay default_input_field" aria-label="Choose your own account"></a>
+									<div class="selectize-input items not-full has-options mobilebackground no-after">
+										<input id="sf-gen-2" type="text" autocomplete="off" placeholder="Choose your own account" tabindex="-1" readonly="">
+									</div>
+								</div>
+							</div>
+							<input type="hidden" name="sf-gen-2">
+						</div>
+					</div>
+				</div>
+				<!-- sf selection ends -->
+			</div>
+		</div>
+		<div class="form_fields pad-t10">
+			<input class="css-checkbox" type="checkbox" id="checkBox11" name="checkBox11"> 
+			<label class="css-label" for="checkBox11"> 
+			<span>Save the beneficiary</span> 
+			</label>					
+		</div>
+	</div>
+	<div class="form_inner_block bg_save_ben">	
+		<div class="form_save_ben">
+			<div class="form_fields">
+				<div class="form_details">
+					<p class="field_error_message">The beneficiary's account number is incorrect. Please correct this.</p>
+					<p class="field_error_message">Please enter the beneficiary's account number.</p>
+					<div class="default_input_field unknown_input">
+						<input type="text" id="City" name="City" spellcheck="false" autocomplete="off">
+					</div>
+				</div>
+			</div>
+			<div class="form_fields">
+				<div class="form_labels">
+					<label for="bank_info">Label this beneficiary as</label>
+				</div>
+				<div class="form_details form_check pad-0">
+					<p class="field_error_message"></p>
+					<div class="form_input default_input_control">
+					   <div class="form_check_row">
+							<input class="css-checkbox radio" type="radio" id="checkBox12" name="checkBox12"> 
+							<label class="css-label radio" for="checkBox12"> 
+							<span class="">Personal</span> 
+							</label>					
+						</div>
+						<div class="form_check_row">
+							<input class="css-checkbox radio" type="radio" id="checkBox23" name="checkBox23"> 
+							<label class="css-label radio" for="checkBox23"> 
+							<span class="">Professional</span> 
+							</label>					
+						</div>
+						<div class="form_check_row check_fav">
+							<input class="css-checkbox radio" type="radio" id="checkBox24" name="checkBox24"> 
+							<label class="css-label radio" for="checkBox24"> 
+							<span class="highlight_text">Favorite</span> 
+							</label>					
+						</div>
+					</div>
+				 </div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+			</div>
+			<div class=" containerLast">
+				
+				<span class="back2">back2</span>
+				<div class="eg_col 3">
+<h2 class="heading1">Country listing</h2>	
+	<div class="simple_list countryList">
+	 
+		  
+		  <div>
+		  <div class="simple_list_item single_row listName">
+	   <p><a href="javascript:void(0)" data-rv-text="country.name">AFGHANISTAN</a>
+	   </p>
+	   </div>
+		  </div><div>
+		  <div class="simple_list_item single_row listName">
+	   <p><a href="javascript:void(0)" data-rv-text="country.name">AFRIQUE DU SUD</a>
+	   </p>
+	   </div>
+		  </div><div>
+		  <div class="simple_list_item single_row listName">
+	   <p><a href="javascript:void(0)" data-rv-text="country.name">ALBANIE</a>
+	   </p>
+	   </div>
+		  </div><div>
+		  <div class="simple_list_item single_row listName">
+	   <p><a href="javascript:void(0)" data-rv-text="country.name">ANDORRE</a>
+	   </p>
+	   </div>
+		  </div><div class="selected">
+		  <div class="simple_list_item single_row listName">
+	   <p><a href="javascript:void(0)" data-rv-text="country.name">ANGOLA</a>
+	   </p>
+	   </div>
+		  </div><div>
+		  <div class="simple_list_item single_row listName">
+	   <p><a href="javascript:void(0)" data-rv-text="country.name">ANGUILLA</a>
+	   </p>
+	   </div>
+		  </div><div>
+		  <div class="simple_list_item single_row listName">
+	   <p><a href="javascript:void(0)" data-rv-text="country.name">ANTIGUA-ET-BARBUDA</a>
+	   </p>
+	   </div>
+		  </div><div>
+		  <div class="simple_list_item single_row listName">
+	   <p><a href="javascript:void(0)" data-rv-text="country.name">ANTILLES NEERLANDAISES</a>
+	   </p>
+	   </div>
+		  </div><div>
+		  <div class="simple_list_item single_row listName">
+	   <p><a href="javascript:void(0)" data-rv-text="country.name">ARABIE SAOUDITE</a>
+	   </p>
+	   </div>
+		  </div><div>
+		  <div class="simple_list_item single_row listName">
+	   <p><a href="javascript:void(0)" data-rv-text="country.name">ARGENTINE</a>
+	   </p>
+	   </div>
+		  </div><div>
+		  <div class="simple_list_item single_row listName">
+	   <p><a href="javascript:void(0)" data-rv-text="country.name">ARMENIE</a>
+	   </p>
+	   </div>
+		  </div><div>
+		  <div class="simple_list_item single_row listName">
+	   <p><a href="javascript:void(0)" data-rv-text="country.name">ARUBA</a>
+	   </p>
+	   </div>
+		  </div><div>
+		  <div class="simple_list_item single_row listName">
+	   <p><a href="javascript:void(0)" data-rv-text="country.name">AUSTRALIE</a>
+	   </p>
+	   </div>
+		  </div><div>
+		  <div class="simple_list_item single_row listName">
+	   <p><a href="javascript:void(0)" data-rv-text="country.name">AUTRICHE</a>
+	   </p>
+	   </div>
+		  </div><div>
+		  <div class="simple_list_item single_row listName">
+	   <p><a href="javascript:void(0)" data-rv-text="country.name">AZERBAIJAN</a>
+	   </p>
+	   </div>
+		  </div><div>
+		  <div class="simple_list_item single_row listName">
+	   <p><a href="javascript:void(0)" data-rv-text="country.name">BAHAMAS</a>
+	   </p>
+	   </div>
+		  </div><div>
+		  <div class="simple_list_item single_row listName">
+	   <p><a href="javascript:void(0)" data-rv-text="country.name">BAHREIN</a>
+	   </p>
+	   </div>
+		  </div><div>
+		  <div class="simple_list_item single_row listName">
+	   <p><a href="javascript:void(0)" data-rv-text="country.name">BANGLADESH</a>
+	   </p>
+	   </div>
+		  </div><div>
+		  <div class="simple_list_item single_row listName">
+	   <p><a href="javascript:void(0)" data-rv-text="country.name">BELGIQUE</a>
+	   </p>
+	   </div>
+		  </div><div>
+		  <div class="simple_list_item single_row listName">
+	   <p><a href="javascript:void(0)" data-rv-text="country.name">BELIZE</a>
+	   </p>
+	   </div>
+		  </div>
+	
+	</div>
+</div>
+			</div> 
+		</div>  
+	</div>  
+	
+
+   </body>
+</html>

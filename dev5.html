@@ -1,0 +1,374 @@
+<html lang="en" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths win chrome chrome4 webkit webkit5 js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths nav-down">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" />
+		<!-- used to load spl characters -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-compatible">
+		<!--ls:begin[stylesheet]-->
+		<title>Account Switcher</title>
+		<!--ls:end[stylesheet]-->
+		<!--ls:begin[meta-keywords]-->
+		<meta name="keywords" content="">
+		<!--ls:end[meta-keywords]-->
+		<!--ls:begin[meta-description]-->
+		<meta name="description" content="">
+		<!--ls:end[meta-description]-->
+		<!--ls:begin[meta-vpath]-->
+		<meta name="vpath" content="">
+		<!--ls:end[meta-vpath]-->
+		<!--ls:begin[meta-page-locale-name]-->
+		<meta name="page-locale-name" content="">
+		<!--ls:end[meta-page-locale-name]-->
+		<!--ls:begin[stylesheet]-->
+		<link type="text/css" href="/rsc/contrib/graphicaltheme/bnpp-fortis/brand.css" rel="stylesheet">
+		<link type="text/css" href="http://wdh00043:8080/documents/css/doc.min.css" rel="stylesheet">
+		<!--ls:end[stylesheet]-->
+		<!--ls:begin[stylesheet]-->
+		<link type="text/css" href="/rsc/sys/css/player/mediaelementplayer.min.css" rel="stylesheet">
+		<!--ls:end[stylesheet]-->
+		<!--ls:begin[script]-->
+		<script type="text/javascript" src="/rsc/contrib/script/js/common/lib/jquery-1.9.1.min.js"></script>
+		<style type="text/css"></style>
+		<script>
+			$( document ).ready(function() {
+					var view = this;			        	            			
+							
+					$('#switcherTrigger').on('click', function(event) {				
+						if (!($(event.currentTarget).hasClass('noclk')) && $(event.currentTarget).find(".noclk").length === 0) {
+							var switcherHeaderHeight = $('.switcher_header').outerHeight() + 20;
+							var viewPortheight = $(window).height() - $('.header').height();
+							var viewPort = $(window).width();
+							var switcherParent = $('.switcher').hasClass('active');
+
+							$('.switcher_content').css('padding-top', switcherHeaderHeight);
+							$('.switcher_content').height(viewPortheight - switcherHeaderHeight);
+							$('.switcher_list').animate({scrollTop: 0}, 10);
+							if (!(switcherParent == true)) {
+								$('.switcher_content').addClass('show');
+								$('.switcher').addClass('active');
+								$("#accountSwitcher_anchor").attr("aria-expanded",true);
+								if (viewPort < 768) {
+									$('.switcher_content').height(viewPortheight - switcherHeaderHeight);
+									$('html').addClass('no_scroll');
+								}
+							} else {
+								$('.switcher_content').removeClass('show');
+								$('.switcher').removeClass('active');
+								$("#accountSwitcher_anchor").attr("aria-expanded",false);
+								$('html').removeClass('no_scroll');
+							}
+						}	
+					});
+					
+					$('#accountSwitcher_anchor').on('click', function(event) {
+						if(event.eventPhase === 2)
+							if (!($(event.currentTarget).hasClass('noclk')) && $(event.currentTarget).find(".noclk").length === 0) {
+							var switcherHeaderHeight = $('.switcher_header').outerHeight() + 20;
+							var viewPortheight = $(window).height() - $('.header').height();
+							var viewPort = $(window).width();
+							var switcherParent = $('.switcher').hasClass('active');
+
+							$('.switcher_content').css('padding-top', switcherHeaderHeight);
+							$('.switcher_content').height(viewPortheight - switcherHeaderHeight);
+							$('.switcher_list').animate({scrollTop: 0}, 10);
+							if (!(switcherParent == true)) {
+								$('.switcher_content').addClass('show');
+								$('.switcher').addClass('active');
+								$("#accountSwitcher_anchor").attr("aria-expanded",true);
+								if (viewPort < 768) {
+									$('.switcher_content').height(viewPortheight - switcherHeaderHeight);
+									$('html').addClass('no_scroll');
+								}
+							} else {
+								$('.switcher_content').removeClass('show');
+								$('.switcher').removeClass('active');
+								$("#accountSwitcher_anchor").attr("aria-expanded",false);
+								$('html').removeClass('no_scroll');
+							}
+						}	
+					});
+														
+					$(window).resize(function() {
+						var viewPort = $(window).width();
+						var switcherParent = $('.switcher').hasClass('active');
+						var switcherHeaderHeight = $('.switcher_header').outerHeight() + 20;
+						$('.switcher_content').css('padding-top', switcherHeaderHeight);
+						var viewPortheight = $(window).height() - $('.header').height();
+						if (viewPort < 768 && switcherParent == true) {
+							$('.switcher_content').height(viewPortheight - switcherHeaderHeight);
+							$('html').addClass('no_scroll');
+						} else {
+							$('html').removeClass('no_scroll');
+						}
+					});
+				
+				
+			});				
+			 
+		</script>
+		<!--ls:end[script]-->
+		<!--ls:end[script]-->
+		<!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/modernizr/modernizr-min.js"></script>
+		<!--ls:end[script]-->
+		<!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/pagebus/pagebus.js"></script>
+		<!--ls:end[script]-->
+		<!--ls:end[script]-->
+		<!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/require/require.js"></script>
+		<!--ls:end[script]-->
+		<!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/lib/iscroll.js"></script>
+		<!--ls:end[script]-->
+		<!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/lib/bootstrap.min.js"></script>
+		<!--ls:end[script]-->
+		<!--ls:end[script]-->
+		<!--ls:begin[favicon]-->
+		<link type="image/x-icon" href="/rsc/contrib/graphicaltheme/bnpp-fortis/images/favicon.ico" rel="shortcut icon">
+		<!--ls:end[favicon]-->
+		<!--ls:begin[head-injection]-->
+		<meta name="siteid" content="web-banking">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="referrer" content="origin">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<style type="text/css">
+			.heading{
+			color: #182D26;
+			text-align: center;
+			font-family: regular;
+			margin-bottom: 20px;
+			border-bottom: 1px solid #232927;
+			background: hsl(160, 17%, 86%);
+			padding: 10px 30px;
+			}
+			.heading1{
+			color: #182D26;
+			text-align: center;
+			font-family: light;
+			background: hsl(160, 13%, 76%);
+			padding: 4px 30px;
+			font-size: 15px;
+			}
+			figure{
+			display:none;
+			}
+			.modal{
+			position:relative;
+			}
+			xmp{ padding:30px; background-color:#ccc;margin:0 100px;}
+			p{ margin-left:100px;}
+			.codeHeading{ font-family: 'regular'; padding:10px;margin:0 100px; border:1px solid #ccc;}
+			 .code{
+		margin: 20px; margin-left:100px;
+	  }
+	  .code p{
+		margin-bottom: 6px;
+		margin-left:0;
+	  }
+	  .code b{
+		font-weight: bold;
+	  }
+	  .code i{
+		font-style: italic;
+	  }
+	  .switcher p{ margin:0}
+		</style>
+	</head>
+	<body class="en PC fb priv nextgen" cz-shortcut-listen="true">
+		<div class="portal_wrapper">
+			<h1 class="heading">Account Switcher</h1>
+			<br>
+			<div class="module_header mh_theme">
+				<div class="module_header_inner clearfix">
+					<div class="left_col">
+						<div class="switcher">
+							<div class="switcher_header">
+								<h1>
+									<a href="javascript:void(0)" class="module_title" id="accountSwitcher_anchor" aria-expanded="true">
+									<span id="switcherTrigger"><span class="switch_userName">NONNKYNIWDPO OCXKFXHU</span>
+									<span class="fontcon-arrow-down-filled switcher_icon"></span>
+									</span>
+									</a>
+								</h1>
+								<p>GEWONE ZICHTREKENING</p>
+								<p>
+									<span>BE95 1440 8000 3458 </span>
+									<span class="hello_icon"></span>
+								</p>
+							</div>
+							<div class="switcher_content">
+								<div class="switcher_list">
+									<div class="switcher_list_group">
+										<h3 class="switcher_group_header">Eigen rekeningen1</h3>
+										<p class="switcher_list_info">View all the accounts at once, or just the accounts in groups you created</p>
+										<div class="switcher_list_item selected">
+											<div class="switcher_column switcher6040 clearfix">
+												<h4 class="switcher_title">
+													<a href="javascript:void(0)" class="lnk_primary">NONNKYNIWDPO OCXKFXHU</a>
+												</h4>
+												<div class="switcher_subtitle">
+													<p>
+														<span>936,00</span>
+														<span>EUR</span>	
+													</p>
+												</div>
+											</div>
+											<p> 
+												<span class="long_account_type">GEWONE ZICHTREKENING</span>
+												<span class="short_account_type">ZICHTREKENING</span>
+											</p>
+											<p>
+												<span >BE95 1440 8000 3458 </span>
+												<span class="hello_icon"></span>
+											</p>
+										</div>
+										<div class="switcher_list_item">
+											<div class="switcher_column switcher6040 clearfix">
+												<h4 class="switcher_title">
+													<a href="javascript:void(0)" class="lnk_primary">NONNKYNIWDPO OCXKFXHU</a>
+												</h4>
+												<div class="switcher_subtitle">
+													<p>
+														<span>936,00</span>
+														<span>EUR</span>	
+													</p>
+												</div>
+											</div>
+											<p> 
+												<span class="long_account_type">GEWONE ZICHTREKENING</span>
+												<span class="short_account_type">ZICHTREKENING</span>
+											</p>
+											<p>
+												<span >BE95 1440 8000 3458 </span>
+												<span class="hello_icon"></span>
+											</p>
+										</div>
+										<div class="switcher_list_item">
+											<div class="switcher_column switcher6040 clearfix">
+												<h4 class="switcher_title">
+													<a href="javascript:void(0)" class="lnk_primary">NONNKYNIWDPO OCXKFXHU</a>
+												</h4>
+												<div class="switcher_subtitle">
+													<p>
+														<span>936,00</span>
+														<span>EUR</span>	
+													</p>
+												</div>
+											</div>
+											<p> 
+												<span class="long_account_type">GEWONE ZICHTREKENING</span>
+												<span class="short_account_type">ZICHTREKENING</span>
+											</p>
+											<p>
+												<span >BE95 1440 8000 3458 </span>
+												<span class="hello_icon"></span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<br>
+			<br>
+			<br>
+			<h2 class="codeHeading">CODE</h2>
+			<xmp>
+<div class="switcher"> 
+	<div class="switcher_header">
+		<h1>
+			<a href="javascript:void(0)" class="module_title" id="accountSwitcher_anchor" aria-expanded="true">
+				<span id="switcherTrigger"><span class="switch_userName">NONNKYNIWDPO OCXKFXHU</span>
+					<span class="fontcon-arrow-down-filled switcher_icon"></span>
+				</span>
+			</a>
+		</h1>
+		<p>GEWONE ZICHTREKENING</p> 
+		<p>
+			<span>BE95 1440 8000 3458 </span>
+			<span class="hello_icon"></span>
+		</p>
+	</div>
+	<div class="switcher_content">
+		<div class="switcher_list">
+			<div class="switcher_list_group">
+			     <h3 class="switcher_group_header">Eigen rekeningen</h3>
+				 <div class="switcher_list_item selected"> 
+					<div class="switcher_column switcher6040 clearfix">
+						<h4 class="switcher_title">
+							<a href="javascript:void(0)" class="lnk_primary">NONNKYNIWDPO OCXKFXHU</a>
+						</h4>
+						<div class="switcher_subtitle">
+							<p>
+						        <span>936,00</span>
+						        <span>EUR</span>	
+							</p>
+						</div>
+					</div>
+					<p>GEWONE ZICHTREKENING</p>
+					<p>
+						<span >BE95 1440 8000 3458 </span>
+						<span class="hello_icon"></span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+			</xmp>
+			<br>
+				<br>
+			<p>
+					Switcher title should use the same pattern as defined, it is properly configured with accesibility rules.</p>
+					<br>
+					<br>
+						<xmp>
+<h1>
+	<a href="javascript:void(0)" class="module_title" id="accountSwitcher_anchor" aria-expanded="true">
+		<span id="switcherTrigger"><span class="switch_userName">NONNKYNIWDPO OCXKFXHU</span>
+			<span class="fontcon-arrow-down-filled switcher_icon"></span>
+		</span>
+	</a>
+</h1>
+						</xmp>
+						<br>
+						<p>if the Switcher is secondary part of the header which means placed at rignt h1 should be replaced by h2 tag, as h1 can be only one on HTML page for accesibility rules.</p>
+				</p>
+			<div class="code">
+				
+				<br>
+				<br>
+				<p><b>switcher</b> <i>- This class is the parent of all complete Account switcher, this can be placed in the IA header either lef or right.</i></p>
+				<p><b>switcherTrigger</b> <i>- This id holds click event which triggers the switcher to open.</i></p>
+				<p><b>switcher_header</b> <i>- This class holds the content of header part, title and subtitles.</i></p>
+				<p><b>module_title</b> <i>- This class renders the styles of the Module title, this can be used when you want to show as title if not you can remove this class which will look like general text on the header.</i></p>
+				<p><b>switcher_content</b> <i>- parent of the Switcher content container, this will also be used in functionality to show on click of switcherTrigger.</i></p>
+				<p><b>switcher_list</b> <i>- parent for every listing, contain the border, padding and cursor</i></p>
+				<p><b>switcher_list_group</b> <i>- This class serves as group wrapper and childs the each list items, if any module needs to iterate groups or grouping is required this group has to be used.</i></p>
+				<p><b>switcher_group_header </b> <i>- This class should be used with H3 tag and makes the group heading.</i></p>
+				<p><b>switcher_list_item</b> <i>- This class represents the each list item, on this level you can iterate the list as much as you can.</i></p>
+				<p><b>switcher_column</b> <i>- This class is the parent of the two column structure with the combination of Switcher6040</i></p>
+				<p><b>simple6040 </b> <i>- table structure left is 60% and right is 40%</i></p>
+				<p><b>switcher_title </b> <i>- this class serves the title of the each list item.</i></p>
+				<p><b>lnk_primary </b> <i>- generic class used to inject the branding color and size</i></p>
+				<p><b>switcher_subtitle </b> <i>- This class wrapps the subtitles of the switcher header.</i></p>
+			 </div>
+			
+			<h2 class="codeHeading">Functionality</h2>
+			<xmp>
+commons.validations.accountSwitcher();
+			</xmp>
+			<br></br>
+			<p><b>Note:</b>commons file is mandatory required to make it work.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To make the list item selected "selected" class need to be added to the respective list item.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For extra requirements of the applications should be handled by respective application only.</p>
+		<br>
+		<br>
+		</div>
+	</body>
+</html>

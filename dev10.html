@@ -1,0 +1,797 @@
+<html lang="en" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths win chrome chrome4 webkit webkit5 js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths nav-down js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	  <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"> <!-- used to load spl characters -->
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=edge,chrome=1" http-equiv="X-UA-compatible">
+      
+      <!--ls:begin[stylesheet]-->
+      <title>AG - portal</title>
+      <link href="/iwov-resources/fixed-layout/Single-Column-Offcanvas.css" type="text/css" rel="stylesheet">
+      <!--ls:end[stylesheet]-->
+      <!--ls:begin[meta-keywords]-->
+      <meta name="keywords" content="">
+      <!--ls:end[meta-keywords]-->
+      <!--ls:begin[meta-description]-->
+      <meta name="description" content="">
+      <!--ls:end[meta-description]-->
+      <!--ls:begin[meta-vpath]-->
+      <meta name="vpath" content="">
+      <!--ls:end[meta-vpath]-->
+      <!--ls:begin[meta-page-locale-name]-->
+      <meta name="page-locale-name" content="">
+      <!--ls:end[meta-page-locale-name]-->
+      <!--ls:begin[stylesheet]-->
+      <link type="text/css" href="/rsc/contrib/graphicaltheme/bnpp-fortis/brand.css" rel="stylesheet">
+      <link type="text/css" href="/rsc/contrib/graphicaltheme/bnpp-fortis/log.css" rel="stylesheet">
+      <!--ls:end[stylesheet]-->
+      <!--ls:begin[stylesheet]-->
+      <link type="text/css" href="/rsc/sys/css/player/mediaelementplayer.min.css" rel="stylesheet">
+      <!--ls:end[stylesheet]-->
+      <!--ls:begin[script]-->
+      <script type="text/javascript" src="/rsc/contrib/script/js/common/lib/jquery-1.9.1.min.js"></script><style type="text/css"></style>
+      <style type="text/css"></style>
+	  <script>
+			$( document ).ready(function() {
+				$(".possible .list_item").on("click",function(e){
+					var view = this;
+						$current = $(e.currentTarget);
+						//$previousSelected = $('.list_body.in');
+						
+					/*if ($previousSelected.hasClass("collapse")) {				
+						$previousSelected.collapse('toggle');
+						$(".list_head .list_item").removeClass("list_arrow_active");
+					}*/				
+					if (!$current.hasClass('disabled')) {					
+						$current.parent().next().collapse('toggle');
+						$current.toggleClass("list_active");
+					}
+				});
+				
+				
+				
+			});				
+			 
+		</script>
+      <!--ls:end[script]-->
+
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/modernizr/modernizr-min.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/pagebus/pagebus.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/require/require.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/lib/iscroll.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/lib/bootstrap.min.js"></script>
+      <!--ls:end[script]-->
+
+      <!--ls:end[script]-->
+      <!--ls:begin[favicon]-->
+      <link type="image/x-icon" href="/rsc/contrib/graphicaltheme/bnpp-fortis/images/favicon.ico" rel="shortcut icon">
+      <!--ls:end[favicon]-->
+      <!--ls:begin[head-injection]-->
+      <meta name="siteid" content="web-banking">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="msapplication-tap-highlight" content="no">
+      <meta name="referrer" content="origin">
+      <meta name="format-detection" content="telephone=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+      
+   </head>
+   <body class="en PC fb priv nextgen" cz-shortcut-listen="true">
+	<div class="portal_wrapper">
+
+	<script>
+		$( document ).ready(function() {
+			
+			$( ".tab_1" ).on( "click", function() {
+			  $(".eb_tab_txt").removeClass( "active" );
+			  $(this).addClass( "active" );
+			  $(".module_content").css("display", "none");
+			  $(".tab_page_1").css("display", "block");
+			});
+			
+			$( ".tab_2" ).on( "click", function() {
+			  $(".eb_tab_txt").removeClass( "active" );
+			  $(this).addClass( "active" );
+			  $(".module_content").css("display", "none");
+			  $(".tab_page_2").css("display", "block");
+			});
+			
+			$( ".tab_3" ).on( "click", function() {
+			  $(".eb_tab_txt").removeClass( "active" );
+			  $(this).addClass( "active" );
+			  $(".module_content").css("display", "none");
+			  $(".tab_page_3").css("display", "block");
+			});
+			
+		});
+
+	</script>
+	<style>
+		.module_content{
+			display: none;
+		}
+	</style>
+	<!-- Module Header -->
+	<div class="module_header mh_theme">
+		<!-- IA header -->
+		<div class="module_header_inner clearfix">
+			<div class="left_col">
+				<h1>
+					<p class="clearfix">Header Title</p>
+				</h1>
+				<div class="switcher">
+					<div class="switcher_header">
+						<h2>
+							<a href="javascript:void(0)" class="module_title" id="accountSwitcher_anchor">
+								<span id="switcherTrigger"><span class="switch_userName">clickable switcher content</span><span class="fontcon-arrow-down-filled switcher_icon"></span></span>
+							</a>
+						</h2>
+						<p>
+							<span class="long_account_type clearfix">Header sub text</span>
+							<span class="short_account_type clearfix">Header sub text</span>
+						</p>
+						<p>
+							<span>Header sub text</span>
+							<span class="fontcon-ag icon_ag show_inline"></span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="right_col module_header_subrow">
+				<div class="mh_title_subheader">
+					<p>Header sub text inline on small screen</p>
+					<p class="mh_subtitle">
+						<span>6.588,80</span>
+						<span>EUR</span>
+					</p>
+					<p class="mh_converted hide">
+						<span>11.340,58</span>
+						<span>USD</span>
+					</p>
+				</div>
+				<p>
+					<span class="highlight_text">KERKSTRAAT 15  </span>
+				</p>
+			</div>
+		</div>
+		<!-- IA Tabs -->
+		<div class="tabs_row">
+			<div class="eb_tabs tab_colored">
+				<a href="javascript:void(0)" class="eb_tab_txt tab_1 active" aria-label=""> <!-- "tab_1" is a dummy class -->
+					<div class="eb_tab_inner">
+						<span class="clearfix">Aperçu</span>
+					</div>
+				</a>
+				<a href="javascript:void(0)" class="eb_tab_txt tab_2" aria-label=""> <!-- "tab_2" is a dummy class -->
+					<div class="eb_tab_inner">
+						<span class="clearfix">Etat financier</span>
+					</div>
+				</a>
+				<a href="javascript:void(0)" class="eb_tab_txt tab_3" aria-label="">  <!-- "tab_3" is a dummy class -->
+					<div class="eb_tab_inner">
+						<span class="clearfix">Documents</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- Module content -->
+	<div class="module_content tab_page_1" style="display:block;"> <!-- "tab_1" is a dummy class -->
+		<div class="details_inner">
+			<!-- Module column structure -->
+			<div class="list_details_col col_3 pad-b10">
+				<div class="list_details">
+					<label class="details_label">
+						<span>Voorspelde waarde</span><span>:</span>
+					</label>
+					<div class="listitem_details">
+						<span>41.764,7</span>
+						<span>EUR</span>                   
+					</div>
+				</div>
+				<div class="list_details">
+					<label class="details_label">
+						<span>Verzekerde</span><span>:</span>
+					</label>
+					<div class="listitem_details">
+						<span>Zoé Van Vaerenbergh</span>              
+					</div>
+				</div>
+				<div class="list_details">
+					<label class="details_label">
+						<span>Einde van de waarborg</span><span>:</span>
+					</label>
+					<div class="listitem_details">
+						<span>01/11/2014</span>              
+					</div>
+				</div>
+			</div>	
+			<!-- Module inner heading -->
+			<div class="list_item_inner">
+				<div class="column_100">
+					<div class="list_col">
+						<h4 class="detail_group_title light_text">
+							Mes garanties
+						</h4>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Module column selectizer -->
+			<div class="list_details_col col_full">
+				<div class="list_details">
+					<label class="details_label pad-b10">
+						<span>Risque sélectionné</span><span>:</span>
+					</label>
+					<div class="listitem_details">
+						<!-- selectzer starts -->
+							<!--<div class="select_message__type selectize_field hide_keyboard">
+								<select class="contract-list selectized" name="contractList" tabindex="-1" style="display: none;"><option value="E1125400" selected="selected"></option></select><div class="selectize-control contract-list single"><div class="selectize-input items has-options hideSearch full has-items"><div data-value="E1125400" class="item">E1125400</div><input type="text" autocomplete="off" tabindex="1" style="width: 4px; opacity: 0; position: absolute; left: -10000px;"></div><div class="selectize-dropdown contract-list single" style="display: none; visibility: visible; width: 656px; top: 44px; left: 0px;"><div class="selectize-dropdown-content"><div data-value="E1125400" data-selectable="" class="option selected">E1125400</div><div data-value="E2720151" data-selectable="" class="option">E2720151</div><div data-value="E2720152" data-selectable="" class="option">E2720152</div></div></div></div>
+							</div>-->
+							
+							<div class="form_fields">
+								<div class="select_message__type">
+									<select class="details_content select_risk hide_keyboard no_input selectized" tabindex="-1" style="display: none;"><option value="Kerkstraat 15 - Eigenaar Bewoner" selected="selected"></option></select>
+									<div class="default_input_control details_content select_risk hide_keyboard no_input single">
+										<!--<div class="default_input_field items custom_dropdown dropdown_arrow input_dropdown has-options full has-items">-->												
+										<div class="default_input_field selectize-input items has-options hideSearch full has-items">
+											<div data-value="Kerkstraat 15 - Eigenaar Bewoner" class="dropdown_seleted_item">Kerkstraat 15 - Eigenaar Bewoner</div>
+											<input type="text" autocomplete="off" spellcheck="false" maxlength="35" tabindex="" style="width: 4px; opacity: 0; position: absolute; left: -10000px;">
+										</div>
+										<div class="default_dropdown_box details_content select_risk hide_keyboard no_input single" style="display: none; visibility: visible; width: 1078px; top: 82px; left: 0px;">
+											<div class="dropdown_wrapper">
+												<div class="dropdown_content">
+													<div data-value="Kerkstraat 15 - Eigenaar Bewoner" data-selectable="" class="option selected">Kerkstraat 15 - Eigenaar Bewoner</div>
+													<div data-value="Kerkstraat 16 - Eigenaar Bewoner" data-selectable="" class="option">Kerkstraat 16 - Eigenaar Bewoner</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							
+						<!-- selectzer ends -->                  
+					</div>
+				</div>
+			</div>
+			<!-- Module pannel -->
+			<div class="list_group pad-t5">
+			
+				<div class="listpanel active">
+					<div class="listpanel_heading">
+						<h3 class="listpanel_title">R.C Auto</h3>
+						<div class="listpanel_icon"><span class="fontcon-circle-done"></span></div>
+					</div>
+					<div class="listpanel_body">
+						<div class="listpanel_row">
+							<p>Une assurance obligatoire qui va plus loin que les exigences légales</p>
+						</div>
+						<div class="listpanel_row collapse" id="collapseExample2">
+							<div class="listpanel_row_inner">
+								<p>
+									Ma RC Auto couvre les blessures des passagers de mon véhicule et les dégâts causés aux autres usagers de la route en cas d’accident dont je suis responsable
+									En cas d’accident ou de pneu crevé, je bénéficie d’une assistance immédiate et gratuite et d’un véhicule de remplacement <a href="#" class="underline">durant</a> 24 heures ; en Belgique : 
+									<span class="highlight_text">0800 555 05</span>, et à l'étranger (jusqu'à 30 km de la frontière belge) : <span class="highlight_text">+32 78 0555 05&#8203;.</span>
+								</p>
+							</div>
+						</div>
+						<div class="listpanel_row">
+							<div class="list_item">
+								<div class="list_item_inner"> <!-- "list_active" to be added when the accordion is active -->
+									<span class="fontcon-arrow-right-filled list_arrow top"></span>
+									<div class="column_100">
+										<div class="list_col">
+										<p>
+											<a href="#collapseExample2" data-toggle="collapse" class="lnk_primary" aria-expanded="false" aria-controls="collapseExample2">En savoir plus</a>
+										</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="listpanel active">
+					<div class="listpanel_heading">
+						<h3 class="listpanel_title">Multirisques Top Omnium</h3>
+						<div class="listpanel_icon"><span class="fontcon-circle-done active"></span></div>
+					</div>
+					<div class="listpanel_body">
+						<div class="listpanel_row">
+							<p>Mon véhicule couvert en cas de vol, incendie, tempête, bris de vitres…</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="listpanel">
+					<div class="listpanel_heading">
+						<h3 class="listpanel_title">Dégâts Matériels Top Omnium</h3>
+						<div class="listpanel_icon"><span class="fontcon-circle-done active"></span></div>
+					</div>
+					<div class="listpanel_body">
+						<div class="listpanel_row">
+							<p>Mon véhicule couvert en cas de dégâts causés par moi ou un tiers</p>
+							<ul>
+								<li>This is a list item</li>
+								<li>Here a second one</li>
+								<li>Do you want a third</li>
+								<li>Or a last one</li>
+							</ul>
+						</div>
+						<div class="listpanel_row collapse" id="collapseExample3">
+							<div class="listpanel_row_inner">
+								<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+								<ul>
+									<li>This is a list item</li>
+									<li>Here a second one</li>
+									<li>Do you want a aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+									<li>Or a last one
+										<ul>
+											<li>This is a list item</li>
+											<li>Here a second one</li>
+											<li>Do you want a third</li>
+											<li>Or a last one</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="listpanel_row">
+							<div class="list_item">
+								<div class="list_item_inner">
+									<span class="fontcon-arrow-right-filled list_arrow top"></span>
+									<div class="column_100">
+										<div class="list_col">
+										<p>
+											<a href="#collapseExample3" data-toggle="collapse" class="lnk_primary" aria-expanded="false" aria-controls="collapseExample3">En savoir plus</a>
+										</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="listpanel">
+					<div class="listpanel_heading">
+						<h3 class="listpanel_title">Dégâts Matériels Top Omnium</h3>
+						<div class="listpanel_icon"><span class="fontcon-circle-done"></span></div>
+					</div>
+					<div class="listpanel_body">
+						<div>
+							<p class="inline_alert inline_alert_info"><span class="fontcon-information-active"></span>Garantie nog niet actief. Begint vanaf 15/10/2016</p>
+							<p class="inline_alert inline_alert_error"><span class="fontcon-information-active"></span>Garantie nog niet actief. Begint vanaf 15/10/2016</p>
+							<p class="inline_alert inline_alert_warning"><span class="fontcon-information-active"></span>Garantie nog niet actief. Begint vanaf 15/10/2016</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="module_content tab_page_2"> <!-- "tab_page_2" is a dummy class -->
+		<div class="details_inner">
+			<!-- Module inner heading -->
+			<div class="list_item_inner pad-t0">
+				<div class="column_100">
+					<div class="list_col">
+						<h4 class="detail_group_title light_text">
+							Mes garanties
+						</h4>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Module column structure -->
+			<div class="list_item_desc">
+				<div class="list_details_col col_1 border_b1 col_group">
+					<div class="list_details">
+						<label class="details_label">
+							<span>Voorspelde waarde</span><span>:</span>
+						</label>
+						<div class="listitem_details">
+							<span>41.764,7</span>
+							<span>EUR</span>                   
+						</div>
+					</div>
+					<div class="list_details">
+						<label class="details_label">
+							<span>Verzekerde</span><span>:</span>
+						</label>
+						<div class="listitem_details">
+							<span>Zoé Van Vaerenbergh</span>              
+						</div>
+					</div>
+					<div class="list_details">
+						<label class="details_label">
+							<span>Einde van de waarborg</span><span>:</span>
+						</label>
+						<div class="listitem_details">
+							<span>01/11/2014</span>              
+						</div>
+					</div>
+				</div>	
+				
+				<!-- Module column bulletlist -->
+				<div class="pad-t15">
+					<ul class="checklist dot">
+						<li>
+							Je paie tous les mois par virement bancaire.
+						</li>
+						<li>
+							Mes primes sont recalculées à chaque échéance annuelle.
+						</li>
+						<li>
+							Mes primes sont indexées suivant l’indice des prix à la consommeation et sont recalculés à chaque échéance annuelle.
+						</li>
+					</ul>
+				</div>
+				<div class="navigation_btns pad-t15">
+					<div class="right_navigation_btn f_left">
+						<button class="btn_default btn_primary f_right">
+							<span>button</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="list_item_inner">
+				<div class="column_100">
+					<div class="list_col">
+						<h4 class="detail_group_title light_text">
+							Mes retraits
+						</h4>
+					</div>
+				</div>
+			</div>
+			<div class="list_item_desc pad-t15">
+				<p>Je reçois 125€ par mois (frais et taxes exclus).</p>
+			</div>
+			
+			<div class="list_item_inner border_none">
+				<div class="column_100">
+					<div class="list_col">
+						<h4 class="detail_group_title light_text">
+							Mes fonds
+						</h4>
+					</div>
+				</div>
+			</div>
+			<div class="list_item_desc">
+				<div class="t_list">
+					<div class="t_list_row lh_theme2 t_list_head">
+						<div class="t_list_col t_spacer"></div>
+						<div class="t_list_col">
+							<p><label>Nom</label></p>
+						</div>
+						<div class="t_list_col">
+							<p><label>Valeur d’inventaire</label></p>
+						</div>
+						<div class="t_list_col">
+							<p><label>Unités(*)</label></p>
+						</div>
+						<div class="t_list_col">
+							<p><label>Date fin</label></p>
+						</div>
+						<div class="t_list_col">
+							<p class="border_none"><label>Total</label></p>
+						</div>
+						<div class="t_list_col t_spacer"></div>
+					</div>
+					<div class="t_list_row">
+						<div class="t_list_col t_spacer"></div>
+						<div class="t_list_col t_list_block">
+							<p class="">
+								<span>A.G. Life Opportunities World </span>
+							</p>
+						</div>
+						<div class="t_list_col t_list_block">
+							<p class="">
+								<span>160,1</span> <span>EUR</span>
+							</p>
+							<p class="">
+								<span class="data_2">15/09/2015</span>
+							</p>
+						</div>
+						<div class="t_list_col t_list_block">
+							<p class="">
+								<span>50,278</span>
+							</p>
+						</div>
+						<div class="t_list_col t_list_block">
+							<p class="">
+								<span>02/04/2016 </span>
+							</p>
+						</div>
+						<div class="t_list_col t_list_block t_list_border">
+							<p class="">
+								<span>6.183,23</span> <span>EUR</span>
+							</p>
+						</div>
+						<div class="t_list_col t_spacer"></div>
+					</div>
+					<div class="t_list_row">
+						<div class="t_list_col t_spacer"></div>
+						<div class="t_list_col t_list_block">
+							<p class="">
+								<span>A.G. Life Opportunities World </span>
+							</p>
+						</div>
+						<div class="t_list_col t_list_block">
+							<p class="">
+								<span>160,1</span> <span>EUR</span>
+							</p>
+							<p class="">
+								<span>15/09/2015</span>
+							</p>
+						</div>
+						<div class="t_list_col t_list_block">
+							<p class="">
+								<span>50,278</span>
+							</p>
+						</div>
+						<div class="t_list_col t_list_block">
+							<p class="">
+								<span>02/04/2016 </span>
+							</p>
+						</div>
+						<div class="t_list_col t_list_block t_list_border">
+							<p class="">
+								<span>6.183,23</span> <span>EUR</span>
+							</p>
+						</div>
+						<div class="t_list_col t_spacer"></div>
+					</div>
+					<div class="t_list_row">
+						<div class="t_list_col t_spacer"></div>
+						<div class="t_list_col t_list_block">
+							<p class="">
+								<span>A.G. Life Opportunities World </span>
+							</p>
+						</div>
+						<div class="t_list_col t_list_block">
+							<p class="">
+								<span>160,1</span> <span>EUR</span>
+							</p>
+							<p class="">
+								<span class="data_2">15/09/2015</span>
+							</p>
+						</div>
+						<div class="t_list_col t_list_block">
+							<p class="">
+								<span>50,278</span>
+							</p>
+						</div>
+						<div class="t_list_col t_list_block">
+							<p class="">
+								<span>02/04/2016 </span>
+							</p>
+						</div>
+						<div class="t_list_col t_list_block t_list_border">
+							<p class="">
+								<span>6.183,23</span> <span>EUR</span>
+							</p>
+						</div>
+						<div class="t_list_col t_spacer"></div>
+					</div>
+					<div class="t_list_row">
+						<div class="t_list_col t_spacer"></div>
+						<div class="t_list_col t_list_block"></div>
+						<div class="t_list_col t_list_block"></div>
+						<div class="t_list_col t_list_block"></div>
+						<div class="t_list_col t_list_block">
+							<p class="">
+								<label>Total de mes fonds</label>
+							</p>
+						</div>
+						<div class="t_list_col t_list_block t_list_border">
+							<p class="">
+								<label>
+									<span>13.731,03</span>
+									<span>EUR</span>
+								</label>
+							</p>
+						</div>
+						<div class="t_list_col t_spacer"></div>
+					</div>
+				</div>
+			</div>
+				
+			<p class="size_12 pad-b10">(*) arrondi à 3 décimales</p>
+			<p class="data_2">Tout versement supplémentaire sera réparti par défaut comme suit: 100,00% dans le fonds AG Life Portfolio FoF Balanced.</p>
+			
+		</div>
+	</div>
+
+	<div class="module_content tab_page_3"> <!-- "tab_page_3" is a dummy class -->
+		<div class="list_group">
+			
+			<div class="list_item list_pdf">
+				<div class="list_item_inner pad_rl30">
+					<span class="fontcon-pdf list_pdf_icon"></span>
+					<div class="column_100">
+						<div class="list_col">
+							<h4>
+								<a class="list_item_title  lnk_primary" href="javascript:void(0);">DOMINIQUE DECLERQ 13 </a>
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="list_block ">
+					<div class="list_head possible">
+						<div class="list_item pad_rl30">
+							<div class="list_item_inner">
+								<span class="fontcon-arrow-right-filled list_arrow"></span>
+								<div class="column_100">
+									<div class="list_col">
+										<h3 class="list_header_title">
+											<a href="javascript:void(0)">2016</a>
+										</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list_body collapse" id="collapse1" aria-expanded="true">
+						<div class="list_group pad_rl30">
+							<div class="list_group_item">
+								<div class="list_item list_pdf">
+									<div class="list_item_inner">
+										<div class="list_calender">
+											<p class="list_date">22</p>
+											<p class="list_month">Maart</p>
+										</div>
+										<div class="list_column_block">
+											<span class="fontcon-pdf list_pdf_icon"></span>
+											<div class="column_100">
+												<div class="list_col">
+													<h4>
+														<a class="list_item_title lnk_primary" href="#collapse3" data-toggle="collapse">DOMINIQUE DECLERQ 13 </a>
+													</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list_item list_pdf">
+									<div class="list_item_inner">
+										<div class="list_calender">
+											<p class="list_date">22</p>
+											<p class="list_month">Maart</p>
+										</div>
+										<div class="list_column_block">
+											<span class="fontcon-pdf list_pdf_icon"></span>
+											<div class="column_100">
+												<div class="list_col">
+													<h4>
+														<a class="list_item_title lnk_primary" href="#collapse3" data-toggle="collapse">DOMINIQUE DECLERQ 13 </a>
+													</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list_item list_pdf">
+									<div class="list_item_inner">
+										<div class="list_calender">
+											<p class="list_date">22</p>
+											<p class="list_month">Maart</p>
+										</div>
+										<div class="list_column_block">
+											<span class="fontcon-pdf list_pdf_icon"></span>
+											<div class="column_100">
+												<div class="list_col">
+													<h4>
+														<a class="list_item_title lnk_primary" href="#collapse3" data-toggle="collapse">DOMINIQUE DECLERQ 13 </a>
+													</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="list_block ">
+					<div class="list_head possible">
+						<div class="list_item pad_rl30">
+							<div class="list_item_inner">
+								<span class="fontcon-arrow-right-filled list_arrow"></span>
+								<div class="column_100">
+									<div class="list_col">
+										<h3 class="list_header_title">
+											<a href="javascript:void(0)">2016</a>
+										</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list_body collapse" id="collapse1" aria-expanded="true">
+						<div class="list_group pad_rl30">
+							<div class="list_group_item">
+								<div class="list_item">
+									<div class="list_item_inner">
+										<div class="list_calender">
+											<p class="list_date">22</p>
+											<p class="list_month">Maart</p>
+										</div>
+										<div class="list_column_block">
+											<div class="column_100">
+												<div class="list_col">
+													<h4>
+														<a class="list_item_title lnk_primary" href="#collapse3" data-toggle="collapse">DOMINIQUE DECLERQ 13 </a>
+													</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="list_item">
+									<div class="list_item_inner">
+										<div class="list_calender">
+											<p class="list_date">22</p>
+											<p class="list_month">Maart</p>
+										</div>
+										<div class="list_column_block">
+											<div class="column_100">
+												<div class="list_col">
+													<h4>
+														<a class="list_item_title lnk_primary" href="#collapse3" data-toggle="collapse">DOMINIQUE DECLERQ 13 </a>
+													</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+	</div>
+	
+	</div>
+</body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,234 @@
+<html lang="en" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths win chrome chrome4 webkit webkit5 js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths nav-down">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	  <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" /> <!-- used to load spl characters -->
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=edge,chrome=1" http-equiv="X-UA-compatible">
+      
+      <!--ls:begin[stylesheet]-->
+      <title>New List 1</title>
+      <link href="/iwov-resources/fixed-layout/Single-Column-Offcanvas.css" type="text/css" rel="stylesheet">
+      <!--ls:end[stylesheet]-->
+      <!--ls:begin[meta-keywords]-->
+      <meta name="keywords" content="">
+      <!--ls:end[meta-keywords]-->
+      <!--ls:begin[meta-description]-->
+      <meta name="description" content="">
+      <!--ls:end[meta-description]-->
+      <!--ls:begin[meta-vpath]-->
+      <meta name="vpath" content="">
+      <!--ls:end[meta-vpath]-->
+      <!--ls:begin[meta-page-locale-name]-->
+      <meta name="page-locale-name" content="">
+      <!--ls:end[meta-page-locale-name]-->
+      <!--ls:begin[stylesheet]-->
+      <link type="text/css" href="/rsc/contrib/graphicaltheme/bnpp-fortis/brand.css" rel="stylesheet">
+      <link type="text/css" href="/rsc/contrib/graphicaltheme/bnpp-fortis/dev.css" rel="stylesheet">
+      <link type="text/css" href="http://wdh00043:8080/documents/css/doc.min.css" rel="stylesheet">
+      <!--ls:end[stylesheet]-->
+      <!--ls:begin[stylesheet]-->
+      <link type="text/css" href="/rsc/sys/css/player/mediaelementplayer.min.css" rel="stylesheet">
+      <!--ls:end[stylesheet]-->
+      <!--ls:begin[script]-->
+      <script type="text/javascript" src="/rsc/contrib/script/js/common/lib/jquery-1.9.1.min.js"></script>
+      <style type="text/css"></style>
+	  <script>
+		$( document ).ready(function() {
+			$(".possible .list_item").on("click",function(e){
+				var view = this;
+					$current = $(e.currentTarget);
+					//$previousSelected = $('.list_body.in');
+					
+				/*if ($previousSelected.hasClass("collapse")) {				
+					$previousSelected.collapse('toggle');
+					$(".list_head .list_item").removeClass("list_arrow_active");
+				}*/				
+				if (!$current.hasClass('disabled')) {					
+					$current.parent().next().collapse('toggle');
+					$current.toggleClass("list_active");
+				}
+			});
+			
+			$(".links").click(function(){
+				$("figure").toggle(200);
+			});
+			
+		});				
+	  </script>
+      <!--ls:end[script]-->
+
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/modernizr/modernizr-min.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/pagebus/pagebus.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/sys/script/js/require/require.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/lib/iscroll.js"></script>
+      <!--ls:end[script]-->
+      <!--ls:begin[script]--><script type="text/javascript" src="/rsc/contrib/script/js/common/lib/bootstrap.min.js"></script>
+      <!--ls:end[script]-->
+
+      <!--ls:end[script]-->
+      <!--ls:begin[favicon]-->
+      <link type="image/x-icon" href="/rsc/contrib/graphicaltheme/bnpp-fortis/images/favicon.ico" rel="shortcut icon">
+      <!--ls:end[favicon]-->
+      <!--ls:begin[head-injection]-->
+      <meta name="siteid" content="web-banking">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="msapplication-tap-highlight" content="no">
+      <meta name="referrer" content="origin">
+      <meta name="format-detection" content="telephone=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+      
+      <style>.product_header:before{background-image:none;}</style>
+      <style type="text/css">
+	  .parent{
+		background: #e9e9e9;
+		color: #000;
+		margin: 0 auto;
+	  }
+	  .parent_row{
+		background: #f4f5f6;
+		padding: 20px 15px;
+		margin-bottom: 10px;
+	  }
+	  .table_discription{
+		padding: 0 15px 15px;
+	  }
+	  .table1{
+		display: table;
+		width: 100%;
+		border:0;
+		font-size: 14px;
+	  }
+	  .table_row{
+		display: table-row;
+	  }
+	  .table_cell{
+		display: table-cell;
+		border-right: 1px solid #d8d8d8;
+		padding: 10px;
+	  }
+	  .table_cell:last-child{
+		border:0;
+	  }
+	  .heading{
+		font-family: regular;
+	  }
+	  .heading.parent_row{
+		padding: 0 15px;
+		background: none;
+	  }
+	  </style>
+      
+   </head>
+   <body>
+		
+		<div class="parent">
+			<div class="parent_row heading">
+				<div class="table1">
+					<div class="table_row">
+						<div class="table_cell">
+							Formule
+						</div>
+						<div class="table_cell">
+							Mensualité
+						</div>
+						<div class="table_cell">
+							Durée
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="parent_row">
+				<div class="table_discription">
+					Variable +2% / -5%: 1ère révision après 10 ans, tous les 5 ans ensuite
+				</div>
+				<div class="table1">
+					<div class="table_row">
+						<div class="table_cell">
+							Formule
+						</div>
+						<div class="table_cell">
+							Mensualité
+						</div>
+						<div class="table_cell">
+							Durée
+						</div>
+					</div>
+					<div class="table_row">
+						<div class="table_cell">
+							Formule
+						</div>
+						<div class="table_cell">
+							Mensualité
+						</div>
+						<div class="table_cell">
+							Durée
+						</div>
+					</div>
+					<div class="table_row">
+						<div class="table_cell">
+							Formule
+						</div>
+						<div class="table_cell">
+							Mensualité
+						</div>
+						<div class="table_cell">
+							Durée
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="parent_row">
+				<div class="table_discription">
+					Variable +2% / -5%: 1ère révision après 10 ans, tous les 5 ans ensuite
+				</div>
+				<div class="table1">
+					<div class="table_row">
+						<div class="table_cell">
+							Formule
+						</div>
+						<div class="table_cell">
+							Mensualité
+						</div>
+						<div class="table_cell">
+							Durée
+						</div>
+					</div>
+					<div class="table_row">
+						<div class="table_cell">
+							Formule
+						</div>
+						<div class="table_cell">
+							Mensualité
+						</div>
+						<div class="table_cell">
+							Durée
+						</div>
+					</div>
+					<div class="table_row">
+						<div class="table_cell">
+							Formule
+						</div>
+						<div class="table_cell">
+							Mensualité
+						</div>
+						<div class="table_cell">
+							Durée
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+   </body>
+</html>
