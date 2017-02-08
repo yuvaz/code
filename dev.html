@@ -1,8 +1,8 @@
 <html lang="en" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths win chrome chrome4 webkit webkit5 js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths nav-down">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-		<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" />
 		<!-- used to load spl characters -->
+		<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta content="IE=edge,chrome=1" http-equiv="X-UA-compatible">
 		<!--ls:begin[stylesheet]-->
@@ -21,8 +21,8 @@
 		<meta name="page-locale-name" content="">
 		<!--ls:end[meta-page-locale-name]-->
 		<!--ls:begin[stylesheet]-->
-		<link type="text/css" href="/rsc/contrib/graphicaltheme/bnpp-fortis/brand.css" rel="stylesheet">
-		<link type="text/css" href="/rsc/contrib/graphicaltheme/bnpp-fortis/dev.css" rel="stylesheet">
+		<link type="text/css" id="original" href="/rsc/contrib/graphicaltheme/bnpp-fortis/brand.css" rel="stylesheet">
+		
 		<link type="text/css" href="http://wdh00043:8080/documents/css/doc.min.css" rel="stylesheet">
 		<!--ls:end[stylesheet]-->
 		<!--ls:begin[stylesheet]-->
@@ -82,6 +82,16 @@
 						$(".component.c").css({"display": "block"});
 						$(".component.c figure").css({"display": "block"});
 					}
+				else if(window.location.href.indexOf("c=d")!==-1){
+					$(".component").css({"display": "none"});
+					$(".component.d").css({"display": "block"});
+					$(".component.d figure").css({"display": "block"});
+				}
+				else if(window.location.href.indexOf("c=e")!==-1){
+					$(".component, br").css({"display": "none"});
+					$(".component.e").css({"display": "block"});
+					$(".component.e figure").css({"display": "block"});
+				}
 				
 				
 			});				
@@ -113,6 +123,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 		<style>.product_header:before{background-image:none;}</style>
 		<style type="text/css">
+			.eb-header{
+				display: none!important;
+			}
 			.heading{
 				color: #182D26;
 				text-align: center;
@@ -151,6 +164,17 @@
 		</style>
 	</head>
 	<body class="en PC fb priv nextgen" cz-shortcut-listen="true">
+		
+		
+<!-- brand switcher start -->  
+ <script> 
+    $(function(){
+      $("#includedContent").load("switcher.html"); 
+    });
+    </script> 
+	<div id="includedContent"></div>
+<!-- brand switcher ends -->  
+		
 		<!-- new -->
 		<div class="portal_wrapper">
 			<!-- simple listing -->
@@ -266,7 +290,138 @@
 							</div>
 						</div>
 					</div>
+					
+					
+					 
+					
 				</div>
+				
+				<h1 class="heading">listing with disable - hover color - onclick enable</h1>
+					
+					<div class="list_group list_group_hover">
+                        <div class="list_group_item">
+                           <div class="list_item list_indent_check pad_rl30 list_disable">
+                              <div class="list_item_inner">
+                                 <div class="list_check_left">
+                                    <input class="css-checkbox" type="checkbox" id="checkBox2" name="checkBox2">
+                                    <label class="css-label" for="checkBox2">
+                                    <span class=""></span>
+                                    </label>
+                                 </div>
+                                 <div class="column_5050">
+                                    <div class="list_col_l">
+                                       <h4>
+                                          <span class="highlight_text">VANDENBORRE</span>
+                                       </h4>
+                                       <p class="list_item_detail">
+                                          BE - BRUSSELS 
+                                       </p>
+                                    </div>
+                                    <div class="list_col_r txt_left_s">
+                                       <p class="nowrap list_amount">
+                                          <span>
+                                          <span>240,00</span><span> USD</span>
+                                          </span>
+                                          <span class="diff_currency hide">240,00 EUR</span>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- .list_group_item -->
+                        <div class="list_group_item">
+                           <div class="list_item list_indent_check pad_rl30 list_disable">
+                              <div class="list_item_inner">
+                                 <div class="list_check_left">
+                                    <input class="css-checkbox" type="checkbox" id="checkBox2" name="checkBox2">
+                                    <label class="css-label" for="checkBox2">
+                                    </label>
+                                 </div>
+                                 <div class="column_5050">
+                                    <div class="list_col_l">
+                                       <h4>
+                                          <span class="highlight_text">VANDENBORRE</span>
+                                       </h4>
+                                       <p class="list_item_detail">
+                                          BE - BRUSSELS 
+                                       </p>
+                                    </div>
+                                    <div class="list_col_r txt_left_s">
+                                       <p class="nowrap list_amount">
+                                          <span>
+                                          <span>240,00</span><span> USD</span>
+                                          </span>
+                                          <span class="diff_currency hide">240,00 EUR</span>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- .list_group_item -->
+                        <div class="list_group_item">
+                           <div class="list_item list_indent_check pad_rl30 list_disable">
+                              <div class="list_item_inner">
+                                 <div class="list_check_left">
+                                    <input class="css-checkbox" type="checkbox" id="checkBox2" name="checkBox2">
+                                    <label class="css-label" for="checkBox2">
+                                    </label>
+                                 </div>
+                                 <div class="column_5050">
+                                    <div class="list_col_l">
+                                       <h4>
+                                          <span class="highlight_text">VANDENBORRE</span>
+                                       </h4>
+                                       <p class="list_item_detail">
+                                          BE - BRUSSELS 
+                                       </p>
+                                    </div>
+                                    <div class="list_col_r txt_left_s">
+                                       <p class="nowrap list_amount">
+                                          <span>
+                                          <span>240,00</span><span> USD</span>
+                                          </span>
+                                          <span class="diff_currency hide">240,00 EUR</span>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- .list_group_item -->
+                        <div class="list_group_item">
+                           <div class="list_item list_indent_check list_disable pad_rl30">
+                              <div class="list_item_inner">
+                                 <div class="list_check_left">
+                                    <input class="css-checkbox" type="checkbox" id="checkBox2" name="checkBox2">
+                                    <label class="css-label" for="checkBox2">
+                                    </label>
+                                 </div>
+                                 <div class="column_5050">
+                                    <div class="list_col_l">
+                                       <h4>
+                                          <span class="highlight_text">VANDENBORRE</span>
+                                       </h4>
+                                       <p class="list_item_detail">
+                                          BE - BRUSSELS 
+                                       </p>
+                                    </div>
+                                    <div class="list_col_r txt_left_s">
+                                       <p class="nowrap list_amount">
+                                          <span>
+                                          <span>240,00</span><span> USD</span>
+                                          </span>
+                                          <span class="diff_currency hide">240,00 EUR</span>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- .list_group_item -->
+                     </div>
+				
 				<figure class="highlight">
 					<pre>
 				<code class="language-html" data-lang="html">
@@ -581,6 +736,27 @@
 										</div>
 									</div>
 								</div>
+								<div class="list_item noclk single_row">
+								 <div class="list_item_inner">
+									<div class="column_5050 single_row">
+									   <div class="list_col_l">
+										  <h4>
+											 <a class="list_item_title" href="#collapse3" data-toggle="collapse">FNAC</a>
+										  </h4>
+										  <p class="list_item_detail">
+											 BE - BRUSSELS
+										  </p>
+									   </div>
+									   <div class="list_col_r">
+										  <p class="nowrap list_amount">
+											 <span>
+											 <span>-330,00</span><span> EUR</span>
+											 </span>
+										  </p>
+									   </div>
+									</div>
+								 </div>
+							  </div>
 							</div>
 						</div>
 					</div>
@@ -1279,6 +1455,13 @@
 									</div>
 								</div>
 								<div class="list_group_item">
+									<div class="ia_alert"> 
+										<div class="alert_messages show_table alert_messages_warning">
+											<div class="alert_messages__inner clearfix">
+												<p>Make sure one bank account.</p>
+											</div>
+										</div>
+									</div>
 									<div class="list_item noclk">
 										<div class="list_item_inner">
 											<div class="column_5050">
@@ -1949,6 +2132,7 @@
 						</div>
 					</div>
 				</div>
+				</div>
 			
 			
 			
@@ -2206,7 +2390,7 @@
 									<span>No</span>
 								</p>
 							</div>
-							<div class="t_list_col t_spacer"></div>
+							<div class="t_list_col t_spacer hide_s"></div>
 						</div>
 						<div class="t_list_row">
 							<div class="t_list_col t_spacer"></div>
@@ -2239,7 +2423,7 @@
 									<span>No</span>
 								</p>
 							</div>
-							<div class="t_list_col t_spacer"></div>
+							<div class="t_list_col t_spacer hide_s"></div>
 						</div>
 					</div>
 				</div>
@@ -2396,7 +2580,7 @@
 					<span>Verzekerde</span><span>:</span>
 				</label>
 				<div class="listitem_details">
-					<span>ZoÈ Van Vaerenbergh</span>              
+					<span>Zo√© Van Vaerenbergh</span>              
 				</div>
 			</div>
 		</div>		
@@ -2418,7 +2602,7 @@
 					<span>Verzekerde</span><span>:</span>
 				</label>
 				<div class="listitem_details">
-					<span>ZoÈ Van Vaerenbergh</span>              
+					<span>Zo√© Van Vaerenbergh</span>              
 				</div>
 			</div>
 			<div class="list_details">
@@ -2448,7 +2632,7 @@
 					<span>Verzekerde</span><span>:</span>
 				</label>
 				<div class="listitem_details">
-					<span>ZoÈ Van Vaerenbergh</span>              
+					<span>Zo√© Van Vaerenbergh</span>              
 				</div>
 			</div>
 			<div class="list_details">
@@ -2464,7 +2648,7 @@
 					<span>Type verzekering</span><span>:</span>
 				</label>
 				<div class="listitem_details">
-					<span>Pension Libre ComplÈmentaire pour IndÈpendants</span>              
+					<span>Pension Libre Compl√©mentaire pour Ind√©pendants</span>              
 				</div>
 			</div>
 		</div>		
@@ -2477,34 +2661,49 @@
 	<div class="component"><br><br><br>
 		<h1 class="heading">AG column panel</h1>
 	
-			<div class="list_group pad_rl30 pad-b30 pad-t30">
-				<div class="listpanel active">
-					<div class="listpanel_heading">
-						<h3 class="listpanel_title">R.C Auto</h3>
-						<div class="listpanel_icon"><span class="fontcon-circle-done"></span></div>
-					</div>
-					<div class="listpanel_body">
-						<div class="listpanel_row">
-							<p>Une assurance obligatoire qui va plus loin que les exigences lÈgales</p>
-						</div>
-						<div class="listpanel_row collapse" id="collapseExample2">
-							<div class="listpanel_row_inner">
-								<p>
-									Ma RC Auto couvre les blessures des passagers de mon vÈhicule et les dÈg‚ts causÈs aux autres usagers de la route en cas díaccident dont je suis responsable
-									En cas díaccident ou de pneu crevÈ, je bÈnÈficie díune assistance immÈdiate et gratuite et díun vÈhicule de remplacement <a href="#" class="underline">durant</a> 24 heures ; en Belgique : 
-									<span class="highlight_text">0800 555 05</span>, et ‡ l'Ètranger (jusqu'‡ 30 km de la frontiËre belge) : <span class="highlight_text">+32 78 0555 05&#8203;.</span>
-								</p>
+			<div class="g_theme3 pad_rl30">
+				<div class="list_block bordered lh_theme3">
+					<div class="list_head">
+						<div class="list_item pad_rl15 noclk">
+							<div class="list_item_inner">
+								<span class="fontcon-arrow-right-filled list_arrow hide"></span>
+								<div class="column_100">
+									<div class="list_col">
+										<h4>
+											<div class="listpanel_icon active"><span class="fontcon-circle-done"></span></div>
+											<a class="list_item_title lnk_primary txt_default" href="#" data-toggle="collapse" aria-expanded="false">D√©c√®s</a>
+											<p class="list_desc font_14">Mon contrat b√©n√©ficie d‚Äôun ou plusieurs m√©canismes de protection.</p>
+										</h4>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="listpanel_row">
-							<div class="list_item">
-								<div class="list_item_inner"> <!-- "list_active" to be added when the accordion is active -->
-									<span class="fontcon-arrow-right-filled list_arrow top"></span>
+					</div>
+				</div>
+				<div class="list_block bordered lh_theme3">
+					<div class="list_head possible">
+						<div class="list_item pad_rl15">
+							<div class="list_item_inner">
+								<span class="fontcon-arrow-right-filled list_arrow"></span>
+								<div class="column_100">
+									<div class="list_col">
+										<h4>
+											<div class="listpanel_icon active"><span class="fontcon-circle-done"></span></div>
+											<a class="list_item_title lnk_primary txt_default" href="#collapseE1" data-toggle="collapse" aria-expanded="false">M√©canismes de protection</a>
+											<p class="list_desc font_14">Mon contrat b√©n√©ficie d‚Äôun ou plusieurs m√©canismes de protection.</p>
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list_body collapse" id="collapseE1" aria-expanded="false">
+						<div class="list_group pad_rl15 lh_theme3">
+							<div class="list_item noclk">
+								<div class="list_item_inner left_indent">
 									<div class="column_100">
-										<div class="list_col">
-										<p>
-											<a href="#collapseExample2" data-toggle="collapse" class="lnk_primary" aria-expanded="false" aria-controls="collapseExample2">En savoir plus</a>
-										</p>
+										<div class="list_col listpanel_body font_14">
+											<p>Si la valeur du fond AG Life Portfolio FoF Balanced descend en-de√ß√† de 95,51 EUR, la totalit√© de la r√©serve sera transf√©r√©e vers le fond AG Life Quam Bonds. La r√©serve transf√©r√©e sur le fond AG Life Quam Bonds sera ensuite progressivement r√©investie dans le fond d‚Äôorigine.</p>
 										</div>
 									</div>
 								</div>
@@ -2512,86 +2711,47 @@
 						</div>
 					</div>
 				</div>
-				
-				<div class="listpanel active">
-					<div class="listpanel_heading">
-						<h3 class="listpanel_title">Multirisques Top Omnium</h3>
-						<div class="listpanel_icon"><span class="fontcon-circle-done active"></span></div>
-					</div>
-					<div class="listpanel_body">
-						<div class="listpanel_row">
-							<p>Mon vÈhicule couvert en cas de vol, incendie, tempÍte, bris de vitresÖ</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="listpanel">
-					<div class="listpanel_heading">
-						<h3 class="listpanel_title">DÈg‚ts MatÈriels Top Omnium</h3>
-						<div class="listpanel_icon"><span class="fontcon-circle-done active"></span></div>
-					</div>
-					<div class="listpanel_body">
-						<div class="listpanel_row">
-							<p>Mon vÈhicule couvert en cas de dÈg‚ts causÈs par moi ou un tiers</p>
-							<ul>
-								<li>This is a list item</li>
-								<li>Here a second one</li>
-								<li>Do you want a third</li>
-								<li>Or a last one</li>
-							</ul>
-						</div>
-						<div class="listpanel_row collapse" id="collapseExample3">
-							<div class="listpanel_row_inner">
-								<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</p>
-								<ul>
-									<li>This is a list item</li>
-									<li>Here a second one</li>
-									<li>Do you want a aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-									<li>Or a last one
-										<ul>
-											<li>This is a list item</li>
-											<li>Here a second one</li>
-											<li>Do you want a third</li>
-											<li>Or a last one</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="listpanel_row">
-							<div class="list_item">
-								<div class="list_item_inner">
-									<span class="fontcon-arrow-right-filled list_arrow top"></span>
-									<div class="column_100">
-										<div class="list_col">
-										<p>
-											<a href="#collapseExample3" data-toggle="collapse" class="lnk_primary" aria-expanded="false" aria-controls="collapseExample3">En savoir plus</a>
-										</p>
-										</div>
+				<div class="list_block bordered lh_theme3">
+					<div class="list_head possible">
+						<div class="list_item pad_rl15">
+							<div class="list_item_inner">
+								<span class="fontcon-arrow-right-filled list_arrow"></span>
+								<div class="column_100">
+									<div class="list_col">
+										<h4>
+											<div class="listpanel_icon"><span class="fontcon-circle-done"></span></div>
+											<a class="list_item_title lnk_primary txt_default" href="#collapseE2" data-toggle="collapse" aria-expanded="false">D√©g√¢ts Mat√©riels Top Omnium</a>
+											<p class="list_desc font_14">Mon v√©hicule couvert en cas de d√©g√¢ts caus√©s par moi ou un tiers</p>
+										</h4>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-
-				<div class="listpanel">
-					<div class="listpanel_heading">
-						<h3 class="listpanel_title">DÈg‚ts MatÈriels Top Omnium</h3>
-						<div class="listpanel_icon"><span class="fontcon-circle-done"></span></div>
-					</div>
-					<div class="listpanel_body">
-						<div>
-							<p class="inline_alert inline_alert_info"><span class="fontcon-information-active"></span>Garantie nog niet actief. Begint vanaf 15/10/2016</p>
-							<p class="inline_alert inline_alert_error"><span class="fontcon-information-active"></span>Garantie nog niet actief. Begint vanaf 15/10/2016</p>
-							<p class="inline_alert inline_alert_warning"><span class="fontcon-information-active"></span>Garantie nog niet actief. Begint vanaf 15/10/2016</p>
+					<div class="list_body collapse" id="collapseE2" aria-expanded="false">
+						<div class="list_group pad_rl15 lh_theme3">
+							<div class="list_item noclk">
+								<div class="list_item_inner left_indent">
+									<div class="column_100">
+										<div class="list_col listpanel_body font_14">
+											<p>Si la valeur du fond AG Life Portfolio FoF Balanced descend en-de√ß√† de 95,51 EUR, la totalit√© de la r√©serve sera transf√©r√©e vers le fond AG Life Quam Bonds. La r√©serve transf√©r√©e sur le fond AG Life Quam Bonds sera ensuite progressivement r√©investie dans le fond d‚Äôorigine.</p>
+											<ul>
+												<li>This is a list item</li>
+												<li>Here a second one</li>
+												<li>Do you want a aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+												<li>Or a last one
+													<ul>
+														<li>This is a list item</li>
+														<li>Here a second one</li>
+														<li>Do you want a third</li>
+														<li>Or a last one</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -2599,6 +2759,96 @@
 	</div>
 	
 	
+	<br>
+	<div class="component e">
+		<h1 class="heading">Two column BONUS listing  - 70/30 in all resolution</h1>
+		
+		<div class="dummyblock_bonus" style="  ">
+		<style>.dummyblock_bonus{width: 634px; margin:0 auto;} @media all and (max-width: 767px) {.dummyblock_bonus{width:100%;}}</style>
+			<!-- code start -->
+			<div class="bonus_group">
+				<div class="bonus_list active">
+					<div class="bonus_list_col1">
+						<a href="#" class="list_item_title lnk_primary txt_default">Visa classic</a>
+						<p class="font_14">Vous avez effectu√© au moins 12 transactions avec votre carte depuis le d√©but de l'ann√©e </p>
+					</div>
+					<div class="bonus_list_col2">
+						<p class="bonus_list_col2_r1">
+							<span>Obtenu</span>
+							<span class="notify"></span>
+						</p>
+						<p class="bonus_list_col2_r2">
+							<span>(</span><span>5,75</span><span>EUR</span><span>)</span>
+						</p>
+					</div>
+				</div>
+				<div class="bonus_list">
+					<div class="bonus_list_col1">
+						<a href="#" class="list_item_title lnk_primary txt_default">Easy Banking app</a>
+						<p class="font_14">Votre bonus sera acquis d√®s que vous aurez effectu√© 12 logins.</p>
+					</div>
+					<div class="bonus_list_col2">
+						<p class="bonus_list_col2_r1">
+							<span>En cours</span>
+							<span class="notify"></span>
+						</p>
+						<p class="bonus_list_col2_r2">
+							<span>(</span><span>5,75</span><span>EUR</span><span>)</span>
+						</p>
+					</div>
+				</div>
+				<div class="bonus_list">
+					<div class="bonus_list_col1">
+						<a href="#" class="list_item_title lnk_primary txt_default">Automatic savings</a>
+						<p class="font_14">Votre bonus sera acquis d√®s que vous aurez √©pargn√© au moins 500 eur depuis le d√©but de l'ann√©e via une √©pargne automatique de minimum 50 eur par mois.</p>
+					</div>
+					<div class="bonus_list_col2">
+						<p class="bonus_list_col2_r1">
+							<span>En cours</span>
+							<span class="notify"></span>
+						</p>
+						<p class="bonus_list_col2_r2">
+							<span>(</span><span>5,75</span><span>EUR</span><span>)</span>
+						</p>
+					</div>
+				</div>
+				<div class="bonus_list">
+					<div class="bonus_list_col1">
+						<a href="#" class="list_item_title lnk_primary txt_default">Pension savings</a>
+						<p class="font_14">Versez cette ann√©e le montant maximal d√©ductible pour l'√©pargne-pension pour remporter ce bonus.</p>
+					</div>
+					<div class="bonus_list_col2">
+						<div class="btn_add2">
+							<button class="">
+								<span class="fontcon-add btn_primary add_icon"></span>
+								<span class="btn_default btn_primary add_text">Obtenir ce bonus</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="bonus_list">
+					<div class="bonus_list_col1">
+						<a href="#" class="list_item_title lnk_primary txt_default">Pension savings</a>
+						<p class="font_14">Versez cette ann√©e le montant maximal d√©ductible pour l'√©pargne-pension pour remporter ce bonus.</p>
+					</div>
+					<div class="bonus_list_col2">
+						<div class="btn_add2">
+							<button class="">
+								<span class="fontcon-add btn_primary add_icon"></span>
+								<span class="btn_default btn_primary add_text">Obtenir ce bonus</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- code ends -->
+		</div>
+		
+		
+	</div>	
+			
+	
+	
 		<br>
 		<br>
 		<br>
@@ -2611,5 +2861,76 @@
 		<br>
 		<br>
 		<br>
+		<script type="text/javascript">
+            /* hover listing */
+            $(function(){
+                $(".list_group_hover .list_group_item").hover(
+                  function () {
+                    $(this).addClass("hover");
+                  },
+                  function () {
+                    $(this).removeClass("hover");
+                  }
+                );
+            
+                $(".list_group_hover .list_group_item").on("click", function(){
+                    var checkbox = $(this).find(".css-checkbox");
+                    if(checkbox.prop('checked') == false){
+                        checkbox.prop('checked', true);
+                        $(this).addClass("active");                 
+                        $(this).find('.list_item').removeClass("list_disable");                 
+                    }
+                    else{
+                        checkbox.prop('checked', false);   
+                        $(this).removeClass("active");   
+                        $(this).find('.list_item').addClass("list_disable");                       
+                    }
+                });
+            });
+            
+            $(function(){
+                var sticky = $('.saleflow_inner').width();
+                $(".list_sticky").width(sticky);
+            });
+            
+            $(window).resize(function() {
+                var sticky = $('.saleflow_inner').width();
+                $(".list_sticky").width(sticky);
+            });
+            
+            $.fn.isOnScreen = function(){
+                var win = $(window);
+                var viewport = {
+                    top : win.scrollTop()+58,
+                    left : win.scrollLeft()
+                };
+                viewport.right = viewport.left + win.width();
+                viewport.bottom = viewport.top + win.height();
+            
+                var bounds = this.offset();
+                bounds.right = bounds.left + this.outerWidth();
+                bounds.bottom = bounds.top + this.outerHeight();
+            
+                return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+            };
+            
+            $(window).scroll(function() {
+            
+                var sticky = $('.saleflow_inner').width();
+                $(".list_sticky").width(sticky);
+            
+                if ($('.previous_list_sticky').isOnScreen() === true) {
+                    $(".list_sticky").removeClass( "fixed" );
+                    $(".list_sticky + * ").css("margin-top", "0px");
+                    $(".list_sticky").css("top", "0");
+                } else {
+                    $(".list_sticky").addClass( "fixed" );
+                    $(".list_sticky + * " ).css("margin-top", "80px");
+            
+                    var stickyTop = $('.header .nav_header').height();
+                    $(".list_sticky").css("top", "58px");
+                }
+            });
+         </script>
 	</body>
 </html>
